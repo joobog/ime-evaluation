@@ -18,10 +18,6 @@ function die() {
 	echo "$1" && exit 1
 }
 
-function command_exists() {
-	type "$1" &> /dev/null;
-}
-
 export MODULEPATH=/gsfs/betke/software/modules:$MODULEPATH
 
 
@@ -45,41 +41,70 @@ module list
 type mpiexec 2>&1 || die "mpiexec not found"
 type benchtool 2>&1 || die "benchtool not found"
 
-#set -x
-IOR="$(which ior)"
-#IOR="/opt/ddn/ior/bin/IOR-mvapich"
+
+IOR="$(which ior)" # default IOR (path to DDN-IOR is hardcoded in the nested loops)
 NCBENCH="$(which benchtool)"
 TESTDIR="/ime/isc18/perf"
-#TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 TIMESTAMP="20171218_162418"
-
 LUSTRE_TESTFILE="/esfs/isc18/perf/file"
 FUSE_TESTFILE="/ime/isc18/perf/file"
 IME_TESTFILE="ime:///esfs/isc18/perf/file"
 OUTPUTDIR="./output"
 SLURM_OUTPUT="slurm/slurm-%j.txt"
-#set +x
-
 WORKDIR="/gsfs/betke/git/manny-benchmark/scripts"
 cd $WORKDIR
 
-PROG_ARR=("$IOR")
-#PROG_ARR=("$NCBENCH" "$IOR")
-#NN_ARR=(1 2 4 8 12 16)
+
+# Benchmarks to run
+#  NCBENCH - NetCDF bench
+#  IOR - default IOR and DDN-IOR
+PROG_ARR=("$IOR" "$NCBENCH")
+
+# Experiment scaling
+# NN_ARR: number of nodes
+# PPN_ARR: processes per node
 NN_ARR=(10 8 6 4 2 1)
-#NN_ARR=(16 12 8 4 2 1)
 PPN_ARR=(8 6 4 2 1)
+
+# Data geomentry of int (4 bytes) values
+# Attention: it was too small in the previous experiments
+# TIME, X, Y, Z: size of dimensizion
+# size = time * x * y * z * 4 bytes
 TIME_ARR=(100)
 XGEOM_ARR=($((8 * 2)))
 YGEOM_ARR=($((8 * 8)))
-#ZGEOM_ARR=(4 25 256 2560)
 ZGEOM_ARR=(2560 256 25 4)
-TYPE_ARR=("ind" "coll") #( "ind" "coll" ) 
+
+# I/O type (only for NetCDF-Bench, ior runs alway in independent mode)
+#  ind - independent
+#  coll - collective
+TYPE_ARR=("ind" "coll")
+
+# Interface list
+#  ime - direct access to IME using DDN-IOR
+#  mpio - enable MPIO interface in IOR
+#  posix - enable POSIX interface in IOR
 IFACE_ARR=("ime" "mpio" "posix")
+
+# File systems list
+#  ime - direct access to IMEs using DDN IOR
+#  fuse - indirect accesss to IMEs over FUSE
+#  lustre - Lustre files system
 FS_ARR=("ime" "lustre" "fuse")
-CHUNKED_ARR=("none" "-c=auto") #("none") # ( "none" "-c=auto" )
+
+# NetCDF4 chunking
+#  none - disable chunking
+#  auto - chunking enabled (see netcdf-bench documentation for details)
+CHUNKED_ARR=("none" "-c=auto")
+
+# NetCDF4 unlimited dimensions
+#  none - disabled unlimited dimensions
+#  -u - enabled unlimited dimenstions
 UNLIMITED_ARR=("none" "-u") # ( "none" "-u" )
-#FILL_VALUE_ARR=("-F" "none") # "-F" )
+
+# NetCDF4 fill value
+#  none - disable fill value
+#  -F - enable fill value
 FILL_VALUE_ARR=("none") # "-F" )
 
 
@@ -91,12 +116,14 @@ TDIR="$(dirname $IME_TESTFILE)"
 srun --nodes=1 --ntasks=1 mkdir -p $TDIR
 mkdir -p $OUTPUTDIR
 
+
+
+# Run an experiment
 function runTest(){
   local l_command="$1"
   local l_out="$2"
   local l_testdir="$3"
   local l_stripes="$4"
-  local l_debug="$5"
 
   local l_wml="$(which mpiexec) -ppn 1 -np 1"
 
@@ -116,10 +143,8 @@ function runTest(){
   rm -rf $l_testdir
 }
 
-#TESTFILE=$(makeOutputName $OUTPUTDIR $NN $PPN $T $X $Y $Z $TYPE $CHUNKED $UNLIMITED $FILLVALUE)
-DEBUG=false
 
-
+# Create function names
 function makeOutputName() {
 	local l_outdir="$1"
 	local l_tag="$2"
@@ -146,6 +171,11 @@ function makeOutputName() {
 	echo ${l_out}
 }
 
+
+
+
+
+# Parameter exploration loops
 for COUNT in $(seq 3); do
 for PROG in ${PROG_ARR[@]}; do
 for NN in ${NN_ARR[@]}; do
@@ -168,14 +198,6 @@ for FILL_VALUE in ${FILL_VALUE_ARR[@]}; do
 			echo "skip ${BENCHFILE}, because -t=ind and -u are not supported"
 		else
 
-
-		#HNUM_ARR=("02" "03" "04" "05" "06" "08" "09" "10" "12" "13" "14" "23")
-		#HNUM_ARR=("02" "03" "04" "05" "06" "08" "09" "10" "11" "14" "23" "12")
-		#HNUM_ARR=("${HNUM_ARR[@]/#/isc17-c}")
-		#HOST_LIST="$(IFS=, ; echo "${HNUM_ARR[*]}")"
-
-		#HOST_LIST=isc17-c02,isc17-c03,isc17-c04,isc17-c05,isc17-c06,isc17-c08,isc17-c09,isc17-c10,isc17-c12,isc17-c13,isc17-c14,isc17-c18
-		#HOST_LIST=isc17-c02,isc17-c03,isc17-c04,isc17-c05,isc17-c06,isc17-c08,isc17-c09,isc17-c10,isc17-c11,isc17-c12,isc17-c14,isc17-c23
 		HOST_LIST=isc17-c02,isc17-c03,isc17-c04,isc17-c05,isc17-c08,isc17-c09,isc17-c10,isc17-c12,isc17-c14,isc17-c23
 
 
@@ -184,6 +206,7 @@ for FILL_VALUE in ${FILL_VALUE_ARR[@]}; do
 		#"-genv IM_MONITOR_FILE /dev/shm/native_mon.%p " \
 		#"-genv IM_CLIENT_NET_BUFFERS 32 " \
 
+		# Workload manager configuration
 		WLM="$(which mpiexec) -ppn ${PPN} -np $(($NN*$PPN)) -hosts $HOST_LIST "
 		WLM+="-genv IM_CLIENT_NET_BUFFERS 32 "
 		WLM+="-genv MV2_NUM_HCAS 1 "
@@ -212,27 +235,27 @@ for FILL_VALUE in ${FILL_VALUE_ARR[@]}; do
 					if [[ "lustre" == "${FS}" ]]; then
 						if [[ "posix" == "${IFACE}" ]]; then
 							if [[ "ind" == "${TYPE}" ]]; then
-								runTest "$WLM $IOR -s $S -t $B -b $B -o $LUSTRE_TESTFILE $PARAMS -f ./tests/POSIX-individual" "${BENCHFILE}" "$(dirname $LUSTRE_TESTFILE)" "$STRIPES" "$DEBUG"
+								runTest "$WLM $IOR -s $S -t $B -b $B -o $LUSTRE_TESTFILE $PARAMS -f ./tests/POSIX-individual" "${BENCHFILE}" "$(dirname $LUSTRE_TESTFILE)" "$STRIPES"
 							fi
 						elif [[ "mpio" == "${IFACE}" ]]; then
 							if [[ "ind" == "${TYPE}" ]]; then
-								runTest "$WLM $IOR -s $S -t $B -b $B -o $LUSTRE_TESTFILE $PARAMS -f ./tests/MPI-shared" "${BENCHFILE}" "$(dirname $LUSTRE_TESTFILE)" "$STRIPES" "$DEBUG"
+								runTest "$WLM $IOR -s $S -t $B -b $B -o $LUSTRE_TESTFILE $PARAMS -f ./tests/MPI-shared" "${BENCHFILE}" "$(dirname $LUSTRE_TESTFILE)" "$STRIPES"
 							fi
 						fi
 					elif [[ "fuse" == "${FS}" ]]; then
 						if [[ "posix" == "${IFACE}" ]]; then
 							if [[ "ind" == "${TYPE}" ]]; then
-								runTest "$WLM $IOR -s $S -t $B -b $B -o $FUSE_TESTFILE $PARAMS -f ./tests/POSIX-individual" "${BENCHFILE}" "$(dirname $FUSE_TESTFILE)" "$STRIPES" "$DEBUG"
+								runTest "$WLM $IOR -s $S -t $B -b $B -o $FUSE_TESTFILE $PARAMS -f ./tests/POSIX-individual" "${BENCHFILE}" "$(dirname $FUSE_TESTFILE)" "$STRIPES"
 							fi
 						elif [[ "mpio" == "${IFACE}" ]]; then
 							if [[ "ind" == "${TYPE}" ]]; then
-								runTest "$WLM $IOR -s $S -t $B -b $B -o $FUSE_TESTFILE $PARAMS -f ./tests/MPI-shared" "${BENCHFILE}" "$(dirname $FUSE_TESTFILE)" "$STRIPES" "$DEBUG"
+								runTest "$WLM $IOR -s $S -t $B -b $B -o $FUSE_TESTFILE $PARAMS -f ./tests/MPI-shared" "${BENCHFILE}" "$(dirname $FUSE_TESTFILE)" "$STRIPES"
 							fi
 						fi
 					elif [[ "ime" == "${FS}" ]]; then
 						if [[ "ime" == "${IFACE}" ]]; then
 							if [[ "ind" == "${TYPE}" ]]; then
-								runTest "$WLM /opt/ddn/ior/bin/IOR-mvapich -s $S -t $B -b $B -o $IME_TESTFILE $PARAMS -a "IM"" "${BENCHFILE}" "$TESTDIR" "$STRIPES" "$DEBUG"
+								runTest "$WLM /opt/ddn/ior/bin/IOR-mvapich -s $S -t $B -b $B -o $IME_TESTFILE $PARAMS -a "IM"" "${BENCHFILE}" "$TESTDIR" "$STRIPES"
 							fi
 						fi
 					fi
@@ -240,7 +263,7 @@ for FILL_VALUE in ${FILL_VALUE_ARR[@]}; do
 					fi
 					fi
 					
-					#runTest "$WLM $IOR -a IM -s $S -t $B -b $B -o ime://$TESTFILE -e -f ./tests/MPI-shared" "shared" "${BENCHFILE}" "$TESTDIR" "$STRIPES" "$DEBUG"
+					#runTest "$WLM $IOR -a IM -s $S -t $B -b $B -o ime://$TESTFILE -e -f ./tests/MPI-shared" "shared" "${BENCHFILE}" "$TESTDIR" "$STRIPES" 
 					#set +x
 					;;
 				$NCBENCH)
