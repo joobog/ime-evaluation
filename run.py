@@ -10,9 +10,10 @@ trap force_exit SIGINT
 # Provides a list of good hosts (that contains QDR connection)
 function hosts() {
     num="$1"
-    HOST_LIST=( isc17-c02 isc17-c03 isc17-c04 isc17-c05 isc17-c08 isc17-c09 isc17-c10 isc17-c12 isc17-c14 isc17-c23 )
-    hlist=${HOST_LIST[1]}
-    for POS in $(seq 2 $num) ; do 
+    #HOST_LIST=( isc17-c02 isc17-c03 isc17-c04 isc17-c05 isc17-c08 isc17-c09 isc17-c10 isc17-c12 isc17-c14 isc17-c23 )
+    HOST_LIST=( isc17-c01 isc17-c02 isc17-c03 isc17-c04 isc17-c05 isc17-c06 isc17-c07 isc17-c08 isc17-c09 isc17-c10 isc17-c11 isc17-c12 isc17-c13 isc17-c14 isc17-c15 isc17-c18 isc17-c19 isc17-c20 isc17-c22 isc17-c23 )
+    hlist=${HOST_LIST[0]}
+    for POS in $(seq 1 $(($num - 1))) ; do 
         hlist="$hlist,${HOST_LIST[$POS]}"
     done
     echo $hlist
@@ -60,8 +61,10 @@ for API in ${API_ARR[@]}; do
         fi
         mkdir -p $TESTDIR 
         lfs setstripe	-c $((2 * $NN)) $TESTDIR
+        set -x
         $MPIEXEC $MPIEXEC_PARAMS $IOR $IOR_PARAMS -w | tee -a $BENCHFILE
         $MPIEXEC $MPIEXEC_PARAMS $IOR $IOR_PARAMS -r -D $((5*60)) | tee -a $BENCHFILE
+        set +x
         rm $LUSTRE_TESTFILE
         lfs getstripe $TESTDIR | tee -a $BENCHFILE
 	else
