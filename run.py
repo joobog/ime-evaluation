@@ -37,7 +37,7 @@ PPN_ARR=(8 6 4 2 1)
 T_ARR=( $((16*1024)) $((100*1024)) $((1024*1024)) $((10240*1024)) )
 API_ARR=("MPIIO" "POSIX")
 
-for COUNT in $(seq 5); do
+for COUNT in $(seq 1); do
 for NN in ${NN_ARR[@]}; do 
 for PPN in ${PPN_ARR[@]}; do 
 for T in ${T_ARR[@]}; do 
@@ -52,8 +52,8 @@ for API in ${API_ARR[@]}; do
         fi
         touch $BENCHFILE
 
-        IOR_PARAMS="-i $ITERATIONS -s 1 -t $T -b $((130 * 1024 * 1024 * 1020)) -o $LUSTRE_TESTFILE -a $API -e -g -z -k"
-        MPIEXEC_PARAMS=" -ppn $PPN -np $NN -hosts $(hosts $NN)"
+        IOR_PARAMS="-i $ITERATIONS -s 1 -t $T -b $((130 * 1024 * 1024 * 1020 / $PPN)) -o $LUSTRE_TESTFILE -a $API -e -g -z -k"
+        MPIEXEC_PARAMS=" -ppn $PPN -np $(($NN * $PPN)) -hosts $(hosts $NN)"
 
         TESTDIR="$(dirname $LUSTRE_TESTFILE)"
         if [ -d $TESTDIR ]; then
