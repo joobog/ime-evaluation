@@ -1,0 +1,67 @@
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Sat Oct 20 17:43:30 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 1048576 -b 17647534080 -o /esfs/jtacquaviva/iorperf/file -a POSIX -e -g -z -k -w
+Machine: Linux isc17-c02
+
+Test 0 started: Sat Oct 20 17:43:30 2018
+Summary:
+	api                = POSIX
+	test filename      = /esfs/jtacquaviva/iorperf/file
+	access             = single-shared-file
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (8 per node)
+	repetitions        = 3
+	xfersize           = 1 MiB
+	blocksize          = 16.44 GiB
+	aggregate filesize = 131.48 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+write     1223.18    17233920   1024.00    0.000505   110.07     0.000515   110.07     0   
+write     1366.60    17233920   1024.00    0.001174   98.52      0.000117   98.52      1   
+write     1312.30    17233920   1024.00    0.001512   102.60     0.000118   102.60     2   
+
+Max Write: 1366.60 MiB/sec (1432.98 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        1366.60    1223.18    1300.69      59.12  103.73149 0 8 8 3 0 0 1 0 0 1 17647534080 1048576 141180272640 POSIX 0
+
+Finished: Sat Oct 20 17:48:52 2018
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Sat Oct 20 17:48:54 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 1048576 -b 17647534080 -o /esfs/jtacquaviva/iorperf/file -a POSIX -e -g -z -k -r -D 300
+Machine: Linux isc17-c02
+
+Test 0 started: Sat Oct 20 17:48:54 2018
+Summary:
+	api                = POSIX
+	test filename      = /esfs/jtacquaviva/iorperf/file
+	access             = single-shared-file
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (8 per node)
+	repetitions        = 3
+	xfersize           = 1 MiB
+	blocksize          = 16.44 GiB
+	aggregate filesize = 131.48 GiB
+	Using stonewalling = 300 second(s)
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+read      4254       17233920   1024.00    0.000828   31.65      0.000168   31.65      0   
+read      4214       17233920   1024.00    0.000709   31.95      0.000142   31.95      1   
+read      3982       17233920   1024.00    0.000727   33.81      0.000173   33.81      2   
+
+Max Read:  4253.88 MiB/sec (4460.51 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+read         4253.88    3981.91    4149.97     119.94   32.47124 0 8 8 3 0 0 1 0 0 1 17647534080 1048576 141180272640 POSIX 0
+
+Finished: Sat Oct 20 17:50:32 2018
+/esfs/jtacquaviva/iorperf
+stripe_count:  2 stripe_size:   1048576 stripe_offset: -1
