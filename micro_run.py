@@ -9,8 +9,8 @@ module list
 
 LUSTRE_TESTFILE="/esfs/jtacquaviva/file"
 ITERATIONS=3
-IOR="$(which ior) -i $ITERATIONS -s 1 -t $((1 * 1024 * 1024)) -b $((128 * 1024 * 1024 * 1024)) -o $LUSTRE_TESTFILE -e -g -z -k"
-MPIEXEC="/opt/ddn/mvapich/bin/mpiexec -ppn 1 -np 1 -hosts isc17-c17"
+IOR="$(which ior) -i $ITERATIONS -s 1 -t $((16 * 1024 )) -b $((128 * 1024 * 1024)) -o $LUSTRE_TESTFILE -e -g -z -k -D 100 "
+MPIEXEC="/opt/ddn/mvapich/bin/mpiexec -ppn 1 -np 1 -hosts isc17-c05"
 
 $MPIEXEC $IOR -w
 $MPIEXEC $IOR -r -D $((5*60)) 

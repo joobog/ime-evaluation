@@ -34,7 +34,11 @@ node_list=$( join_by , "${cx4nodes[@]}" )
 
 IFS='' read -r -d '' script <<"EOF"
 if [ -d /esfs/jtacquaviva ]; then
-	echo 'ok'
+	if [ -d /gsfs/betke ]; then
+		echo 'ok'
+	else 
+		echo "failed: $(hostname) /gsfs/ is not mounted"
+	fi
 else 
 	echo "failed: $(hostname) /esfs/ is not mounted"
 fi
