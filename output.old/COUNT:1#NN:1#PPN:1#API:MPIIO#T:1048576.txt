@@ -1,0 +1,69 @@
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: fsync() only available in POSIX.  Using value of 0.
+Began: Sat Oct 20 19:29:21 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 1048576 -b 141180272640 -o /esfs/jtacquaviva/iorperf/file -a MPIIO -e -g -z -k -w
+Machine: Linux isc17-c02
+
+Test 0 started: Sat Oct 20 19:29:21 2018
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /esfs/jtacquaviva/iorperf/file
+	access             = single-shared-file
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 3
+	xfersize           = 1 MiB
+	blocksize          = 131.48 GiB
+	aggregate filesize = 131.48 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+write     1126.11    137871360  1024.00    0.001397   119.56     0.000280   119.56     0   
+write     1178.04    137871360  1024.00    0.027352   114.26     0.000223   114.29     1   
+write     1158.85    137871360  1024.00    0.022593   116.14     0.000176   116.18     2   
+
+Max Write: 1178.04 MiB/sec (1235.27 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        1178.04    1126.11    1154.33      21.44  116.67916 0 1 1 3 0 0 1 0 0 1 141180272640 1048576 141180272640 MPIIO 0
+
+Finished: Sat Oct 20 19:35:23 2018
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: fsync() only available in POSIX.  Using value of 0.
+Began: Sat Oct 20 19:35:23 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 1048576 -b 141180272640 -o /esfs/jtacquaviva/iorperf/file -a MPIIO -e -g -z -k -r -D 300
+Machine: Linux isc17-c02
+
+Test 0 started: Sat Oct 20 19:35:23 2018
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /esfs/jtacquaviva/iorperf/file
+	access             = single-shared-file
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 3
+	xfersize           = 1 MiB
+	blocksize          = 131.48 GiB
+	aggregate filesize = 131.48 GiB
+	Using stonewalling = 300 second(s)
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+read      963.96     137871360  1024.00    0.000703   139.67     0.000229   139.67     0   
+read      960.85     137871360  1024.00    0.000514   140.12     0.000245   140.13     1   
+read      961.40     137871360  1024.00    0.000521   140.04     0.000180   140.05     2   
+
+Max Read:  963.96 MiB/sec (1010.78 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+read          963.96     960.85     962.07       1.35  139.94855 0 1 1 3 0 0 1 0 0 1 141180272640 1048576 141180272640 MPIIO 0
+
+Finished: Sat Oct 20 19:42:23 2018
+/esfs/jtacquaviva/iorperf
+stripe_count:  2 stripe_size:   1048576 stripe_offset: -1

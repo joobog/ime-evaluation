@@ -1,0 +1,87 @@
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: fsync() only available in POSIX.  Using value of 0.
+Began: Sat Oct 20 17:50:34 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 10485760 -b 17647534080 -o /esfs/jtacquaviva/iorperf/file -a MPIIO -e -g -z -k -w
+Machine: Linux isc17-c02
+
+Test 0 started: Sat Oct 20 17:50:34 2018
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /esfs/jtacquaviva/iorperf/file
+	access             = single-shared-file
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (8 per node)
+	repetitions        = 3
+	xfersize           = 10 MiB
+	blocksize          = 16.44 GiB
+	aggregate filesize = 131.48 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 141180272640.
+WARNING: Stat() of aggregate file size      = 141169786880.
+WARNING: Using actual aggregate bytes moved = 140771328000.
+write     2236.23    17233920   10240      0.001734   60.03      0.000373   60.03      0   
+WARNING: Expected aggregate file size       = 141180272640.
+WARNING: Stat() of aggregate file size      = 141180272640.
+WARNING: Using actual aggregate bytes moved = 141159301120.
+write     2369.18    17233920   10240      0.534101   56.29      0.000263   56.82      1   
+WARNING: Expected aggregate file size       = 141180272640.
+WARNING: Stat() of aggregate file size      = 141180272640.
+WARNING: Using actual aggregate bytes moved = 141389987840.
+write     2274.03    17233920   10240      0.193066   58.85      0.253811   59.30      2   
+
+Max Write: 2369.18 MiB/sec (2484.27 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        2369.18    2236.23    2293.15      55.93   58.71694 0 8 8 3 0 0 1 0 0 1 17647534080 10485760 140771328000 MPIIO 0
+
+Finished: Sat Oct 20 17:53:42 2018
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: fsync() only available in POSIX.  Using value of 0.
+Began: Sat Oct 20 17:53:44 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 10485760 -b 17647534080 -o /esfs/jtacquaviva/iorperf/file -a MPIIO -e -g -z -k -r -D 300
+Machine: Linux isc17-c02
+
+Test 0 started: Sat Oct 20 17:53:44 2018
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /esfs/jtacquaviva/iorperf/file
+	access             = single-shared-file
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (8 per node)
+	repetitions        = 3
+	xfersize           = 10 MiB
+	blocksize          = 16.44 GiB
+	aggregate filesize = 131.48 GiB
+	Using stonewalling = 300 second(s)
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 141180272640.
+WARNING: Stat() of aggregate file size      = 141180272640.
+WARNING: Using actual aggregate bytes moved = 141022986240.
+read      3457.78    17233920   10240      0.024159   38.87      0.000325   38.89      0   
+WARNING: Expected aggregate file size       = 141180272640.
+WARNING: Stat() of aggregate file size      = 141180272640.
+WARNING: Using actual aggregate bytes moved = 141652131840.
+read      3447.49    17233920   10240      0.001108   39.18      0.000231   39.19      1   
+WARNING: Expected aggregate file size       = 141180272640.
+WARNING: Stat() of aggregate file size      = 141180272640.
+WARNING: Using actual aggregate bytes moved = 140918128640.
+read      3456.22    17233920   10240      0.001038   38.88      0.000246   38.88      2   
+
+Max Read:  3457.78 MiB/sec (3625.75 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+read         3457.78    3447.49    3453.83       4.53   38.98781 0 8 8 3 0 0 1 0 0 1 17647534080 10485760 141022986240 MPIIO 0
+
+Finished: Sat Oct 20 17:55:41 2018
+/esfs/jtacquaviva/iorperf
+stripe_count:  2 stripe_size:   1048576 stripe_offset: -1
