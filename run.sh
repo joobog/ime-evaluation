@@ -19,7 +19,8 @@ function hosts() {
     echo $hlist
 }
  -D $((120))
-export MODULEPATH=/gsfs/betke/software/modules:$MODULEPATH
+#export MODULEPATH=/gsfs/betke/software/modules:$MODULEPATH
+export MODULEPATH=/esfs/jtacquaviva/software/modules:$MODULEPATH
 
 module purge
 module load betke/hdf5/1.8.20-ddn
@@ -47,9 +48,9 @@ for API in ${API_ARR[@]}; do
     BENCHFILE="./output/COUNT:$COUNT#NN:$NN#PPN:$PPN#API:$API#T:$T.txt"
 
 	if [ ! -e "${BENCHFILE}" ]; then
-        OUTDIR="$(dirname $BENCHFILE)"
+		OUTDIR="$(dirname $BENCHFILE)"
         if [ ! -d $OUTDIR ]; then
-            mkdir $OUTDIR
+		mkdir $OUTDIR
         fi
         touch $BENCHFILE
 
@@ -59,14 +60,14 @@ for API in ${API_ARR[@]}; do
 
         TESTDIR="$(dirname $LUSTRE_TESTFILE_WRITE)"
         if [ -d $TESTDIR ]; then
-            rm -r $TESTDIR
+		rm -r $TESTDIR
         fi
         mkdir -p $TESTDIR 
         lfs setstripe	-c $((2 * $NN)) $TESTDIR
 	(
         set -x
         $MPIEXEC $MPIEXEC_PARAMS $IOR $IOR_PARAMS -o $LUSTRE_TESTFILE_WRITE -w | tee -a $BENCHFILE
-	$MPIEXEC $MPIEXEC_PARAMS /gsfs/betke/git/ime-evaluation/drop_caches.sh
+	$MPIEXEC $MPIEXEC_PARAMS /esfs/jtacquaviva/git/ime-evaluation/drop_caches.sh
         $MPIEXEC $MPIEXEC_PARAMS $IOR $IOR_PARAMS -o $LUSTRE_TESTFILE_READ -r | tee -a $BENCHFILE
         set +x
 	) 2> >(tee -a $BENCHFILE)
@@ -74,7 +75,7 @@ for API in ${API_ARR[@]}; do
         lfs getstripe $TESTDIR | tee -a $BENCHFILE
 	else
 		echo "skip $(readlink -f $BENCHFILE), already exists"
-    fi
+	fi
 
 done
 done
