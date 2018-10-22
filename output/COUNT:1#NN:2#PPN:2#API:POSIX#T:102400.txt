@@ -1,0 +1,59 @@
++ /opt/ddn/mvapich/bin/mpiexec -ppn 2 -np 4 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 102400 -b 70590136320 -D 120 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/ioperf/file_write -w
++ tee -a ./output/COUNT:1#NN:2#PPN:2#API:POSIX#T:102400.txt
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+[cli_0]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 0
+ior ERROR: block size must be a multiple of transfer size, errno 0, Success (ior.c:2293)
+[cli_1]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 1
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+[cli_2]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 2
+ior ERROR: block size must be a multiple of transfer size, errno 0, Success (ior.c:2293)
+[cli_3]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 3
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 30245 RUNNING AT isc17-c04
+=   EXIT CODE: 255
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
++ /opt/ddn/mvapich/bin/mpiexec -ppn 2 -np 4 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05 /esfs/jtacquaviva/git/ime-evaluation/drop_caches.sh
++ /opt/ddn/mvapich/bin/mpiexec -ppn 2 -np 4 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 102400 -b 70590136320 -D 120 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/indread2/file -r
++ tee -a ./output/COUNT:1#NN:2#PPN:2#API:POSIX#T:102400.txt
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior ERROR: block size must be a multiple of transfer size, errno 0, Success (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 0, Success (ior.c:2293)
+[cli_0]: [cli_1]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 1
+[cli_3]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 3
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 0
+[cli_2]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 2
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 30260 RUNNING AT isc17-c04
+=   EXIT CODE: 255
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+[proxy:0:1@isc17-c05] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:912): assert (!closed) failed
+[proxy:0:1@isc17-c05] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:1@isc17-c05] main (pm/pmiserv/pmip.c:256): demux engine error waiting for event
+[mpiexec@isc17-c04] HYDT_bscu_wait_for_completion (tools/bootstrap/utils/bscu_wait.c:76): one of the processes terminated badly; aborting
+[mpiexec@isc17-c04] HYDT_bsci_wait_for_completion (tools/bootstrap/src/bsci_wait.c:23): launcher returned error waiting for completion
+[mpiexec@isc17-c04] HYD_pmci_wait_for_completion (pm/pmiserv/pmiserv_pmci.c:218): launcher returned error waiting for completion
+[mpiexec@isc17-c04] main (ui/mpich/mpiexec.c:344): process manager error waiting for completion
++ set +x
+/esfs/jtacquaviva/ioperf
+stripe_count:  4 stripe_size:   1048576 stripe_offset: -1
