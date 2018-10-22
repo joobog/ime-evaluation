@@ -1,18 +1,27 @@
 #!/bin/bash 
 
-export MODULEPATH=/gsfs/betke/software/modules:$MODULEPATH
+export MODULEPATH=/esfs/jtacquaviva/software/modules:$MODULEPATH
 
 module purge
 module load betke/hdf5/1.8.20-ddn
 module load betke/ior/git-ddn
 module list
 
-LUSTRE_TESTFILE="/esfs/jtacquaviva/file"
-ITERATIONS=3
-IOR="$(which ior) -i $ITERATIONS -s 1 -t $((16 * 1024 )) -b $((128 * 1024 * 1024)) -o $LUSTRE_TESTFILE -e -g -z -k -D 100 "
-MPIEXEC="/opt/ddn/mvapich/bin/mpiexec -ppn 1 -np 1 -hosts isc17-c05"
+NN=2
 
-$MPIEXEC $IOR -w
-$MPIEXEC $IOR -r -D $((5*60)) 
-rm $LUSTRE_TESTFILE
+
+LUSTRE_TESTFILE="/esfs/jtacquaviva/indread${NN}/file"
+TESTDIR="$(dirname $LUSTRE_TESTFILE)"
+mkdir $TESTDIR
+lfs setstripe -c $(($NN * 2)) $TESTDIR
+ITERATIONS=1
+IOR="$(which ior) -i $ITERATIONS -s 1 -t $((16 * 1024 * 1024)) -b $((132 * 1024 * 1024 * 1020)) -o $LUSTRE_TESTFILE -a POSIX -F -e -g -k -w"
+ENVVAR="-genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter"
+MPIEXEC="/opt/ddn/mvapich/bin/mpiexec -ppn 8 -np $((8*$NN)) $ENVVAR -hosts isc17-c04,isc17-c05"
+
+set -x
+$MPIEXEC $IOR 
+#$MPIEXEC $IOR -r -D $((5*60)) 
+-set +x
+#rm $LUSTRE_TESTFILE
 

@@ -21,8 +21,7 @@ function hosts() {
     done
     echo $hlist
 }
- -D $((120))
-#export MODULEPATH=/gsfs/betke/software/modules:$MODULEPATH
+
 export MODULEPATH=/esfs/jtacquaviva/software/modules:$MODULEPATH
 
 module purge
@@ -32,19 +31,21 @@ module list
 
 
 LUSTRE_TESTFILE_WRITE="/esfs/jtacquaviva/ioperf/file_write"
-LUSTRE_TESTFILE_READ="/esfs/jtacquaviva/file_read"
+LUSTRE_TESTFILE_READ=""
+
 ITERATIONS=3
 IOR="$(which ior)"
 MPIEXEC="/opt/ddn/mvapich/bin/mpiexec"
 
 API_ARR=( "POSIX" "MPIIO" )
-NN_ARR=( 4 2 1 8 10 16)
+#NN_ARR=( 4 2 1 8 10 16)
+NN_ARR=( 2 1 )
 PPN_ARR=( 8 6 4 2 1 )
 T_ARR=( $((10240*1024)) $((1024*1024)) $((100*1024)) $((16*1024)) )
 
-for T in ${T_ARR[@]}; do 
 for COUNT in $(seq 1); do
 for NN in ${NN_ARR[@]}; do 
+for T in ${T_ARR[@]}; do 
 for PPN in ${PPN_ARR[@]}; do 
 for API in ${API_ARR[@]}; do 
 
@@ -57,8 +58,18 @@ for API in ${API_ARR[@]}; do
         fi
         touch $BENCHFILE
 
-        IOR_PARAMS="-i $ITERATIONS -s 1 -t $T -b $((132 * 1024 * 1024 * 1020 / $PPN)) -D $((120)) -a $API -e -g -z -k"
-	ENVVAR="-genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter"
+        IOR_API_OPTS=""
+        if [[ "POSIX" == $API ]]; then
+            IOR_API_OPTS="-F"
+            LUSTRE_TESTFILE_READ="/esfs/jtacquaviva/indread$NN/file"
+        elif [[ "MPIIO" == $API ]]; then
+            IOR_API_OPTS=""
+            LUSTRE_TESTFILE_READ="/esfs/jtacquaviva/file_read"
+        fi
+
+
+        IOR_PARAMS="-i $ITERATIONS -s 1 -t $T -b $((132 * 1024 * 1024 * 1020 / $PPN)) -D $((120)) -a $API $IOR_API_OPTS -e -g -z -k"
+	    ENVVAR="-genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter"
         MPIEXEC_PARAMS=" -ppn $PPN -np $(($NN * $PPN)) $ENVVAR --hosts $(hosts $NN) "
 
         TESTDIR="$(dirname $LUSTRE_TESTFILE_WRITE)"
@@ -70,11 +81,10 @@ for API in ${API_ARR[@]}; do
 	(
         set -x
         $MPIEXEC $MPIEXEC_PARAMS $IOR $IOR_PARAMS -o $LUSTRE_TESTFILE_WRITE -w | tee -a $BENCHFILE
-	$MPIEXEC $MPIEXEC_PARAMS /esfs/jtacquaviva/git/ime-evaluation/drop_caches.sh
+        $MPIEXEC $MPIEXEC_PARAMS /esfs/jtacquaviva/git/ime-evaluation/drop_caches.sh
         $MPIEXEC $MPIEXEC_PARAMS $IOR $IOR_PARAMS -o $LUSTRE_TESTFILE_READ -r | tee -a $BENCHFILE
         set +x
 	) 2> >(tee -a $BENCHFILE)
-        rm $LUSTRE_TESTFILE_WRITE
         lfs getstripe $TESTDIR | tee -a $BENCHFILE
 	else
 		echo "skip $(readlink -f $BENCHFILE), already exists"
