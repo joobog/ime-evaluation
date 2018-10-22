@@ -10,7 +10,10 @@ trap force_exit SIGINT
 # Provides a list of good hosts (that contains QDR connection)
 function hosts() {
     num="$1"
-    HOST_LIST=( isc17-c04 isc17-c05 isc17-c06 isc17-c18 )
+    #HOST_LIST=( isc17-c04 isc17-c05 isc17-c06 isc17-c18 )
+
+    HOST_LIST=( isc17-c04 isc17-c05 isc17-c06 isc17-c18 isc17-c01 isc17-c02 isc17-c03 isc17-c07 isc17-c08 isc17-c09 isc17-c11 isc17-c12 isc17-c13 isc17-c14 isc17-c15 isc17-c22 )
+
 
     hlist=${HOST_LIST[0]}
     for POS in $(seq 1 $(($num - 1))) ; do 
@@ -34,10 +37,10 @@ ITERATIONS=3
 IOR="$(which ior)"
 MPIEXEC="/opt/ddn/mvapich/bin/mpiexec"
 
-NN_ARR=( 4 2 1 )
+API_ARR=( "POSIX" "MPIIO" )
+NN_ARR=( 4 2 1 8 10 16)
 PPN_ARR=( 8 6 4 2 1 )
 T_ARR=( $((10240*1024)) $((1024*1024)) $((100*1024)) $((16*1024)) )
-API_ARR=( "POSIX" "MPIIO" )
 
 for T in ${T_ARR[@]}; do 
 for COUNT in $(seq 1); do
