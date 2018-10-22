@@ -14,10 +14,10 @@ if [ -d /esfs/jtacquaviva ]; then
 	if [[ "" != $cx4 ]]; then
 		echo 'ok'
 	else 
-		echo "failed: $(hostname) no cx4"
+		echo "no cx4"
 	fi
 else 
-	echo "failed: $(hostname) /esfs/ is not mounted"
+	echo "/esfs/ is not mounted"
 fi
 EOF
 
@@ -39,8 +39,6 @@ done
 
 echo "GOOD NODES:"
 echo "${good_nodes[@]}"
-echo "GOOD NODES (Komma separated):"
-echo $( join_by , "${good_nodes[@]}" )
 
 
 
