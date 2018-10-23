@@ -1,0 +1,64 @@
++ /opt/ddn/mvapich/bin/mpiexec -ppn 6 -np 6 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 102400 -b 23530045440 -D 120 -a MPIIO -e -g -z -k -o /esfs/jtacquaviva/ioperf/file_write -w
++ tee -a ./output/COUNT:1#NN:1#PPN:6#API:MPIIO#T:102400.txt
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+[cli_1]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 1
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 0, Success (ior.c:2293)
+[cli_3]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 3
+[cli_5]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 5
+[cli_0]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 0
+[cli_2]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 2
+[cli_4]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 4
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 24411 RUNNING AT isc17-c04
+=   EXIT CODE: 255
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
++ /opt/ddn/mvapich/bin/mpiexec -ppn 6 -np 6 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04 /esfs/jtacquaviva/git/ime-evaluation/drop_caches.sh
++ /opt/ddn/mvapich/bin/mpiexec -ppn 6 -np 6 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 102400 -b 23530045440 -D 120 -a MPIIO -e -g -z -k -o /esfs/jtacquaviva/file_read -r
++ tee -a ./output/COUNT:1#NN:1#PPN:6#API:MPIIO#T:102400.txt
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 0, Success (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+ior ERROR: block size must be a multiple of transfer size, errno 2, No such file or directory (ior.c:2293)
+[cli_1]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 1
+[cli_3]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 3
+[cli_5]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 5
+[cli_2]: [cli_4]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 4
+[cli_0]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 0
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 2
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 24440 RUNNING AT isc17-c04
+=   EXIT CODE: 255
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
++ set +x
+/esfs/jtacquaviva/ioperf
+stripe_count:  2 stripe_size:   1048576 stripe_offset: -1
