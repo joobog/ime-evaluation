@@ -1,12 +1,12 @@
-+ /opt/ddn/mvapich/bin/mpiexec -ppn 1 -np 16 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22,isc17-c01,isc17-c02,isc17-c03 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 16384 -b 161061273600 -D 60 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/ioperf/file_write -w
 + tee -a ./output/COUNT:1#NN:16#PPN:1#API:POSIX#T:16384.txt
++ /opt/ddn/mvapich/bin/mpiexec -ppn 1 -np 16 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22,isc17-c01,isc17-c02,isc17-c03 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 16384 -b 161061273600 -D 60 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/ioperf/file_write -w
 IOR-3.0.1: MPI Coordinated Test of Parallel I/O
 
-Began: Tue Oct 23 22:51:16 2018
+Began: Wed Oct 24 00:17:18 2018
 Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 16384 -b 161061273600 -D 60 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/ioperf/file_write -w
 Machine: Linux isc17-c04
 
-Test 0 started: Tue Oct 23 22:51:16 2018
+Test 0 started: Wed Oct 24 00:17:18 2018
 Summary:
 	api                = POSIX
 	test filename      = /esfs/jtacquaviva/ioperf/file_write
@@ -23,22 +23,323 @@ Summary:
 access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
 ------    ---------  ---------- ---------  --------   --------   --------   --------   ----
 WARNING: Expected aggregate file size       = 2576980377600.
-WARNING: Stat() of aggregate file size      = 2576966270976.
-WARNING: Using actual aggregate bytes moved = 48308715520.
-write     251.70     157286400  16.00      0.001133   183.04     0.000773   183.04     0   
+WARNING: Stat() of aggregate file size      = 2576969367552.
+WARNING: Using actual aggregate bytes moved = 47575384064.
+write     258.83     157286400  16.00      0.001137   175.29     0.000825   175.29     0   
 WARNING: Expected aggregate file size       = 2576980377600.
-WARNING: Stat() of aggregate file size      = 2576976969728.
-WARNING: Using actual aggregate bytes moved = 40420524032.
-write     238.78     157286400  16.00      0.012327   161.42     0.001165   161.44     1   
+WARNING: Stat() of aggregate file size      = 2576971988992.
+WARNING: Using actual aggregate bytes moved = 38961807360.
+write     210.68     157286400  16.00      0.001874   176.36     0.002410   176.36     1   
 WARNING: Expected aggregate file size       = 2576980377600.
-WARNING: Stat() of aggregate file size      = 2576938106880.
-WARNING: Using actual aggregate bytes moved = 38403276800.
-write     213.59     157286400  16.00      0.002032   171.47     0.001609   171.47     2   
+WARNING: Stat() of aggregate file size      = 2576929259520.
+WARNING: Using actual aggregate bytes moved = 39732887552.
+write     218.95     157286400  16.00      0.002807   173.06     0.001380   173.06     2   
 
-Max Write: 251.70 MiB/sec (263.93 MB/sec)
+Max Write: 258.83 MiB/sec (271.41 MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write         251.70     213.59     234.69      15.82  171.98076 0 16 1 3 1 0 1 0 0 1 161061273600 16384 48308715520 POSIX 0
+write         258.83     210.68     229.49      21.02  174.90541 0 16 1 3 1 0 1 0 0 1 161061273600 16384 47575384064 POSIX 0
 
-Finished: Tue Oct 23 22:59:54 2018
+Finished: Wed Oct 24 00:26:04 2018
++ /opt/ddn/mvapich/bin/mpiexec -ppn 1 -np 16 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22,isc17-c01,isc17-c02,isc17-c03 /esfs/jtacquaviva/git/ime-evaluation/drop_caches.sh
++ /opt/ddn/mvapich/bin/mpiexec -ppn 1 -np 16 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22,isc17-c01,isc17-c02,isc17-c03 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 16384 -b 161061273600 -D 60 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/indread16/file -r
++ tee -a ./output/COUNT:1#NN:16#PPN:1#API:POSIX#T:16384.txt
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Wed Oct 24 00:26:09 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 16384 -b 161061273600 -D 60 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/indread16/file -r
+Machine: Linux isc17-c04
+
+Test 0 started: Wed Oct 24 00:26:09 2018
+Summary:
+	api                = POSIX
+	test filename      = /esfs/jtacquaviva/indread16/file
+	access             = file-per-process
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (1 per node)
+	repetitions        = 3
+	xfersize           = 16384 bytes
+	blocksize          = 150 GiB
+	aggregate filesize = 2400 GiB
+	Using stonewalling = 60 second(s)
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 2576980377600.
+WARNING: Using actual aggregate bytes moved = 1479524352.
+read      23.27      157286400  16.00      0.000595   60.62      0.000419   60.62      0   
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 2576980377600.
+WARNING: Using actual aggregate bytes moved = 2041004032.
+read      32.10      157286400  16.00      0.000445   60.63      0.000397   60.63      1   
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 2576980377600.
+WARNING: Using actual aggregate bytes moved = 2062680064.
+read      32.45      157286400  16.00      0.000727   60.62      0.000490   60.62      2   
+
+Max Read:  32.45 MiB/sec (34.03 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+read           32.45      23.27      29.28       4.25   60.62536 0 16 1 3 1 0 1 0 0 1 161061273600 16384 1479524352 POSIX 0
+
+Finished: Wed Oct 24 00:29:11 2018
++ set +x
+/esfs/jtacquaviva/ioperf
+stripe_count:  32 stripe_size:   1048576 stripe_offset: -1
+/esfs/jtacquaviva/ioperf/file_write.00000006
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384887	     0xbcfa77	             0
+	     6	      12598144	     0xc03b80	             0
+	     0	      12426547	     0xbd9d33	             0
+	     2	      12572885	     0xbfd8d5	             0
+	     1	      12644530	     0xc0f0b2	             0
+	     4	      12514622	     0xbef53e	             0
+	     3	      12492825	     0xbea019	             0
+	     7	      12463244	     0xbe2c8c	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000002
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598147	     0xc03b83	             0
+	     1	      12644536	     0xc0f0b8	             0
+	     4	      12514628	     0xbef544	             0
+	     7	      12463251	     0xbe2c93	             0
+	     0	      12426556	     0xbd9d3c	             0
+	     3	      12492834	     0xbea022	             0
+	     2	      12572895	     0xbfd8df	             0
+	     5	      12384897	     0xbcfa81	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000000
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492830	     0xbea01e	             0
+	     6	      12598148	     0xc03b84	             0
+	     7	      12463250	     0xbe2c92	             0
+	     1	      12644537	     0xc0f0b9	             0
+	     5	      12384895	     0xbcfa7f	             0
+	     2	      12572894	     0xbfd8de	             0
+	     0	      12426557	     0xbd9d3d	             0
+	     4	      12514632	     0xbef548	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000004
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572891	     0xbfd8db	             0
+	     5	      12384891	     0xbcfa7b	             0
+	     0	      12426553	     0xbd9d39	             0
+	     4	      12514626	     0xbef542	             0
+	     1	      12644538	     0xc0f0ba	             0
+	     3	      12492835	     0xbea023	             0
+	     7	      12463252	     0xbe2c94	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000007
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492824	     0xbea018	             0
+	     5	      12384886	     0xbcfa76	             0
+	     6	      12598143	     0xc03b7f	             0
+	     0	      12426546	     0xbd9d32	             0
+	     2	      12572884	     0xbfd8d4	             0
+	     4	      12514621	     0xbef53d	             0
+	     7	      12463243	     0xbe2c8b	             0
+	     1	      12644529	     0xc0f0b1	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000012
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426550	     0xbd9d36	             0
+	     2	      12572890	     0xbfd8da	             0
+	     6	      12598149	     0xc03b85	             0
+	     4	      12514627	     0xbef543	             0
+	     3	      12492832	     0xbea020	             0
+	     5	      12384894	     0xbcfa7e	             0
+	     1	      12644540	     0xc0f0bc	             0
+	     7	      12463254	     0xbe2c96	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000013
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463246	     0xbe2c8e	             0
+	     3	      12492827	     0xbea01b	             0
+	     6	      12598146	     0xc03b82	             0
+	     2	      12572887	     0xbfd8d7	             0
+	     1	      12644533	     0xc0f0b5	             0
+	     0	      12426551	     0xbd9d37	             0
+	     4	      12514624	     0xbef540	             0
+	     5	      12384892	     0xbcfa7c	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000003
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644539	     0xc0f0bb	             0
+	     3	      12492833	     0xbea021	             0
+	     5	      12384896	     0xbcfa80	             0
+	     6	      12598153	     0xc03b89	             0
+	     0	      12426558	     0xbd9d3e	             0
+	     2	      12572896	     0xbfd8e0	             0
+	     4	      12514633	     0xbef549	             0
+	     7	      12463255	     0xbe2c97	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000008
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463241	     0xbe2c89	             0
+	     1	      12644527	     0xc0f0af	             0
+	     3	      12492822	     0xbea016	             0
+	     5	      12384884	     0xbcfa74	             0
+	     6	      12598141	     0xc03b7d	             0
+	     0	      12426544	     0xbd9d30	             0
+	     2	      12572882	     0xbfd8d2	             0
+	     4	      12514619	     0xbef53b	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000010
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384890	     0xbcfa7a	             0
+	     1	      12644534	     0xc0f0b6	             0
+	     7	      12463248	     0xbe2c90	             0
+	     6	      12598150	     0xc03b86	             0
+	     0	      12426555	     0xbd9d3b	             0
+	     4	      12514631	     0xbef547	             0
+	     2	      12572893	     0xbfd8dd	             0
+	     3	      12492836	     0xbea024	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000005
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514618	     0xbef53a	             0
+	     7	      12463240	     0xbe2c88	             0
+	     1	      12644526	     0xc0f0ae	             0
+	     3	      12492821	     0xbea015	             0
+	     5	      12384883	     0xbcfa73	             0
+	     6	      12598140	     0xc03b7c	             0
+	     0	      12426543	     0xbd9d2f	             0
+	     2	      12572881	     0xbfd8d1	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000014
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598145	     0xc03b81	             0
+	     4	      12514623	     0xbef53f	             0
+	     1	      12644531	     0xc0f0b3	             0
+	     0	      12426548	     0xbd9d34	             0
+	     7	      12463245	     0xbe2c8d	             0
+	     2	      12572886	     0xbfd8d6	             0
+	     3	      12492826	     0xbea01a	             0
+	     5	      12384888	     0xbcfa78	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000009
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492828	     0xbea01c	             0
+	     2	      12572889	     0xbfd8d9	             0
+	     1	      12644535	     0xc0f0b7	             0
+	     0	      12426552	     0xbd9d38	             0
+	     7	      12463249	     0xbe2c91	             0
+	     6	      12598151	     0xc03b87	             0
+	     4	      12514629	     0xbef545	             0
+	     5	      12384893	     0xbcfa7d	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000015
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572892	     0xbfd8dc	             0
+	     3	      12492831	     0xbea01f	             0
+	     0	      12426554	     0xbd9d3a	             0
+	     4	      12514630	     0xbef546	             0
+	     6	      12598152	     0xc03b88	             0
+	     1	      12644541	     0xc0f0bd	             0
+	     7	      12463253	     0xbe2c95	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000001
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644528	     0xc0f0b0	             0
+	     3	      12492823	     0xbea017	             0
+	     5	      12384885	     0xbcfa75	             0
+	     6	      12598142	     0xc03b7e	             0
+	     0	      12426545	     0xbd9d31	             0
+	     2	      12572883	     0xbfd8d3	             0
+	     4	      12514620	     0xbef53c	             0
+	     7	      12463242	     0xbe2c8a	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000011
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463247	     0xbe2c8f	             0
+	     1	      12644532	     0xc0f0b4	             0
+	     0	      12426549	     0xbd9d35	             0
+	     5	      12384889	     0xbcfa79	             0
+	     2	      12572888	     0xbfd8d8	             0
+	     3	      12492829	     0xbea01d	             0
+	     4	      12514625	     0xbef541	             0
+
