@@ -1,0 +1,110 @@
++ /opt/ddn/mvapich/bin/mpiexec -ppn 2 -np 32 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c01,isc17-c02,isc17-c03,isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 1048576 -b 70590136320 -D 120 -a MPIIO -e -g -z -k -o /esfs/jtacquaviva/ioperf/file_write -w
++ tee -a ./output/COUNT:1#NN:16#PPN:2#API:MPIIO#T:1048576.txt
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: fsync() only available in POSIX.  Using value of 0.
+Began: Tue Oct 23 10:00:33 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 1048576 -b 70590136320 -D 120 -a MPIIO -e -g -z -k -o /esfs/jtacquaviva/ioperf/file_write -w
+Machine: Linux isc17-c01
+
+Test 0 started: Tue Oct 23 10:00:33 2018
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /esfs/jtacquaviva/ioperf/file_write
+	access             = single-shared-file
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 32 (2 per node)
+	repetitions        = 3
+	xfersize           = 1 MiB
+	blocksize          = 65.74 GiB
+	aggregate filesize = 2103.75 GiB
+	Using stonewalling = 120 second(s)
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 2258884362240.
+WARNING: Stat() of aggregate file size      = 2258878070784.
+WARNING: Using actual aggregate bytes moved = 394322247680.
+write     3128.37    68935680   1024.00    0.018345   120.19     0.001042   120.21     0   
+WARNING: Expected aggregate file size       = 2258884362240.
+WARNING: Stat() of aggregate file size      = 2258882265088.
+WARNING: Using actual aggregate bytes moved = 389842731008.
+write     3090.10    68935680   1024.00    0.121912   120.19     0.001159   120.31     1   
+WARNING: Expected aggregate file size       = 2258884362240.
+WARNING: Stat() of aggregate file size      = 2258881216512.
+WARNING: Using actual aggregate bytes moved = 387821076480.
+write     3074.77    68935680   1024.00    0.094908   120.19     0.001437   120.29     2   
+
+Max Write: 3128.37 MiB/sec (3280.34 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        3128.37    3074.77    3097.75      22.54  120.26981 0 32 2 3 0 0 1 0 0 1 70590136320 1048576 394322247680 MPIIO 0
+
+Finished: Tue Oct 23 10:06:39 2018
++ /opt/ddn/mvapich/bin/mpiexec -ppn 2 -np 32 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c01,isc17-c02,isc17-c03,isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22 /esfs/jtacquaviva/git/ime-evaluation/drop_caches.sh
++ tee -a ./output/COUNT:1#NN:16#PPN:2#API:MPIIO#T:1048576.txt
++ /opt/ddn/mvapich/bin/mpiexec -ppn 2 -np 32 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c01,isc17-c02,isc17-c03,isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 1048576 -b 70590136320 -D 120 -a MPIIO -e -g -z -k -o /esfs/jtacquaviva/file_read -r
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: fsync() only available in POSIX.  Using value of 0.
+Began: Tue Oct 23 10:07:01 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 1048576 -b 70590136320 -D 120 -a MPIIO -e -g -z -k -o /esfs/jtacquaviva/file_read -r
+Machine: Linux isc17-c01
+
+Test 0 started: Tue Oct 23 10:07:01 2018
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /esfs/jtacquaviva/file_read
+	access             = single-shared-file
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 32 (2 per node)
+	repetitions        = 3
+	xfersize           = 1 MiB
+	blocksize          = 65.74 GiB
+	aggregate filesize = 2103.75 GiB
+	Using stonewalling = 120 second(s)
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 2258884362240.
+WARNING: Stat() of aggregate file size      = 4517768724480.
+WARNING: Using actual aggregate bytes moved = 139143938048.
+read      1103.78    68935680   1024.00    0.057155   120.16     0.014544   120.22     0   
+WARNING: Expected aggregate file size       = 2258884362240.
+WARNING: Stat() of aggregate file size      = 4517768724480.
+WARNING: Using actual aggregate bytes moved = 141212778496.
+read      1120.65    68935680   1024.00    0.009195   120.17     0.008226   120.17     1   
+WARNING: Expected aggregate file size       = 2258884362240.
+WARNING: Stat() of aggregate file size      = 4517768724480.
+WARNING: Using actual aggregate bytes moved = 141608091648.
+read      1123.94    68935680   1024.00    0.009282   120.15     0.008219   120.16     2   
+
+Max Read:  1123.94 MiB/sec (1178.53 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+read         1123.94    1103.78    1116.12       8.83  120.18323 0 32 2 3 0 0 1 0 0 1 70590136320 1048576 139143938048 MPIIO 0
+
+Finished: Tue Oct 23 10:13:01 2018
++ set +x
+/esfs/jtacquaviva/ioperf
+stripe_count:  32 stripe_size:   1048576 stripe_offset: -1
+/esfs/jtacquaviva/ioperf/file_write
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12459209	     0xbe1cc9	             0
+	     1	      12640484	     0xc0e0e4	             0
+	     3	      12488787	     0xbe9053	             0
+	     5	      12380851	     0xbceab3	             0
+	     6	      12594110	     0xc02bbe	             0
+	     0	      12422502	     0xbd8d66	             0
+	     2	      12568843	     0xbfc90b	             0
+	     4	      12510577	     0xbee571	             0
+

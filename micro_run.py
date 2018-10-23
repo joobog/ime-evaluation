@@ -15,7 +15,7 @@ TESTDIR="$(dirname $LUSTRE_TESTFILE)"
 mkdir $TESTDIR
 lfs setstripe -c $(($NN * 2)) $TESTDIR
 ITERATIONS=1
-IOR="$(which ior) -i $ITERATIONS -s 1 -t $((16 * 1024 * 1024)) -b $((132 * 1024 * 1024 * 1020)) -o $LUSTRE_TESTFILE -a POSIX -F -e -g -k -w"
+IOR="$(which ior) -i $ITERATIONS -s 1 -t $((16 * 1024 * 1024)) -b $((4800 * 1024 * 1024 * 32)) -o $LUSTRE_TESTFILE -a POSIX -F -e -g -k -w"
 ENVVAR="-genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter"
 MPIEXEC="/opt/ddn/mvapich/bin/mpiexec -ppn 8 -np $((8*$NN)) $ENVVAR -hosts isc17-c04,isc17-c05"
 
