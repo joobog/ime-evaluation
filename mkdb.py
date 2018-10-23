@@ -33,6 +33,9 @@ def parse(filename, conn):
                 metadata["ppn"] = int(m.group(3)) 
                 metadata["api"] = m.group(4) 
                 metadata["tsize"] = m.group(5) 
+                metadata["fs"] = "lustre"
+                metadata["app"] = "ior-default"
+                metadata["type"] = "random"
 
             else:
                 print('couldn\'t parse', os.path.basename(filename))
@@ -75,7 +78,7 @@ def parse(filename, conn):
 
 
         for iteration,entry in data.items():
-            if len(entry) == 19:
+            if len(entry) == 22:
                 print("Success")
                 columns = ", ".join(entry.keys())
                 placeholders = ':' + ', :'.join(entry.keys())
@@ -103,6 +106,8 @@ try:
             nn int, \
             ppn int, \
             api text, \
+            fs text, \
+            type text, \
             tsize float, \
             fsize float, \
             fsize_ctl txt, \
