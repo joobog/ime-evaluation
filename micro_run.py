@@ -7,8 +7,8 @@ module load betke/hdf5/1.8.20-ddn
 module load betke/ior/git-ddn
 module list
 
-NN=2
-
+NN=16
+NODES='isc17-c01,isc17-c02,isc17-c03,isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22'
 
 LUSTRE_TESTFILE="/esfs/jtacquaviva/indread${NN}/file"
 TESTDIR="$(dirname $LUSTRE_TESTFILE)"
