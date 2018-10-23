@@ -1,0 +1,1618 @@
++ /opt/ddn/mvapich/bin/mpiexec -ppn 6 -np 96 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22,isc17-c01,isc17-c02,isc17-c03 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 102400 -b 26843545600 -D 60 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/ioperf/file_write -w
++ tee -a ./output/COUNT:1#NN:16#PPN:6#API:POSIX#T:102400.txt
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Tue Oct 23 20:42:07 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 102400 -b 26843545600 -D 60 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/ioperf/file_write -w
+Machine: Linux isc17-c04
+
+Test 0 started: Tue Oct 23 20:42:07 2018
+Summary:
+	api                = POSIX
+	test filename      = /esfs/jtacquaviva/ioperf/file_write
+	access             = file-per-process
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 96 (6 per node)
+	repetitions        = 3
+	xfersize           = 102400 bytes
+	blocksize          = 25 GiB
+	aggregate filesize = 2400 GiB
+	Using stonewalling = 60 second(s)
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 2576931225600.
+WARNING: Using actual aggregate bytes moved = 104101376000.
+write     832.29     26214400   100.00     0.017550   119.27     0.013124   119.28     0   
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 2575377510400.
+WARNING: Using actual aggregate bytes moved = 98503782400.
+write     744.85     26214400   100.00     0.017856   126.11     0.014458   126.12     1   
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 2575326310400.
+WARNING: Using actual aggregate bytes moved = 96915558400.
+write     739.35     26214400   100.00     0.019516   124.99     0.013645   125.01     2   
+
+Max Write: 832.29 MiB/sec (872.72 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         832.29     739.35     772.16      42.58  123.47169 0 96 6 3 1 0 1 0 0 1 26843545600 102400 104101376000 POSIX 0
+
+Finished: Tue Oct 23 20:48:18 2018
++ /opt/ddn/mvapich/bin/mpiexec -ppn 6 -np 96 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22,isc17-c01,isc17-c02,isc17-c03 /esfs/jtacquaviva/git/ime-evaluation/drop_caches.sh
++ tee -a ./output/COUNT:1#NN:16#PPN:6#API:POSIX#T:102400.txt
++ /opt/ddn/mvapich/bin/mpiexec -ppn 6 -np 96 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22,isc17-c01,isc17-c02,isc17-c03 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 102400 -b 26843545600 -D 60 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/indread16/file -r
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Tue Oct 23 20:48:24 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 102400 -b 26843545600 -D 60 -a POSIX -F -e -g -z -k -o /esfs/jtacquaviva/indread16/file -r
+Machine: Linux isc17-c04
+
+Test 0 started: Tue Oct 23 20:48:24 2018
+Summary:
+	api                = POSIX
+	test filename      = /esfs/jtacquaviva/indread16/file
+	access             = file-per-process
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 96 (6 per node)
+	repetitions        = 3
+	xfersize           = 102400 bytes
+	blocksize          = 25 GiB
+	aggregate filesize = 2400 GiB
+	Using stonewalling = 60 second(s)
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 13553306173440.
+WARNING: Using actual aggregate bytes moved = 64711987200.
+read      1027.52    26214400   100.00     0.013367   60.05      0.013125   60.06      0   
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 13553306173440.
+WARNING: Using actual aggregate bytes moved = 67529216000.
+read      1072.62    26214400   100.00     0.012674   60.04      0.012968   60.04      1   
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 13553306173440.
+WARNING: Using actual aggregate bytes moved = 68304076800.
+read      1084.91    26214400   100.00     0.012922   60.04      0.012880   60.04      2   
+
+Max Read:  1084.91 MiB/sec (1137.61 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+read         1084.91    1027.52    1061.68      24.67   60.04782 0 96 6 3 1 0 1 0 0 1 26843545600 102400 64711987200 POSIX 0
+
+Finished: Tue Oct 23 20:51:24 2018
++ set +x
+/esfs/jtacquaviva/ioperf
+stripe_count:  32 stripe_size:   1048576 stripe_offset: -1
+/esfs/jtacquaviva/ioperf/file_write.00000006
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571292	     0xbfd29c	             0
+	     3	      12491242	     0xbe99ea	             0
+	     4	      12513033	     0xbeef09	             0
+	     0	      12424959	     0xbd96ff	             0
+	     7	      12461666	     0xbe2662	             0
+	     1	      12642947	     0xc0ea83	             0
+	     5	      12383302	     0xbcf446	             0
+	     6	      12596560	     0xc03550	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000093
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461602	     0xbe2622	             0
+	     1	      12642880	     0xc0ea40	             0
+	     3	      12491177	     0xbe99a9	             0
+	     5	      12383238	     0xbcf406	             0
+	     6	      12596495	     0xc0350f	             0
+	     0	      12424895	     0xbd96bf	             0
+	     2	      12571234	     0xbfd262	             0
+	     4	      12512970	     0xbeeeca	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000023
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12513004	     0xbeeeec	             0
+	     7	      12461636	     0xbe2644	             0
+	     1	      12642913	     0xc0ea61	             0
+	     3	      12491211	     0xbe99cb	             0
+	     5	      12383271	     0xbcf427	             0
+	     6	      12596529	     0xc03531	             0
+	     0	      12424930	     0xbd96e2	             0
+	     2	      12571268	     0xbfd284	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000083
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571301	     0xbfd2a5	             0
+	     4	      12513041	     0xbeef11	             0
+	     1	      12642951	     0xc0ea87	             0
+	     5	      12383308	     0xbcf44c	             0
+	     0	      12424967	     0xbd9707	             0
+	     7	      12461674	     0xbe266a	             0
+	     3	      12491250	     0xbe99f2	             0
+	     6	      12596567	     0xc03557	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000044
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461598	     0xbe261e	             0
+	     6	      12596491	     0xc0350b	             0
+	     4	      12512966	     0xbeeec6	             0
+	     5	      12383235	     0xbcf403	             0
+	     0	      12424892	     0xbd96bc	             0
+	     3	      12491175	     0xbe99a7	             0
+	     1	      12642878	     0xc0ea3e	             0
+	     2	      12571232	     0xbfd260	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000040
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12424938	     0xbd96ea	             0
+	     4	      12513012	     0xbeeef4	             0
+	     5	      12383280	     0xbcf430	             0
+	     1	      12642926	     0xc0ea6e	             0
+	     2	      12571277	     0xbfd28d	             0
+	     7	      12461649	     0xbe2651	             0
+	     6	      12596540	     0xc0353c	             0
+	     3	      12491225	     0xbe99d9	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000002
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571275	     0xbfd28b	             0
+	     3	      12491221	     0xbe99d5	             0
+	     6	      12596538	     0xc0353a	             0
+	     4	      12513017	     0xbeeef9	             0
+	     5	      12383285	     0xbcf435	             0
+	     1	      12642933	     0xc0ea75	             0
+	     7	      12461653	     0xbe2655	             0
+	     0	      12424946	     0xbd96f2	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000059
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383307	     0xbcf44b	             0
+	     6	      12596565	     0xc03555	             0
+	     0	      12424966	     0xbd9706	             0
+	     2	      12571302	     0xbfd2a6	             0
+	     4	      12513040	     0xbeef10	             0
+	     7	      12461673	     0xbe2669	             0
+	     1	      12642950	     0xc0ea86	             0
+	     3	      12491249	     0xbe99f1	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000088
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12424901	     0xbd96c5	             0
+	     1	      12642886	     0xc0ea46	             0
+	     5	      12383245	     0xbcf40d	             0
+	     2	      12571240	     0xbfd268	             0
+	     7	      12461609	     0xbe2629	             0
+	     6	      12596502	     0xc03516	             0
+	     4	      12512978	     0xbeeed2	             0
+	     3	      12491185	     0xbe99b1	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000026
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12596573	     0xc0355d	             0
+	     4	      12513048	     0xbeef18	             0
+	     1	      12642958	     0xc0ea8e	             0
+	     5	      12383315	     0xbcf453	             0
+	     0	      12424975	     0xbd970f	             0
+	     2	      12571310	     0xbfd2ae	             0
+	     7	      12461681	     0xbe2671	             0
+	     3	      12491257	     0xbe99f9	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000033
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12424907	     0xbd96cb	             0
+	     5	      12383251	     0xbcf413	             0
+	     4	      12512983	     0xbeeed7	             0
+	     2	      12571247	     0xbfd26f	             0
+	     7	      12461615	     0xbe262f	             0
+	     1	      12642893	     0xc0ea4d	             0
+	     3	      12491190	     0xbe99b6	             0
+	     6	      12596508	     0xc0351c	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000052
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491173	     0xbe99a5	             0
+	     2	      12571231	     0xbfd25f	             0
+	     1	      12642876	     0xc0ea3c	             0
+	     6	      12596492	     0xc0350c	             0
+	     4	      12512967	     0xbeeec7	             0
+	     5	      12383236	     0xbcf404	             0
+	     7	      12461600	     0xbe2620	             0
+	     0	      12424893	     0xbd96bd	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000000
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461662	     0xbe265e	             0
+	     5	      12383297	     0xbcf441	             0
+	     0	      12424956	     0xbd96fc	             0
+	     4	      12513030	     0xbeef06	             0
+	     3	      12491240	     0xbe99e8	             0
+	     6	      12596556	     0xc0354c	             0
+	     1	      12642942	     0xc0ea7e	             0
+	     2	      12571294	     0xbfd29e	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000075
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383264	     0xbcf420	             0
+	     6	      12596520	     0xc03528	             0
+	     0	      12424924	     0xbd96dc	             0
+	     2	      12571261	     0xbfd27d	             0
+	     4	      12512997	     0xbeeee5	             0
+	     7	      12461629	     0xbe263d	             0
+	     1	      12642915	     0xc0ea63	             0
+	     3	      12491213	     0xbe99cd	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000084
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383259	     0xbcf41b	             0
+	     0	      12424916	     0xbd96d4	             0
+	     7	      12461623	     0xbe2637	             0
+	     1	      12642901	     0xc0ea55	             0
+	     2	      12571255	     0xbfd277	             0
+	     3	      12491200	     0xbe99c0	             0
+	     6	      12596525	     0xc0352d	             0
+	     4	      12513003	     0xbeeeeb	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000071
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491216	     0xbe99d0	             0
+	     0	      12424934	     0xbd96e6	             0
+	     4	      12513008	     0xbeeef0	             0
+	     1	      12642918	     0xc0ea66	             0
+	     6	      12596534	     0xc03536	             0
+	     2	      12571272	     0xbfd288	             0
+	     7	      12461641	     0xbe2649	             0
+	     5	      12383277	     0xbcf42d	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000020
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642898	     0xc0ea52	             0
+	     5	      12383257	     0xbcf419	             0
+	     0	      12424914	     0xbd96d2	             0
+	     2	      12571254	     0xbfd276	             0
+	     3	      12491197	     0xbe99bd	             0
+	     4	      12512990	     0xbeeede	             0
+	     7	      12461622	     0xbe2636	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000030
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12424918	     0xbd96d6	             0
+	     4	      12512995	     0xbeeee3	             0
+	     3	      12491207	     0xbe99c7	             0
+	     5	      12383266	     0xbcf422	             0
+	     1	      12642907	     0xc0ea5b	             0
+	     7	      12461628	     0xbe263c	             0
+	     6	      12596523	     0xc0352b	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000068
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12596575	     0xc0355f	             0
+	     0	      12424976	     0xbd9710	             0
+	     2	      12571311	     0xbfd2af	             0
+	     4	      12513050	     0xbeef1a	             0
+	     7	      12461682	     0xbe2672	             0
+	     1	      12642960	     0xc0ea90	             0
+	     3	      12491258	     0xbe99fa	             0
+	     5	      12383317	     0xbcf455	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000032
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642930	     0xc0ea72	             0
+	     3	      12491231	     0xbe99df	             0
+	     5	      12383292	     0xbcf43c	             0
+	     6	      12596550	     0xc03546	             0
+	     0	      12424951	     0xbd96f7	             0
+	     2	      12571286	     0xbfd296	             0
+	     4	      12513025	     0xbeef01	             0
+	     7	      12461657	     0xbe2659	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000062
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642900	     0xc0ea54	             0
+	     7	      12461624	     0xbe2638	             0
+	     6	      12596515	     0xc03523	             0
+	     2	      12571257	     0xbfd279	             0
+	     4	      12512994	     0xbeeee2	             0
+	     3	      12491204	     0xbe99c4	             0
+	     0	      12424922	     0xbd96da	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000004
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571237	     0xbfd265	             0
+	     4	      12512974	     0xbeeece	             0
+	     5	      12383242	     0xbcf40a	             0
+	     7	      12461606	     0xbe2626	             0
+	     6	      12596499	     0xc03513	             0
+	     3	      12491182	     0xbe99ae	             0
+	     0	      12424900	     0xbd96c4	             0
+	     1	      12642885	     0xc0ea45	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000095
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491194	     0xbe99ba	             0
+	     5	      12383255	     0xbcf417	             0
+	     6	      12596512	     0xc03520	             0
+	     0	      12424912	     0xbd96d0	             0
+	     2	      12571251	     0xbfd273	             0
+	     4	      12512987	     0xbeeedb	             0
+	     7	      12461619	     0xbe2633	             0
+	     1	      12642897	     0xc0ea51	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000050
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12424927	     0xbd96df	             0
+	     2	      12571263	     0xbfd27f	             0
+	     4	      12512999	     0xbeeee7	             0
+	     7	      12461634	     0xbe2642	             0
+	     1	      12642911	     0xc0ea5f	             0
+	     3	      12491210	     0xbe99ca	             0
+	     5	      12383270	     0xbcf426	             0
+	     6	      12596528	     0xc03530	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000007
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642881	     0xc0ea41	             0
+	     3	      12491178	     0xbe99aa	             0
+	     5	      12383239	     0xbcf407	             0
+	     6	      12596496	     0xc03510	             0
+	     0	      12424896	     0xbd96c0	             0
+	     2	      12571235	     0xbfd263	             0
+	     4	      12512971	     0xbeeecb	             0
+	     7	      12461603	     0xbe2623	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000072
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642970	     0xc0ea9a	             0
+	     3	      12491268	     0xbe9a04	             0
+	     5	      12383327	     0xbcf45f	             0
+	     6	      12596585	     0xc03569	             0
+	     0	      12424986	     0xbd971a	             0
+	     2	      12571321	     0xbfd2b9	             0
+	     4	      12513060	     0xbeef24	             0
+	     7	      12461692	     0xbe267c	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000069
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461625	     0xbe2639	             0
+	     1	      12642905	     0xc0ea59	             0
+	     3	      12491205	     0xbe99c5	             0
+	     5	      12383265	     0xbcf421	             0
+	     6	      12596522	     0xc0352a	             0
+	     0	      12424929	     0xbd96e1	             0
+	     2	      12571266	     0xbfd282	             0
+	     4	      12513001	     0xbeeee9	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000064
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12512980	     0xbeeed4	             0
+	     7	      12461612	     0xbe262c	             0
+	     1	      12642890	     0xc0ea4a	             0
+	     3	      12491187	     0xbe99b3	             0
+	     5	      12383248	     0xbcf410	             0
+	     6	      12596505	     0xc03519	             0
+	     0	      12424905	     0xbd96c9	             0
+	     2	      12571244	     0xbfd26c	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000089
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12596537	     0xc03539	             0
+	     1	      12642927	     0xc0ea6f	             0
+	     5	      12383283	     0xbcf433	             0
+	     2	      12571279	     0xbfd28f	             0
+	     3	      12491227	     0xbe99db	             0
+	     7	      12461652	     0xbe2654	             0
+	     0	      12424944	     0xbd96f0	             0
+	     4	      12513020	     0xbeeefc	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000018
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642956	     0xc0ea8c	             0
+	     6	      12596571	     0xc0355b	             0
+	     2	      12571307	     0xbfd2ab	             0
+	     7	      12461678	     0xbe266e	             0
+	     3	      12491254	     0xbe99f6	             0
+	     0	      12424973	     0xbd970d	             0
+	     4	      12513047	     0xbeef17	             0
+	     5	      12383314	     0xbcf452	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000041
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12513053	     0xbeef1d	             0
+	     7	      12461685	     0xbe2675	             0
+	     1	      12642963	     0xc0ea93	             0
+	     3	      12491261	     0xbe99fd	             0
+	     5	      12383320	     0xbcf458	             0
+	     6	      12596578	     0xc03562	             0
+	     0	      12424979	     0xbd9713	             0
+	     2	      12571314	     0xbfd2b2	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000031
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642917	     0xc0ea65	             0
+	     3	      12491215	     0xbe99cf	             0
+	     5	      12383274	     0xbcf42a	             0
+	     6	      12596532	     0xc03534	             0
+	     0	      12424933	     0xbd96e5	             0
+	     2	      12571270	     0xbfd286	             0
+	     4	      12513007	     0xbeeeef	             0
+	     7	      12461639	     0xbe2647	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000012
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491229	     0xbe99dd	             0
+	     5	      12383289	     0xbcf439	             0
+	     6	      12596549	     0xc03545	             0
+	     0	      12424949	     0xbd96f5	             0
+	     2	      12571284	     0xbfd294	             0
+	     4	      12513023	     0xbeeeff	             0
+	     7	      12461655	     0xbe2657	             0
+	     1	      12642934	     0xc0ea76	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000051
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12513029	     0xbeef05	             0
+	     7	      12461661	     0xbe265d	             0
+	     1	      12642939	     0xc0ea7b	             0
+	     3	      12491237	     0xbe99e5	             0
+	     5	      12383296	     0xbcf440	             0
+	     6	      12596555	     0xc0354b	             0
+	     0	      12424955	     0xbd96fb	             0
+	     2	      12571291	     0xbfd29b	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000077
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491179	     0xbe99ab	             0
+	     5	      12383240	     0xbcf408	             0
+	     6	      12596497	     0xc03511	             0
+	     0	      12424897	     0xbd96c1	             0
+	     2	      12571236	     0xbfd264	             0
+	     4	      12512972	     0xbeeecc	             0
+	     7	      12461604	     0xbe2624	             0
+	     1	      12642882	     0xc0ea42	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000013
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642945	     0xc0ea81	             0
+	     5	      12383301	     0xbcf445	             0
+	     0	      12424961	     0xbd9701	             0
+	     4	      12513037	     0xbeef0d	             0
+	     3	      12491247	     0xbe99ef	             0
+	     6	      12596564	     0xc03554	             0
+	     2	      12571299	     0xbfd2a3	             0
+	     7	      12461669	     0xbe2665	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000055
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12596551	     0xc03547	             0
+	     0	      12424952	     0xbd96f8	             0
+	     2	      12571287	     0xbfd297	             0
+	     4	      12513026	     0xbeef02	             0
+	     7	      12461658	     0xbe265a	             0
+	     1	      12642936	     0xc0ea78	             0
+	     3	      12491234	     0xbe99e2	             0
+	     5	      12383293	     0xbcf43d	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000074
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12513043	     0xbeef13	             0
+	     3	      12491251	     0xbe99f3	             0
+	     5	      12383311	     0xbcf44f	             0
+	     6	      12596569	     0xc03559	             0
+	     0	      12424970	     0xbd970a	             0
+	     2	      12571304	     0xbfd2a8	             0
+	     7	      12461676	     0xbe266c	             0
+	     1	      12642954	     0xc0ea8a	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000042
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461647	     0xbe264f	             0
+	     1	      12642929	     0xc0ea71	             0
+	     3	      12491224	     0xbe99d8	             0
+	     5	      12383287	     0xbcf437	             0
+	     6	      12596546	     0xc03542	             0
+	     0	      12424947	     0xbd96f3	             0
+	     2	      12571282	     0xbfd292	             0
+	     4	      12513022	     0xbeeefe	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000025
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571276	     0xbfd28c	             0
+	     4	      12513015	     0xbeeef7	             0
+	     7	      12461650	     0xbe2652	             0
+	     1	      12642932	     0xc0ea74	             0
+	     3	      12491230	     0xbe99de	             0
+	     5	      12383290	     0xbcf43a	             0
+	     6	      12596547	     0xc03543	             0
+	     0	      12424948	     0xbd96f4	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000058
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642919	     0xc0ea67	             0
+	     6	      12596535	     0xc03537	             0
+	     7	      12461643	     0xbe264b	             0
+	     0	      12424941	     0xbd96ed	             0
+	     3	      12491220	     0xbe99d4	             0
+	     5	      12383282	     0xbcf432	             0
+	     4	      12513016	     0xbeeef8	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000082
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383244	     0xbcf40c	             0
+	     7	      12461608	     0xbe2628	             0
+	     3	      12491183	     0xbe99af	             0
+	     6	      12596501	     0xc03515	             0
+	     4	      12512977	     0xbeeed1	             0
+	     1	      12642887	     0xc0ea47	             0
+	     0	      12424903	     0xbd96c7	             0
+	     2	      12571242	     0xbfd26a	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000080
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12513009	     0xbeeef1	             0
+	     5	      12383276	     0xbcf42c	             0
+	     2	      12571273	     0xbfd289	             0
+	     1	      12642921	     0xc0ea69	             0
+	     7	      12461642	     0xbe264a	             0
+	     0	      12424939	     0xbd96eb	             0
+	     6	      12596536	     0xc03538	             0
+	     3	      12491219	     0xbe99d3	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000087
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383324	     0xbcf45c	             0
+	     6	      12596582	     0xc03566	             0
+	     0	      12424983	     0xbd9717	             0
+	     2	      12571318	     0xbfd2b6	             0
+	     1	      12642967	     0xc0ea97	             0
+	     3	      12491265	     0xbe9a01	             0
+	     4	      12513058	     0xbeef22	             0
+	     7	      12461690	     0xbe267a	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000046
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642892	     0xc0ea4c	             0
+	     3	      12491189	     0xbe99b5	             0
+	     5	      12383250	     0xbcf412	             0
+	     2	      12571246	     0xbfd26e	             0
+	     4	      12512982	     0xbeeed6	             0
+	     7	      12461614	     0xbe262e	             0
+	     6	      12596507	     0xc0351b	             0
+	     0	      12424908	     0xbd96cc	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000063
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461686	     0xbe2676	             0
+	     1	      12642964	     0xc0ea94	             0
+	     3	      12491262	     0xbe99fe	             0
+	     5	      12383321	     0xbcf459	             0
+	     6	      12596579	     0xc03563	             0
+	     0	      12424980	     0xbd9714	             0
+	     2	      12571315	     0xbfd2b3	             0
+	     4	      12513054	     0xbeef1e	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000065
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12596566	     0xc03556	             0
+	     7	      12461672	     0xbe2668	             0
+	     3	      12491248	     0xbe99f0	             0
+	     2	      12571303	     0xbfd2a7	             0
+	     4	      12513042	     0xbeef12	             0
+	     5	      12383309	     0xbcf44d	             0
+	     0	      12424968	     0xbd9708	             0
+	     1	      12642952	     0xc0ea88	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000060
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12424936	     0xbd96e8	             0
+	     3	      12491218	     0xbe99d2	             0
+	     4	      12513011	     0xbeeef3	             0
+	     5	      12383279	     0xbcf42f	             0
+	     1	      12642924	     0xc0ea6c	             0
+	     6	      12596539	     0xc0353b	             0
+	     7	      12461651	     0xbe2653	             0
+	     2	      12571281	     0xbfd291	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000039
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383310	     0xbcf44e	             0
+	     6	      12596568	     0xc03558	             0
+	     0	      12424969	     0xbd9709	             0
+	     7	      12461675	     0xbe266b	             0
+	     1	      12642953	     0xc0ea89	             0
+	     4	      12513044	     0xbeef14	             0
+	     3	      12491252	     0xbe99f4	             0
+	     2	      12571305	     0xbfd2a9	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000022
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491241	     0xbe99e9	             0
+	     5	      12383299	     0xbcf443	             0
+	     6	      12596557	     0xc0354d	             0
+	     4	      12513032	     0xbeef08	             0
+	     7	      12461664	     0xbe2660	             0
+	     1	      12642946	     0xc0ea82	             0
+	     0	      12424960	     0xbd9700	             0
+	     2	      12571296	     0xbfd2a0	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000034
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571230	     0xbfd25e	             0
+	     5	      12383234	     0xbcf402	             0
+	     0	      12424891	     0xbd96bb	             0
+	     7	      12461599	     0xbe261f	             0
+	     3	      12491174	     0xbe99a6	             0
+	     1	      12642877	     0xc0ea3d	             0
+	     6	      12596493	     0xc0350d	             0
+	     4	      12512968	     0xbeeec8	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000091
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12596521	     0xc03529	             0
+	     0	      12424928	     0xbd96e0	             0
+	     2	      12571262	     0xbfd27e	             0
+	     4	      12513000	     0xbeeee8	             0
+	     7	      12461632	     0xbe2640	             0
+	     1	      12642910	     0xc0ea5e	             0
+	     3	      12491209	     0xbe99c9	             0
+	     5	      12383269	     0xbcf425	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000003
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642965	     0xc0ea95	             0
+	     3	      12491263	     0xbe99ff	             0
+	     5	      12383322	     0xbcf45a	             0
+	     6	      12596580	     0xc03564	             0
+	     0	      12424981	     0xbd9715	             0
+	     2	      12571316	     0xbfd2b4	             0
+	     4	      12513055	     0xbeef1f	             0
+	     7	      12461687	     0xbe2677	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000008
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461689	     0xbe2679	             0
+	     1	      12642968	     0xc0ea98	             0
+	     4	      12513057	     0xbeef21	             0
+	     3	      12491266	     0xbe9a02	             0
+	     5	      12383325	     0xbcf45d	             0
+	     6	      12596583	     0xc03567	             0
+	     0	      12424984	     0xbd9718	             0
+	     2	      12571319	     0xbfd2b7	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000066
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383288	     0xbcf438	             0
+	     6	      12596548	     0xc03544	             0
+	     0	      12424950	     0xbd96f6	             0
+	     2	      12571285	     0xbfd295	             0
+	     4	      12513024	     0xbeef00	             0
+	     7	      12461656	     0xbe2658	             0
+	     1	      12642935	     0xc0ea77	             0
+	     3	      12491233	     0xbe99e1	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000038
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642903	     0xc0ea57	             0
+	     3	      12491203	     0xbe99c3	             0
+	     5	      12383262	     0xbcf41e	             0
+	     6	      12596519	     0xc03527	             0
+	     0	      12424926	     0xbd96de	             0
+	     2	      12571264	     0xbfd280	             0
+	     4	      12513002	     0xbeeeea	             0
+	     7	      12461635	     0xbe2643	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000079
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12424953	     0xbd96f9	             0
+	     2	      12571288	     0xbfd298	             0
+	     4	      12513027	     0xbeef03	             0
+	     7	      12461659	     0xbe265b	             0
+	     1	      12642937	     0xc0ea79	             0
+	     3	      12491235	     0xbe99e3	             0
+	     5	      12383294	     0xbcf43e	             0
+	     6	      12596552	     0xc03548	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000067
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571243	     0xbfd26b	             0
+	     4	      12512979	     0xbeeed3	             0
+	     7	      12461611	     0xbe262b	             0
+	     1	      12642889	     0xc0ea49	             0
+	     3	      12491186	     0xbe99b2	             0
+	     5	      12383247	     0xbcf40f	             0
+	     6	      12596504	     0xc03518	             0
+	     0	      12424904	     0xbd96c8	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000085
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383313	     0xbcf451	             0
+	     0	      12424972	     0xbd970c	             0
+	     4	      12513046	     0xbeef16	             0
+	     1	      12642957	     0xc0ea8d	             0
+	     6	      12596572	     0xc0355c	             0
+	     2	      12571308	     0xbfd2ac	             0
+	     7	      12461679	     0xbe266f	             0
+	     3	      12491255	     0xbe99f7	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000028
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12596514	     0xc03522	             0
+	     4	      12512989	     0xbeeedd	             0
+	     2	      12571253	     0xbfd275	             0
+	     7	      12461621	     0xbe2635	             0
+	     5	      12383258	     0xbcf41a	             0
+	     1	      12642899	     0xc0ea53	             0
+	     3	      12491196	     0xbe99bc	             0
+	     0	      12424915	     0xbd96d3	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000010
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571309	     0xbfd2ad	             0
+	     7	      12461680	     0xbe2670	             0
+	     3	      12491256	     0xbe99f8	             0
+	     6	      12596574	     0xc0355e	             0
+	     0	      12424974	     0xbd970e	             0
+	     4	      12513049	     0xbeef19	             0
+	     1	      12642959	     0xc0ea8f	             0
+	     5	      12383316	     0xbcf454	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000043
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642902	     0xc0ea56	             0
+	     6	      12596516	     0xc03524	             0
+	     5	      12383261	     0xbcf41d	             0
+	     2	      12571258	     0xbfd27a	             0
+	     4	      12512996	     0xbeeee4	             0
+	     3	      12491206	     0xbe99c6	             0
+	     0	      12424925	     0xbd96dd	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000036
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12512976	     0xbeeed0	             0
+	     0	      12424902	     0xbd96c6	             0
+	     3	      12491184	     0xbe99b0	             0
+	     2	      12571241	     0xbfd269	             0
+	     7	      12461610	     0xbe262a	             0
+	     5	      12383246	     0xbcf40e	             0
+	     1	      12642888	     0xc0ea48	             0
+	     6	      12596503	     0xc03517	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000054
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642883	     0xc0ea43	             0
+	     3	      12491181	     0xbe99ad	             0
+	     4	      12512975	     0xbeeecf	             0
+	     0	      12424899	     0xbd96c3	             0
+	     7	      12461607	     0xbe2627	             0
+	     5	      12383243	     0xbcf40b	             0
+	     6	      12596500	     0xc03514	             0
+	     2	      12571239	     0xbfd267	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000017
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461616	     0xbe2630	             0
+	     3	      12491191	     0xbe99b7	             0
+	     6	      12596509	     0xc0351d	             0
+	     2	      12571249	     0xbfd271	             0
+	     4	      12512984	     0xbeeed8	             0
+	     1	      12642895	     0xc0ea4f	             0
+	     5	      12383253	     0xbcf415	             0
+	     0	      12424910	     0xbd96ce	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000094
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491238	     0xbe99e6	             0
+	     6	      12596554	     0xc0354a	             0
+	     2	      12571290	     0xbfd29a	             0
+	     7	      12461663	     0xbe265f	             0
+	     1	      12642941	     0xc0ea7d	             0
+	     5	      12383298	     0xbcf442	             0
+	     0	      12424957	     0xbd96fd	             0
+	     4	      12513031	     0xbeef07	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000029
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383241	     0xbcf409	             0
+	     6	      12596498	     0xc03512	             0
+	     4	      12512973	     0xbeeecd	             0
+	     3	      12491180	     0xbe99ac	             0
+	     0	      12424898	     0xbd96c2	             0
+	     7	      12461605	     0xbe2625	             0
+	     2	      12571238	     0xbfd266	             0
+	     1	      12642884	     0xc0ea44	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000061
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461691	     0xbe267b	             0
+	     1	      12642969	     0xc0ea99	             0
+	     3	      12491267	     0xbe9a03	             0
+	     5	      12383326	     0xbcf45e	             0
+	     6	      12596584	     0xc03568	             0
+	     0	      12424985	     0xbd9719	             0
+	     2	      12571320	     0xbfd2b8	             0
+	     4	      12513059	     0xbeef23	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000016
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491198	     0xbe99be	             0
+	     4	      12512991	     0xbeeedf	             0
+	     0	      12424917	     0xbd96d5	             0
+	     5	      12383260	     0xbcf41c	             0
+	     7	      12461626	     0xbe263a	             0
+	     1	      12642904	     0xc0ea58	             0
+	     6	      12596524	     0xc0352c	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000005
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461677	     0xbe266d	             0
+	     1	      12642955	     0xc0ea8b	             0
+	     3	      12491253	     0xbe99f5	             0
+	     5	      12383312	     0xbcf450	             0
+	     6	      12596570	     0xc0355a	             0
+	     0	      12424971	     0xbd970b	             0
+	     2	      12571306	     0xbfd2aa	             0
+	     4	      12513045	     0xbeef15	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000014
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12596533	     0xc03535	             0
+	     2	      12571271	     0xbfd287	             0
+	     7	      12461640	     0xbe2648	             0
+	     3	      12491217	     0xbe99d1	             0
+	     5	      12383275	     0xbcf42b	             0
+	     0	      12424935	     0xbd96e7	             0
+	     4	      12513010	     0xbeeef2	             0
+	     1	      12642920	     0xc0ea68	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000021
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461613	     0xbe262d	             0
+	     1	      12642891	     0xc0ea4b	             0
+	     3	      12491188	     0xbe99b4	             0
+	     5	      12383249	     0xbcf411	             0
+	     6	      12596506	     0xc0351a	             0
+	     0	      12424906	     0xbd96ca	             0
+	     2	      12571245	     0xbfd26d	             0
+	     4	      12512981	     0xbeeed5	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000078
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12512992	     0xbeeee0	             0
+	     3	      12491201	     0xbe99c1	             0
+	     0	      12424920	     0xbd96d8	             0
+	     2	      12571259	     0xbfd27b	             0
+	     1	      12642909	     0xc0ea5d	             0
+	     7	      12461631	     0xbe263f	             0
+	     6	      12596526	     0xc0352e	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000073
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12513014	     0xbeeef6	             0
+	     7	      12461648	     0xbe2650	             0
+	     1	      12642931	     0xc0ea73	             0
+	     3	      12491226	     0xbe99da	             0
+	     5	      12383286	     0xbcf436	             0
+	     6	      12596543	     0xc0353f	             0
+	     0	      12424945	     0xbd96f1	             0
+	     2	      12571283	     0xbfd293	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000057
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12424977	     0xbd9711	             0
+	     2	      12571312	     0xbfd2b0	             0
+	     4	      12513051	     0xbeef1b	             0
+	     7	      12461683	     0xbe2673	             0
+	     1	      12642961	     0xc0ea91	             0
+	     3	      12491259	     0xbe99fb	             0
+	     5	      12383318	     0xbcf456	             0
+	     6	      12596576	     0xc03560	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000086
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642940	     0xc0ea7c	             0
+	     3	      12491239	     0xbe99e7	             0
+	     5	      12383300	     0xbcf444	             0
+	     6	      12596558	     0xc0354e	             0
+	     0	      12424958	     0xbd96fe	             0
+	     2	      12571295	     0xbfd29f	             0
+	     4	      12513036	     0xbeef0c	             0
+	     7	      12461667	     0xbe2663	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000045
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461638	     0xbe2646	             0
+	     1	      12642916	     0xc0ea64	             0
+	     3	      12491214	     0xbe99ce	             0
+	     5	      12383273	     0xbcf429	             0
+	     6	      12596531	     0xc03533	             0
+	     0	      12424932	     0xbd96e4	             0
+	     2	      12571269	     0xbfd285	             0
+	     4	      12513006	     0xbeeeee	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000019
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461645	     0xbe264d	             0
+	     0	      12424942	     0xbd96ee	             0
+	     1	      12642928	     0xc0ea70	             0
+	     5	      12383284	     0xbcf434	             0
+	     3	      12491228	     0xbe99dc	             0
+	     4	      12513021	     0xbeeefd	             0
+	     6	      12596545	     0xc03541	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000056
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571256	     0xbfd278	             0
+	     4	      12512993	     0xbeeee1	             0
+	     6	      12596517	     0xc03525	             0
+	     0	      12424921	     0xbd96d9	             0
+	     3	      12491208	     0xbe99c8	             0
+	     1	      12642908	     0xc0ea5c	             0
+	     5	      12383267	     0xbcf423	             0
+	     7	      12461630	     0xbe263e	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000049
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12461644	     0xbe264c	             0
+	     1	      12642923	     0xc0ea6b	             0
+	     5	      12383281	     0xbcf431	             0
+	     2	      12571278	     0xbfd28e	             0
+	     3	      12491222	     0xbe99d6	             0
+	     0	      12424943	     0xbd96ef	             0
+	     4	      12513018	     0xbeeefa	             0
+	     6	      12596544	     0xc03540	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000090
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642896	     0xc0ea50	             0
+	     3	      12491193	     0xbe99b9	             0
+	     5	      12383254	     0xbcf416	             0
+	     6	      12596511	     0xc0351f	             0
+	     0	      12424911	     0xbd96cf	             0
+	     2	      12571250	     0xbfd272	             0
+	     4	      12512986	     0xbeeeda	             0
+	     7	      12461618	     0xbe2632	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000047
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12513035	     0xbeef0b	             0
+	     3	      12491244	     0xbe99ec	             0
+	     6	      12596559	     0xc0354f	             0
+	     2	      12571297	     0xbfd2a1	             0
+	     7	      12461668	     0xbe2664	             0
+	     5	      12383306	     0xbcf44a	             0
+	     0	      12424965	     0xbd9705	             0
+	     1	      12642948	     0xc0ea84	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000035
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12642943	     0xc0ea7f	             0
+	     3	      12491243	     0xbe99eb	             0
+	     5	      12383305	     0xbcf449	             0
+	     6	      12596563	     0xc03553	             0
+	     0	      12424964	     0xbd9704	             0
+	     2	      12571300	     0xbfd2a4	             0
+	     4	      12513039	     0xbeef0f	             0
+	     7	      12461671	     0xbe2667	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000081
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571313	     0xbfd2b1	             0
+	     4	      12513052	     0xbeef1c	             0
+	     7	      12461684	     0xbe2674	             0
+	     1	      12642962	     0xc0ea92	             0
+	     3	      12491260	     0xbe99fc	             0
+	     5	      12383319	     0xbcf457	             0
+	     6	      12596577	     0xc03561	             0
+	     0	      12424978	     0xbd9712	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000009
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383278	     0xbcf42e	             0
+	     0	      12424940	     0xbd96ec	             0
+	     1	      12642925	     0xc0ea6d	             0
+	     7	      12461646	     0xbe264e	             0
+	     6	      12596541	     0xc0353d	             0
+	     2	      12571280	     0xbfd290	             0
+	     4	      12513019	     0xbeeefb	             0
+	     3	      12491232	     0xbe99e0	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000015
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12512969	     0xbeeec9	             0
+	     7	      12461601	     0xbe2621	             0
+	     1	      12642879	     0xc0ea3f	             0
+	     3	      12491176	     0xbe99a8	             0
+	     5	      12383237	     0xbcf405	             0
+	     6	      12596494	     0xc0350e	             0
+	     0	      12424894	     0xbd96be	             0
+	     2	      12571233	     0xbfd261	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000027
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571267	     0xbfd283	             0
+	     4	      12513005	     0xbeeeed	             0
+	     7	      12461637	     0xbe2645	             0
+	     1	      12642914	     0xc0ea62	             0
+	     3	      12491212	     0xbe99cc	             0
+	     5	      12383272	     0xbcf428	             0
+	     6	      12596530	     0xc03532	             0
+	     0	      12424931	     0xbd96e3	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000024
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571293	     0xbfd29d	             0
+	     4	      12513034	     0xbeef0a	             0
+	     7	      12461665	     0xbe2661	             0
+	     1	      12642944	     0xc0ea80	             0
+	     3	      12491246	     0xbe99ee	             0
+	     5	      12383304	     0xbcf448	             0
+	     6	      12596561	     0xc03551	             0
+	     0	      12424962	     0xbd9702	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000070
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491245	     0xbe99ed	             0
+	     5	      12383303	     0xbcf447	             0
+	     6	      12596562	     0xc03552	             0
+	     0	      12424963	     0xbd9703	             0
+	     2	      12571298	     0xbfd2a2	             0
+	     4	      12513038	     0xbeef0e	             0
+	     7	      12461670	     0xbe2666	             0
+	     1	      12642949	     0xc0ea85	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000001
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491199	     0xbe99bf	             0
+	     0	      12424919	     0xbd96d7	             0
+	     7	      12461627	     0xbe263b	             0
+	     1	      12642906	     0xc0ea5a	             0
+	     2	      12571265	     0xbfd281	             0
+	     6	      12596527	     0xc0352f	             0
+	     5	      12383268	     0xbcf424	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000076
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491264	     0xbe9a00	             0
+	     5	      12383323	     0xbcf45b	             0
+	     6	      12596581	     0xc03565	             0
+	     0	      12424982	     0xbd9716	             0
+	     2	      12571317	     0xbfd2b5	             0
+	     4	      12513056	     0xbeef20	             0
+	     7	      12461688	     0xbe2678	             0
+	     1	      12642966	     0xc0ea96	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000037
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571289	     0xbfd299	             0
+	     4	      12513028	     0xbeef04	             0
+	     7	      12461660	     0xbe265c	             0
+	     1	      12642938	     0xc0ea7a	             0
+	     3	      12491236	     0xbe99e4	             0
+	     5	      12383295	     0xbcf43f	             0
+	     6	      12596553	     0xc03549	             0
+	     0	      12424954	     0xbd96fa	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000048
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12571248	     0xbfd270	             0
+	     1	      12642894	     0xc0ea4e	             0
+	     5	      12383252	     0xbcf414	             0
+	     0	      12424909	     0xbd96cd	             0
+	     7	      12461617	     0xbe2631	             0
+	     3	      12491192	     0xbe99b8	             0
+	     6	      12596510	     0xc0351e	             0
+	     4	      12512985	     0xbeeed9	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000053
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12383256	     0xbcf418	             0
+	     6	      12596513	     0xc03521	             0
+	     0	      12424913	     0xbd96d1	             0
+	     2	      12571252	     0xbfd274	             0
+	     4	      12512988	     0xbeeedc	             0
+	     3	      12491195	     0xbe99bb	             0
+	     7	      12461620	     0xbe2634	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000092
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12424937	     0xbd96e9	             0
+	     2	      12571274	     0xbfd28a	             0
+	     1	      12642922	     0xc0ea6a	             0
+	     4	      12513013	     0xbeeef5	             0
+	     3	      12491223	     0xbe99d7	             0
+	     6	      12596542	     0xc0353e	             0
+	     7	      12461654	     0xbe2656	             0
+	     5	      12383291	     0xbcf43b	             0
+
+/esfs/jtacquaviva/ioperf/file_write.00000011
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12491202	     0xbe99c2	             0
+	     5	      12383263	     0xbcf41f	             0
+	     6	      12596518	     0xc03526	             0
+	     0	      12424923	     0xbd96db	             0
+	     2	      12571260	     0xbfd27c	             0
+	     4	      12512998	     0xbeeee6	             0
+	     7	      12461633	     0xbe2641	             0
+	     1	      12642912	     0xc0ea60	             0
+
