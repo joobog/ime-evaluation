@@ -1,0 +1,46 @@
++ /opt/ddn/mvapich/bin/mpiexec -ppn 2 -np 32 -genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter --hosts isc17-c04,isc17-c05,isc17-c06,isc17-c07,isc17-c08,isc17-c09,isc17-c11,isc17-c12,isc17-c13,isc17-c14,isc17-c15,isc17-c18,isc17-c22,isc17-c01,isc17-c02,isc17-c03 /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 10485760 -b 80530636800 -D 30 -a MPIIO -e -g -z -k -o /esfs/jtacquaviva/sharedread16/file -r
++ tee -a ./output_v2/COUNT:1#NN:16#PPN:2#API:MPIIO#T:10485760#TYPE:read.txt
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: fsync() only available in POSIX.  Using value of 0.
+Began: Wed Oct 24 10:44:04 2018
+Command line used: /esfs/jtacquaviva/software/install/ior/git-ddn/bin/ior -i 3 -s 1 -t 10485760 -b 80530636800 -D 30 -a MPIIO -e -g -z -k -o /esfs/jtacquaviva/sharedread16/file -r
+Machine: Linux isc17-c04
+
+Test 0 started: Wed Oct 24 10:44:04 2018
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /esfs/jtacquaviva/sharedread16/file
+	access             = single-shared-file
+	ordering in a file = random offsets
+	ordering inter file= no tasks offsets
+	clients            = 32 (2 per node)
+	repetitions        = 3
+	xfersize           = 10 MiB
+	blocksize          = 75 GiB
+	aggregate filesize = 2400 GiB
+	Using stonewalling = 30 second(s)
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 2576980377600.
+WARNING: Using actual aggregate bytes moved = 89569361920.
+read      2829.56    78643200   10240      0.014503   30.18      0.005045   30.19      0   
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 2576980377600.
+WARNING: Using actual aggregate bytes moved = 89716162560.
+read      2834.92    78643200   10240      0.005623   30.17      0.004831   30.18      1   
+WARNING: Expected aggregate file size       = 2576980377600.
+WARNING: Stat() of aggregate file size      = 2576980377600.
+WARNING: Using actual aggregate bytes moved = 90827653120.
+read      2859.44    78643200   10240      0.005661   30.29      0.004782   30.29      2   
+
+Max Read:  2859.44 MiB/sec (2998.34 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+read         2859.44    2829.56    2841.31      13.01   30.22061 0 32 2 3 0 0 1 0 0 1 80530636800 10485760 89569361920 MPIIO 0
+
+Finished: Wed Oct 24 10:45:35 2018
++ set +x
