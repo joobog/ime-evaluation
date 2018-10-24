@@ -53,6 +53,9 @@ dims_list = data.frame(h, w, event)       # df is a data frame
 
 
 
+for (scale in c("linear", "logarithmic")) {
+
+
 
 fss = unique(dbdata$fs)
 for (fs in fss) {
@@ -69,55 +72,66 @@ print(api)
 
 for (app in apps) {
 data3 = data2[app == data2$app, ]
-types = unique(data3$type)
+iotypes = unique(data3$iotype)
 
 print(app)
 
-for (type in types) {
-data = data3[type == data3$type, ]
+for (iotype in iotypes) {
+data = data3[iotype == data3$iotype, ]
 
-print(type)
+print(iotype)
 
-	ggplot(data=data, aes(x=nn, y=write, colour=as.factor(blocksize/1024), group=blocksize), ymin=0) +
+	p = ggplot(data=data, aes(x=nn, y=perf, colour=as.factor(blocksize/1024), group=blocksize), ymin=0) +
 		#ggtitle("Write") +
-		facet_grid(ppn ~ ., labeller = labeller(nn = as_labeller(nn_lab), ppn = as_labeller(ppn_lab))) +
+		facet_grid(ppn ~ accesstype + striping, labeller = labeller(nn = as_labeller(nn_lab), ppn = as_labeller(ppn_lab))) +
 		xlab("Nodes") +
 		ylab("Performance in MiB/s") +
 		theme(axis.text.x=element_text(angle=90, hjust=0.95, vjust=0.5)) +
 		theme(legend.position="bottom") +
-		#scale_y_log10() +
-		scale_x_continuous(breaks = c(unique(data$nn))) +
+		#scale_x_continuous(breaks = c(unique(data$nn))) +
+		scale_x_log10(breaks = c(unique(data$nn))) +
 		scale_color_manual(name="Blocksize in KiB: ", values=c('#999999','#E69F00', '#56B4E9', '#000000'), breaks=sort(unique(data$blocksize)/1024)) +
 		#stat_summary(fun.y="median", geom="line", aes(group=factor(blocksize))) +
 		stat_summary(fun.y="mean", geom="line", aes(group=factor(blocksize))) +
 		#geom_boxplot()
 		geom_point()
-	filename_eps = sprintf("%s/performance_%s_%s_%s_%s_%s.eps", folder_out, app, fs, api, type, "write")
-	filename_png = sprintf("%s/performance_%s_%s_%s_%s_%s.png", folder_out, app, fs, api, type, "write")
+
+	if ( "logarithmic" == scale ) {
+		p = p + scale_y_log10()
+	}
+
+	filename_eps = sprintf("%s/performance_%s_%s_%s_%s_%s_%s.eps", folder_out, app, fs, api, iotype, "write", scale)
+	filename_png = sprintf("%s/performance_%s_%s_%s_%s_%s_%s.png", folder_out, app, fs, api, iotype, "write", scale)
 	ggsave(filename_png, width = 6, height = 10)
 	ggsave(filename_eps, width = 6, height = 10)
-	system(sprintf("epstopdf %s", filename_eps))
+	#system(sprintf("epstopdf %s", filename_eps))
 	system(sprintf("rm %s", filename_eps))
 
-	ggplot(data=data, aes(x=nn, y=read, colour=as.factor(blocksize/1024), group=blocksize), ymin=0) +
-		#ggtitle("Read") +
-		facet_grid(ppn ~ ., labeller = labeller(nn = as_labeller(nn_lab), ppn = as_labeller(ppn_lab))) +
-		xlab("Nodes") +
-		ylab("Performance in MiB/s") +
-		theme(axis.text.x=element_text(angle=90, hjust=0.95, vjust=0.5)) +
-		theme(legend.position="bottom") +
-		#scale_y_log10() +
-		scale_x_continuous(breaks = c(unique(data$nn))) +
-		scale_color_manual(name="Blocksize in KiB: ", values=c('#999999','#E69F00', '#56B4E9', '#000000'), breaks=sort(unique(data$blocksize)/1024)) +
-		#stat_summary(fun.y="median", geom="line", aes(group=factor(blocksize))) +
-		stat_summary(fun.y="mean", geom="line", aes(group=factor(blocksize))) +
-		#geom_boxplot()
-		geom_point()
-	filename_eps = sprintf("%s/performance_%s_%s_%s_%s_%s.eps", folder_out, app, fs, api, type, "read")
-	filename_png = sprintf("%s/performance_%s_%s_%s_%s_%s.png", folder_out, app, fs, api, type, "read")
-	ggsave(filename_png, width = 6, height = 10)
-	ggsave(filename_eps, width = 6, height = 10)
-	system(sprintf("epstopdf %s", filename_eps))
-	system(sprintf("rm %s", filename_eps))
+	#p = ggplot(data=data, aes(x=nn, y=read, colour=as.factor(blocksize/1024), group=blocksize), ymin=0) +
+	#  #ggtitle("Read") +
+	#  facet_grid(ppn ~ ., labeller = labeller(nn = as_labeller(nn_lab), ppn = as_labeller(ppn_lab))) +
+	#  xlab("Nodes") +
+	#  ylab("Performance in MiB/s") +
+	#  theme(axis.text.x=element_text(angle=90, hjust=0.95, vjust=0.5)) +
+	#  theme(legend.position="bottom") +
+	#  #scale_x_continuous(breaks = c(unique(data$nn))) +
+	#  scale_x_log10(breaks = c(unique(data$nn))) +
+	#  scale_color_manual(name="Blocksize in KiB: ", values=c('#999999','#E69F00', '#56B4E9', '#000000'), breaks=sort(unique(data$blocksize)/1024)) +
+	#  #stat_summary(fun.y="median", geom="line", aes(group=factor(blocksize))) +
+	#  stat_summary(fun.y="mean", geom="line", aes(group=factor(blocksize))) +
+	#  #geom_boxplot()
+	#  geom_point()
+
+	#if ( "logarithmic" == scale ) {
+	#  p = p + scale_y_log10()
+	#}
+
+	#filename_eps = sprintf("%s/performance_%s_%s_%s_%s_%s_%s.eps", folder_out, app, fs, api, type, "read", scale)
+	#filename_png = sprintf("%s/performance_%s_%s_%s_%s_%s_%s.png", folder_out, app, fs, api, type, "read", scale)
+	#ggsave(filename_png, width = 3, height = 10)
+	#ggsave(filename_eps, width = 3, height = 10)
+	##system(sprintf("epstopdf %s", filename_eps))
+	#system(sprintf("rm %s", filename_eps))
 
 }}}}
+}
