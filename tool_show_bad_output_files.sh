@@ -8,7 +8,7 @@ find "./output" -type f -name "*.txt" -print0 |
 		if [[ "" != ${status} ]]; then
 			if [[ "delete" == $force_delete ]]; then
 				set -x
-					rm $fn
+					git rm $fn
 				set +x
 			else
 				echo "Bad output: $fn"

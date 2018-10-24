@@ -39,8 +39,8 @@ MPIEXEC="/opt/ddn/mvapich/bin/mpiexec"
 
 API_ARR=( "POSIX" "MPIIO" )
 #NN_ARR=( 4 2 1 8 10 16)
-NN_ARR=( 16 )
-PPN_ARR=( 8 6 4 2 1 )
+NN_ARR=( 1 2 8 )
+PPN_ARR=( 8 4 1 6 2)
 T_ARR=( $((10*1024*1024)) $((1*1024*1024)) $((100*1024)) $((16*1024)) )
 
 for COUNT in $(seq 1); do
@@ -68,7 +68,7 @@ for API in ${API_ARR[@]}; do
         fi
 
 
-        IOR_PARAMS="-i $ITERATIONS -s 1 -t $T -b $((4800 * 1024 * 1024 * 32 / $PPN)) -D $((120)) -a $API $IOR_API_OPTS -e -g -z -k"
+        IOR_PARAMS="-i $ITERATIONS -s 1 -t $T -b $((4800 * 1024 * 1024 * 32 / $PPN)) -D $((60)) -a $API $IOR_API_OPTS -e -g -z -k"
 	    ENVVAR="-genv MV2_NUM_HCAS 1 -genv MV2_CPU_BINDING_LEVEL core -genv MV2_CPU_BINDING_POLICY scatter"
         MPIEXEC_PARAMS=" -ppn $PPN -np $(($NN * $PPN)) $ENVVAR --hosts $(hosts $NN) "
 
