@@ -1,0 +1,3944 @@
+indread1
+stripe_count:  2 stripe_size:   1048576 stripe_offset: -1
+indread1/file.00000007
+lmm_stripe_count:  2
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384594	     0xbcf952	             0
+	     6	      12597852	     0xc03a5c	             0
+
+indread1/file.00000006
+lmm_stripe_count:  2
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644235	     0xc0ef8b	             0
+	     3	      12492529	     0xbe9ef1	             0
+
+indread1/file.00000003
+lmm_stripe_count:  2
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426252	     0xbd9c0c	             0
+	     2	      12572586	     0xbfd7aa	             0
+
+indread1/file.00000005
+lmm_stripe_count:  2
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572587	     0xbfd7ab	             0
+	     4	      12514327	     0xbef417	             0
+
+indread1/file.00000004
+lmm_stripe_count:  2
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12462955	     0xbe2b6b	             0
+	     1	      12644234	     0xc0ef8a	             0
+
+indread1/file.00000000
+lmm_stripe_count:  2
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597851	     0xc03a5b	             0
+	     0	      12426253	     0xbd9c0d	             0
+
+indread1/file.00000002
+lmm_stripe_count:  2
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492528	     0xbe9ef0	             0
+	     5	      12384593	     0xbcf951	             0
+
+indread1/file.00000001
+lmm_stripe_count:  2
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426254	     0xbd9c0e	             0
+	     2	      12572588	     0xbfd7ac	             0
+
+indread16
+stripe_count:  32 stripe_size:   1048576 stripe_offset: -1
+indread16/file.00000080
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514538	     0xbef4ea	             0
+	     7	      12463165	     0xbe2c3d	             0
+	     1	      12644446	     0xc0f05e	             0
+	     3	      12492742	     0xbe9fc6	             0
+	     5	      12384804	     0xbcfa24	             0
+	     6	      12598061	     0xc03b2d	             0
+	     0	      12426464	     0xbd9ce0	             0
+	     2	      12572799	     0xbfd87f	             0
+
+indread16/file.00000042
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572782	     0xbfd86e	             0
+	     4	      12514521	     0xbef4d9	             0
+	     7	      12463148	     0xbe2c2c	             0
+	     1	      12644429	     0xc0f04d	             0
+	     3	      12492725	     0xbe9fb5	             0
+	     5	      12384787	     0xbcfa13	             0
+	     6	      12598044	     0xc03b1c	             0
+	     0	      12426447	     0xbd9ccf	             0
+
+indread16/file.00000108
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514448	     0xbef490	             0
+	     7	      12463075	     0xbe2be3	             0
+	     1	      12644356	     0xc0f004	             0
+	     3	      12492653	     0xbe9f6d	             0
+	     5	      12384714	     0xbcf9ca	             0
+	     6	      12597971	     0xc03ad3	             0
+	     0	      12426374	     0xbd9c86	             0
+	     2	      12572709	     0xbfd825	             0
+
+indread16/file.00000110
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572736	     0xbfd840	             0
+	     4	      12514475	     0xbef4ab	             0
+	     7	      12463102	     0xbe2bfe	             0
+	     1	      12644383	     0xc0f01f	             0
+	     3	      12492679	     0xbe9f87	             0
+	     5	      12384741	     0xbcf9e5	             0
+	     6	      12597998	     0xc03aee	             0
+	     0	      12426401	     0xbd9ca1	             0
+
+indread16/file.00000115
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644440	     0xc0f058	             0
+	     3	      12492736	     0xbe9fc0	             0
+	     5	      12384798	     0xbcfa1e	             0
+	     6	      12598055	     0xc03b27	             0
+	     0	      12426458	     0xbd9cda	             0
+	     2	      12572793	     0xbfd879	             0
+	     4	      12514532	     0xbef4e4	             0
+	     7	      12463159	     0xbe2c37	             0
+
+indread16/file.00000072
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514451	     0xbef493	             0
+	     3	      12492656	     0xbe9f70	             0
+	     5	      12384717	     0xbcf9cd	             0
+	     6	      12597974	     0xc03ad6	             0
+	     2	      12572712	     0xbfd828	             0
+	     7	      12463078	     0xbe2be6	             0
+	     0	      12426378	     0xbd9c8a	             0
+	     1	      12644360	     0xc0f008	             0
+
+indread16/file.00000059
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597948	     0xc03abc	             0
+	     0	      12426352	     0xbd9c70	             0
+	     2	      12572686	     0xbfd80e	             0
+	     4	      12514425	     0xbef479	             0
+	     7	      12463052	     0xbe2bcc	             0
+	     1	      12644333	     0xc0efed	             0
+	     3	      12492630	     0xbe9f56	             0
+	     5	      12384691	     0xbcf9b3	             0
+
+indread16/file.00000007
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572680	     0xbfd808	             0
+	     4	      12514419	     0xbef473	             0
+	     7	      12463046	     0xbe2bc6	             0
+	     1	      12644327	     0xc0efe7	             0
+	     3	      12492624	     0xbe9f50	             0
+	     5	      12384685	     0xbcf9ad	             0
+	     6	      12597942	     0xc03ab6	             0
+	     0	      12426346	     0xbd9c6a	             0
+
+indread16/file.00000071
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426338	     0xbd9c62	             0
+	     7	      12463038	     0xbe2bbe	             0
+	     3	      12492616	     0xbe9f48	             0
+	     6	      12597934	     0xc03aae	             0
+	     2	      12572672	     0xbfd800	             0
+	     1	      12644320	     0xc0efe0	             0
+	     5	      12384678	     0xbcf9a6	             0
+	     4	      12514412	     0xbef46c	             0
+
+indread16/file.00000049
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644322	     0xc0efe2	             0
+	     3	      12492619	     0xbe9f4b	             0
+	     5	      12384680	     0xbcf9a8	             0
+	     6	      12597937	     0xc03ab1	             0
+	     0	      12426341	     0xbd9c65	             0
+	     2	      12572675	     0xbfd803	             0
+	     4	      12514414	     0xbef46e	             0
+	     7	      12463041	     0xbe2bc1	             0
+
+indread16/file.00000014
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597996	     0xc03aec	             0
+	     0	      12426399	     0xbd9c9f	             0
+	     2	      12572734	     0xbfd83e	             0
+	     4	      12514473	     0xbef4a9	             0
+	     7	      12463100	     0xbe2bfc	             0
+	     1	      12644381	     0xc0f01d	             0
+	     3	      12492677	     0xbe9f85	             0
+	     5	      12384739	     0xbcf9e3	             0
+
+indread16/file.00000101
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492716	     0xbe9fac	             0
+	     5	      12384778	     0xbcfa0a	             0
+	     6	      12598035	     0xc03b13	             0
+	     0	      12426438	     0xbd9cc6	             0
+	     2	      12572773	     0xbfd865	             0
+	     4	      12514512	     0xbef4d0	             0
+	     1	      12644420	     0xc0f044	             0
+	     7	      12463139	     0xbe2c23	             0
+
+indread16/file.00000066
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514476	     0xbef4ac	             0
+	     7	      12463103	     0xbe2bff	             0
+	     1	      12644384	     0xc0f020	             0
+	     3	      12492680	     0xbe9f88	             0
+	     5	      12384742	     0xbcf9e6	             0
+	     6	      12597999	     0xc03aef	             0
+	     0	      12426402	     0xbd9ca2	             0
+	     2	      12572737	     0xbfd841	             0
+
+indread16/file.00000097
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463040	     0xbe2bc0	             0
+	     1	      12644321	     0xc0efe1	             0
+	     3	      12492618	     0xbe9f4a	             0
+	     5	      12384679	     0xbcf9a7	             0
+	     6	      12597936	     0xc03ab0	             0
+	     0	      12426340	     0xbd9c64	             0
+	     2	      12572674	     0xbfd802	             0
+	     4	      12514413	     0xbef46d	             0
+
+indread16/file.00000078
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384690	     0xbcf9b2	             0
+	     6	      12597947	     0xc03abb	             0
+	     0	      12426351	     0xbd9c6f	             0
+	     2	      12572685	     0xbfd80d	             0
+	     4	      12514424	     0xbef478	             0
+	     7	      12463051	     0xbe2bcb	             0
+	     1	      12644332	     0xc0efec	             0
+	     3	      12492629	     0xbe9f55	             0
+
+indread16/file.00000074
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463142	     0xbe2c26	             0
+	     1	      12644423	     0xc0f047	             0
+	     3	      12492719	     0xbe9faf	             0
+	     5	      12384781	     0xbcfa0d	             0
+	     6	      12598038	     0xc03b16	             0
+	     0	      12426441	     0xbd9cc9	             0
+	     2	      12572776	     0xbfd868	             0
+	     4	      12514515	     0xbef4d3	             0
+
+indread16/file.00000039
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492707	     0xbe9fa3	             0
+	     5	      12384769	     0xbcfa01	             0
+	     6	      12598026	     0xc03b0a	             0
+	     0	      12426429	     0xbd9cbd	             0
+	     2	      12572764	     0xbfd85c	             0
+	     4	      12514503	     0xbef4c7	             0
+	     7	      12463130	     0xbe2c1a	             0
+	     1	      12644411	     0xc0f03b	             0
+
+indread16/file.00000076
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384710	     0xbcf9c6	             0
+	     6	      12597967	     0xc03acf	             0
+	     0	      12426370	     0xbd9c82	             0
+	     2	      12572705	     0xbfd821	             0
+	     4	      12514444	     0xbef48c	             0
+	     7	      12463071	     0xbe2bdf	             0
+	     1	      12644352	     0xc0f000	             0
+	     3	      12492649	     0xbe9f69	             0
+
+indread16/file.00000043
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463136	     0xbe2c20	             0
+	     1	      12644417	     0xc0f041	             0
+	     3	      12492713	     0xbe9fa9	             0
+	     5	      12384775	     0xbcfa07	             0
+	     6	      12598032	     0xc03b10	             0
+	     0	      12426435	     0xbd9cc3	             0
+	     2	      12572770	     0xbfd862	             0
+	     4	      12514509	     0xbef4cd	             0
+
+indread16/file.00000092
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426372	     0xbd9c84	             0
+	     2	      12572707	     0xbfd823	             0
+	     4	      12514446	     0xbef48e	             0
+	     7	      12463073	     0xbe2be1	             0
+	     1	      12644354	     0xc0f002	             0
+	     3	      12492651	     0xbe9f6b	             0
+	     5	      12384712	     0xbcf9c8	             0
+	     6	      12597969	     0xc03ad1	             0
+
+indread16/file.00000086
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492635	     0xbe9f5b	             0
+	     5	      12384696	     0xbcf9b8	             0
+	     6	      12597953	     0xc03ac1	             0
+	     0	      12426357	     0xbd9c75	             0
+	     2	      12572691	     0xbfd813	             0
+	     4	      12514430	     0xbef47e	             0
+	     7	      12463057	     0xbe2bd1	             0
+	     1	      12644338	     0xc0eff2	             0
+
+indread16/file.00000033
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644336	     0xc0eff0	             0
+	     6	      12597952	     0xc03ac0	             0
+	     4	      12514429	     0xbef47d	             0
+	     3	      12492634	     0xbe9f5a	             0
+	     0	      12426356	     0xbd9c74	             0
+	     5	      12384695	     0xbcf9b7	             0
+	     2	      12572690	     0xbfd812	             0
+	     7	      12463056	     0xbe2bd0	             0
+
+indread16/file.00000088
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492665	     0xbe9f79	             0
+	     5	      12384726	     0xbcf9d6	             0
+	     6	      12597984	     0xc03ae0	             0
+	     4	      12514461	     0xbef49d	             0
+	     7	      12463088	     0xbe2bf0	             0
+	     0	      12426386	     0xbd9c92	             0
+	     1	      12644369	     0xc0f011	             0
+	     2	      12572722	     0xbfd832	             0
+
+indread16/file.00000052
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492660	     0xbe9f74	             0
+	     5	      12384721	     0xbcf9d1	             0
+	     6	      12597978	     0xc03ada	             0
+	     4	      12514455	     0xbef497	             0
+	     7	      12463082	     0xbe2bea	             0
+	     0	      12426381	     0xbd9c8d	             0
+	     1	      12644363	     0xc0f00b	             0
+	     2	      12572717	     0xbfd82d	             0
+
+indread16/file.00000116
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598028	     0xc03b0c	             0
+	     0	      12426431	     0xbd9cbf	             0
+	     2	      12572766	     0xbfd85e	             0
+	     4	      12514505	     0xbef4c9	             0
+	     7	      12463132	     0xbe2c1c	             0
+	     1	      12644413	     0xc0f03d	             0
+	     3	      12492709	     0xbe9fa5	             0
+	     5	      12384771	     0xbcfa03	             0
+
+indread16/file.00000018
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572721	     0xbfd831	             0
+	     1	      12644368	     0xc0f010	             0
+	     6	      12597983	     0xc03adf	             0
+	     4	      12514460	     0xbef49c	             0
+	     3	      12492666	     0xbe9f7a	             0
+	     7	      12463087	     0xbe2bef	             0
+	     5	      12384727	     0xbcf9d7	             0
+	     0	      12426387	     0xbd9c93	             0
+
+indread16/file.00000008
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384792	     0xbcfa18	             0
+	     6	      12598049	     0xc03b21	             0
+	     0	      12426452	     0xbd9cd4	             0
+	     2	      12572787	     0xbfd873	             0
+	     4	      12514526	     0xbef4de	             0
+	     7	      12463153	     0xbe2c31	             0
+	     1	      12644434	     0xc0f052	             0
+	     3	      12492730	     0xbe9fba	             0
+
+indread16/file.00000105
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463076	     0xbe2be4	             0
+	     1	      12644357	     0xc0f005	             0
+	     3	      12492654	     0xbe9f6e	             0
+	     5	      12384715	     0xbcf9cb	             0
+	     6	      12597972	     0xc03ad4	             0
+	     4	      12514449	     0xbef491	             0
+	     0	      12426375	     0xbd9c87	             0
+	     2	      12572711	     0xbfd827	             0
+
+indread16/file.00000112
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426392	     0xbd9c98	             0
+	     2	      12572727	     0xbfd837	             0
+	     4	      12514466	     0xbef4a2	             0
+	     7	      12463093	     0xbe2bf5	             0
+	     1	      12644374	     0xc0f016	             0
+	     3	      12492670	     0xbe9f7e	             0
+	     5	      12384732	     0xbcf9dc	             0
+	     6	      12597989	     0xc03ae5	             0
+
+indread16/file.00000034
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384800	     0xbcfa20	             0
+	     6	      12598057	     0xc03b29	             0
+	     0	      12426460	     0xbd9cdc	             0
+	     2	      12572795	     0xbfd87b	             0
+	     4	      12514534	     0xbef4e6	             0
+	     7	      12463161	     0xbe2c39	             0
+	     1	      12644442	     0xc0f05a	             0
+	     3	      12492738	     0xbe9fc2	             0
+
+indread16/file.00000022
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572760	     0xbfd858	             0
+	     4	      12514499	     0xbef4c3	             0
+	     7	      12463126	     0xbe2c16	             0
+	     1	      12644407	     0xc0f037	             0
+	     3	      12492703	     0xbe9f9f	             0
+	     5	      12384765	     0xbcf9fd	             0
+	     6	      12598022	     0xc03b06	             0
+	     0	      12426425	     0xbd9cb9	             0
+
+indread16/file.00000091
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463112	     0xbe2c08	             0
+	     1	      12644393	     0xc0f029	             0
+	     3	      12492689	     0xbe9f91	             0
+	     5	      12384751	     0xbcf9ef	             0
+	     6	      12598008	     0xc03af8	             0
+	     0	      12426411	     0xbd9cab	             0
+	     2	      12572746	     0xbfd84a	             0
+	     4	      12514485	     0xbef4b5	             0
+
+indread16/file.00000051
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644359	     0xc0f007	             0
+	     0	      12426377	     0xbd9c89	             0
+	     4	      12514452	     0xbef494	             0
+	     3	      12492657	     0xbe9f71	             0
+	     2	      12572713	     0xbfd829	             0
+	     5	      12384718	     0xbcf9ce	             0
+	     6	      12597975	     0xc03ad7	             0
+	     7	      12463079	     0xbe2be7	             0
+
+indread16/file.00000006
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384770	     0xbcfa02	             0
+	     6	      12598027	     0xc03b0b	             0
+	     0	      12426430	     0xbd9cbe	             0
+	     2	      12572765	     0xbfd85d	             0
+	     4	      12514504	     0xbef4c8	             0
+	     7	      12463131	     0xbe2c1b	             0
+	     1	      12644412	     0xc0f03c	             0
+	     3	      12492708	     0xbe9fa4	             0
+
+indread16/file.00000003
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426345	     0xbd9c69	             0
+	     2	      12572679	     0xbfd807	             0
+	     4	      12514418	     0xbef472	             0
+	     7	      12463045	     0xbe2bc5	             0
+	     1	      12644326	     0xc0efe6	             0
+	     3	      12492623	     0xbe9f4f	             0
+	     5	      12384684	     0xbcf9ac	             0
+	     6	      12597941	     0xc03ab5	             0
+
+indread16/file.00000005
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644378	     0xc0f01a	             0
+	     3	      12492674	     0xbe9f82	             0
+	     5	      12384736	     0xbcf9e0	             0
+	     6	      12597993	     0xc03ae9	             0
+	     0	      12426396	     0xbd9c9c	             0
+	     2	      12572731	     0xbfd83b	             0
+	     4	      12514470	     0xbef4a6	             0
+	     7	      12463097	     0xbe2bf9	             0
+
+indread16/file.00000009
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514428	     0xbef47c	             0
+	     3	      12492633	     0xbe9f59	             0
+	     5	      12384694	     0xbcf9b6	             0
+	     0	      12426355	     0xbd9c73	             0
+	     2	      12572689	     0xbfd811	             0
+	     7	      12463055	     0xbe2bcf	             0
+	     6	      12597951	     0xc03abf	             0
+	     1	      12644337	     0xc0eff1	             0
+
+indread16/file.00000057
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598020	     0xc03b04	             0
+	     0	      12426423	     0xbd9cb7	             0
+	     2	      12572758	     0xbfd856	             0
+	     4	      12514497	     0xbef4c1	             0
+	     7	      12463124	     0xbe2c14	             0
+	     1	      12644405	     0xc0f035	             0
+	     3	      12492701	     0xbe9f9d	             0
+	     5	      12384763	     0xbcf9fb	             0
+
+indread16/file.00000050
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384754	     0xbcf9f2	             0
+	     6	      12598011	     0xc03afb	             0
+	     0	      12426414	     0xbd9cae	             0
+	     2	      12572749	     0xbfd84d	             0
+	     4	      12514488	     0xbef4b8	             0
+	     7	      12463115	     0xbe2c0b	             0
+	     1	      12644396	     0xc0f02c	             0
+	     3	      12492692	     0xbe9f94	             0
+
+indread16/file.00000069
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597955	     0xc03ac3	             0
+	     4	      12514432	     0xbef480	             0
+	     3	      12492637	     0xbe9f5d	             0
+	     0	      12426359	     0xbd9c77	             0
+	     7	      12463060	     0xbe2bd4	             0
+	     5	      12384699	     0xbcf9bb	             0
+	     2	      12572694	     0xbfd816	             0
+	     1	      12644341	     0xc0eff5	             0
+
+indread16/file.00000102
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426454	     0xbd9cd6	             0
+	     2	      12572789	     0xbfd875	             0
+	     4	      12514528	     0xbef4e0	             0
+	     7	      12463155	     0xbe2c33	             0
+	     1	      12644436	     0xc0f054	             0
+	     3	      12492732	     0xbe9fbc	             0
+	     5	      12384794	     0xbcfa1a	             0
+	     6	      12598051	     0xc03b23	             0
+
+indread16/file.00000098
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492737	     0xbe9fc1	             0
+	     5	      12384799	     0xbcfa1f	             0
+	     6	      12598056	     0xc03b28	             0
+	     0	      12426459	     0xbd9cdb	             0
+	     2	      12572794	     0xbfd87a	             0
+	     4	      12514533	     0xbef4e5	             0
+	     7	      12463160	     0xbe2c38	             0
+	     1	      12644441	     0xc0f059	             0
+
+indread16/file.00000089
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644350	     0xc0effe	             0
+	     3	      12492647	     0xbe9f67	             0
+	     5	      12384708	     0xbcf9c4	             0
+	     6	      12597965	     0xc03acd	             0
+	     0	      12426368	     0xbd9c80	             0
+	     2	      12572703	     0xbfd81f	             0
+	     4	      12514442	     0xbef48a	             0
+	     7	      12463069	     0xbe2bdd	             0
+
+indread16/file.00000061
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572688	     0xbfd810	             0
+	     4	      12514427	     0xbef47b	             0
+	     7	      12463054	     0xbe2bce	             0
+	     1	      12644335	     0xc0efef	             0
+	     3	      12492632	     0xbe9f58	             0
+	     5	      12384693	     0xbcf9b5	             0
+	     6	      12597950	     0xc03abe	             0
+	     0	      12426354	     0xbd9c72	             0
+
+indread16/file.00000094
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384738	     0xbcf9e2	             0
+	     6	      12597995	     0xc03aeb	             0
+	     0	      12426398	     0xbd9c9e	             0
+	     2	      12572733	     0xbfd83d	             0
+	     4	      12514472	     0xbef4a8	             0
+	     7	      12463099	     0xbe2bfb	             0
+	     1	      12644380	     0xc0f01c	             0
+	     3	      12492676	     0xbe9f84	             0
+
+indread16/file.00000083
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463096	     0xbe2bf8	             0
+	     1	      12644377	     0xc0f019	             0
+	     3	      12492673	     0xbe9f81	             0
+	     5	      12384735	     0xbcf9df	             0
+	     6	      12597992	     0xc03ae8	             0
+	     0	      12426395	     0xbd9c9b	             0
+	     2	      12572730	     0xbfd83a	             0
+	     4	      12514469	     0xbef4a5	             0
+
+indread16/file.00000090
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384784	     0xbcfa10	             0
+	     6	      12598041	     0xc03b19	             0
+	     0	      12426444	     0xbd9ccc	             0
+	     2	      12572779	     0xbfd86b	             0
+	     4	      12514518	     0xbef4d6	             0
+	     7	      12463145	     0xbe2c29	             0
+	     1	      12644426	     0xc0f04a	             0
+	     3	      12492722	     0xbe9fb2	             0
+
+indread16/file.00000047
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572700	     0xbfd81c	             0
+	     4	      12514439	     0xbef487	             0
+	     7	      12463066	     0xbe2bda	             0
+	     1	      12644347	     0xc0effb	             0
+	     3	      12492644	     0xbe9f64	             0
+	     5	      12384705	     0xbcf9c1	             0
+	     6	      12597962	     0xc03aca	             0
+	     0	      12426365	     0xbd9c7d	             0
+
+indread16/file.00000048
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492620	     0xbe9f4c	             0
+	     5	      12384681	     0xbcf9a9	             0
+	     6	      12597938	     0xc03ab2	             0
+	     0	      12426342	     0xbd9c66	             0
+	     2	      12572676	     0xbfd804	             0
+	     4	      12514415	     0xbef46f	             0
+	     7	      12463042	     0xbe2bc2	             0
+	     1	      12644323	     0xc0efe3	             0
+
+indread16/file.00000122
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514462	     0xbef49e	             0
+	     7	      12463089	     0xbe2bf1	             0
+	     1	      12644370	     0xc0f012	             0
+	     3	      12492667	     0xbe9f7b	             0
+	     5	      12384728	     0xbcf9d8	             0
+	     6	      12597985	     0xc03ae1	             0
+	     0	      12426388	     0xbd9c94	             0
+	     2	      12572723	     0xbfd833	             0
+
+indread16/file.00000040
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644432	     0xc0f050	             0
+	     3	      12492728	     0xbe9fb8	             0
+	     5	      12384790	     0xbcfa16	             0
+	     6	      12598047	     0xc03b1f	             0
+	     0	      12426450	     0xbd9cd2	             0
+	     2	      12572785	     0xbfd871	             0
+	     4	      12514524	     0xbef4dc	             0
+	     7	      12463151	     0xbe2c2f	             0
+
+indread16/file.00000107
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644418	     0xc0f042	             0
+	     3	      12492714	     0xbe9faa	             0
+	     5	      12384776	     0xbcfa08	             0
+	     6	      12598033	     0xc03b11	             0
+	     0	      12426436	     0xbd9cc4	             0
+	     2	      12572771	     0xbfd863	             0
+	     4	      12514510	     0xbef4ce	             0
+	     7	      12463137	     0xbe2c21	             0
+
+indread16/file.00000064
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514492	     0xbef4bc	             0
+	     7	      12463119	     0xbe2c0f	             0
+	     1	      12644400	     0xc0f030	             0
+	     3	      12492696	     0xbe9f98	             0
+	     5	      12384758	     0xbcf9f6	             0
+	     6	      12598015	     0xc03aff	             0
+	     0	      12426418	     0xbd9cb2	             0
+	     2	      12572753	     0xbfd851	             0
+
+indread16/file.00000104
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572768	     0xbfd860	             0
+	     4	      12514507	     0xbef4cb	             0
+	     7	      12463134	     0xbe2c1e	             0
+	     1	      12644415	     0xc0f03f	             0
+	     3	      12492711	     0xbe9fa7	             0
+	     5	      12384773	     0xbcfa05	             0
+	     6	      12598030	     0xc03b0e	             0
+	     0	      12426433	     0xbd9cc1	             0
+
+indread16/file.00000095
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492648	     0xbe9f68	             0
+	     5	      12384709	     0xbcf9c5	             0
+	     6	      12597966	     0xc03ace	             0
+	     0	      12426369	     0xbd9c81	             0
+	     2	      12572704	     0xbfd820	             0
+	     4	      12514443	     0xbef48b	             0
+	     7	      12463070	     0xbe2bde	             0
+	     1	      12644351	     0xc0efff	             0
+
+indread16/file.00000031
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514434	     0xbef482	             0
+	     7	      12463061	     0xbe2bd5	             0
+	     1	      12644342	     0xc0eff6	             0
+	     3	      12492639	     0xbe9f5f	             0
+	     5	      12384700	     0xbcf9bc	             0
+	     2	      12572696	     0xbfd818	             0
+	     6	      12597957	     0xc03ac5	             0
+
+indread16/file.00000030
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598050	     0xc03b22	             0
+	     0	      12426453	     0xbd9cd5	             0
+	     2	      12572788	     0xbfd874	             0
+	     4	      12514527	     0xbef4df	             0
+	     7	      12463154	     0xbe2c32	             0
+	     1	      12644435	     0xc0f053	             0
+	     3	      12492731	     0xbe9fbb	             0
+	     5	      12384793	     0xbcfa19	             0
+
+indread16/file.00000021
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572710	     0xbfd826	             0
+	     7	      12463077	     0xbe2be5	             0
+	     4	      12514450	     0xbef492	             0
+	     1	      12644358	     0xc0f006	             0
+	     3	      12492655	     0xbe9f6f	             0
+	     5	      12384716	     0xbcf9cc	             0
+	     6	      12597973	     0xc03ad5	             0
+	     0	      12426376	     0xbd9c88	             0
+
+indread16/file.00000114
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492691	     0xbe9f93	             0
+	     5	      12384753	     0xbcf9f1	             0
+	     6	      12598010	     0xc03afa	             0
+	     0	      12426413	     0xbd9cad	             0
+	     2	      12572748	     0xbfd84c	             0
+	     4	      12514487	     0xbef4b7	             0
+	     7	      12463114	     0xbe2c0a	             0
+	     1	      12644395	     0xc0f02b	             0
+
+indread16/file.00000015
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426364	     0xbd9c7c	             0
+	     2	      12572699	     0xbfd81b	             0
+	     4	      12514438	     0xbef486	             0
+	     7	      12463065	     0xbe2bd9	             0
+	     1	      12644346	     0xc0effa	             0
+	     3	      12492643	     0xbe9f63	             0
+	     5	      12384704	     0xbcf9c0	             0
+	     6	      12597961	     0xc03ac9	             0
+
+indread16/file.00000087
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463090	     0xbe2bf2	             0
+	     1	      12644371	     0xc0f013	             0
+	     3	      12492668	     0xbe9f7c	             0
+	     5	      12384729	     0xbcf9d9	             0
+	     6	      12597986	     0xc03ae2	             0
+	     0	      12426389	     0xbd9c95	             0
+	     2	      12572724	     0xbfd834	             0
+	     4	      12514463	     0xbef49f	             0
+
+indread16/file.00000053
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384682	     0xbcf9aa	             0
+	     6	      12597939	     0xc03ab3	             0
+	     0	      12426343	     0xbd9c67	             0
+	     2	      12572677	     0xbfd805	             0
+	     4	      12514416	     0xbef470	             0
+	     7	      12463043	     0xbe2bc3	             0
+	     1	      12644324	     0xc0efe4	             0
+	     3	      12492621	     0xbe9f4d	             0
+
+indread16/file.00000077
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384702	     0xbcf9be	             0
+	     6	      12597959	     0xc03ac7	             0
+	     0	      12426362	     0xbd9c7a	             0
+	     2	      12572697	     0xbfd819	             0
+	     4	      12514436	     0xbef484	             0
+	     7	      12463063	     0xbe2bd7	             0
+	     1	      12644344	     0xc0eff8	             0
+	     3	      12492641	     0xbe9f61	             0
+
+indread16/file.00000070
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426416	     0xbd9cb0	             0
+	     2	      12572751	     0xbfd84f	             0
+	     4	      12514490	     0xbef4ba	             0
+	     7	      12463117	     0xbe2c0d	             0
+	     1	      12644398	     0xc0f02e	             0
+	     3	      12492694	     0xbe9f96	             0
+	     5	      12384756	     0xbcf9f4	             0
+	     6	      12598013	     0xc03afd	             0
+
+indread16/file.00000058
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426446	     0xbd9cce	             0
+	     2	      12572781	     0xbfd86d	             0
+	     4	      12514520	     0xbef4d8	             0
+	     7	      12463147	     0xbe2c2b	             0
+	     1	      12644428	     0xc0f04c	             0
+	     3	      12492724	     0xbe9fb4	             0
+	     5	      12384786	     0xbcfa12	             0
+	     6	      12598043	     0xc03b1b	             0
+
+indread16/file.00000073
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644330	     0xc0efea	             0
+	     3	      12492627	     0xbe9f53	             0
+	     5	      12384688	     0xbcf9b0	             0
+	     6	      12597945	     0xc03ab9	             0
+	     0	      12426349	     0xbd9c6d	             0
+	     2	      12572683	     0xbfd80b	             0
+	     4	      12514422	     0xbef476	             0
+	     7	      12463049	     0xbe2bc9	             0
+
+indread16/file.00000054
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514530	     0xbef4e2	             0
+	     7	      12463157	     0xbe2c35	             0
+	     1	      12644438	     0xc0f056	             0
+	     3	      12492734	     0xbe9fbe	             0
+	     5	      12384796	     0xbcfa1c	             0
+	     6	      12598053	     0xc03b25	             0
+	     0	      12426456	     0xbd9cd8	             0
+	     2	      12572791	     0xbfd877	             0
+
+indread16/file.00000036
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572728	     0xbfd838	             0
+	     4	      12514467	     0xbef4a3	             0
+	     7	      12463094	     0xbe2bf6	             0
+	     1	      12644375	     0xc0f017	             0
+	     3	      12492671	     0xbe9f7f	             0
+	     5	      12384733	     0xbcf9dd	             0
+	     6	      12597990	     0xc03ae6	             0
+	     0	      12426393	     0xbd9c99	             0
+
+indread16/file.00000096
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463120	     0xbe2c10	             0
+	     1	      12644401	     0xc0f031	             0
+	     3	      12492697	     0xbe9f99	             0
+	     5	      12384759	     0xbcf9f7	             0
+	     6	      12598016	     0xc03b00	             0
+	     0	      12426419	     0xbd9cb3	             0
+	     2	      12572754	     0xbfd852	             0
+	     4	      12514493	     0xbef4bd	             0
+
+indread16/file.00000027
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644394	     0xc0f02a	             0
+	     3	      12492690	     0xbe9f92	             0
+	     5	      12384752	     0xbcf9f0	             0
+	     6	      12598009	     0xc03af9	             0
+	     0	      12426412	     0xbd9cac	             0
+	     2	      12572747	     0xbfd84b	             0
+	     4	      12514486	     0xbef4b6	             0
+	     7	      12463113	     0xbe2c09	             0
+
+indread16/file.00000056
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514500	     0xbef4c4	             0
+	     7	      12463127	     0xbe2c17	             0
+	     1	      12644408	     0xc0f038	             0
+	     3	      12492704	     0xbe9fa0	             0
+	     5	      12384766	     0xbcf9fe	             0
+	     6	      12598023	     0xc03b07	             0
+	     0	      12426426	     0xbd9cba	             0
+	     2	      12572761	     0xbfd859	             0
+
+indread16/file.00000037
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492717	     0xbe9fad	             0
+	     5	      12384779	     0xbcfa0b	             0
+	     6	      12598036	     0xc03b14	             0
+	     0	      12426439	     0xbd9cc7	             0
+	     7	      12463140	     0xbe2c24	             0
+	     1	      12644421	     0xc0f045	             0
+	     2	      12572774	     0xbfd866	             0
+	     4	      12514514	     0xbef4d2	             0
+
+indread16/file.00000126
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572752	     0xbfd850	             0
+	     4	      12514491	     0xbef4bb	             0
+	     7	      12463118	     0xbe2c0e	             0
+	     1	      12644399	     0xc0f02f	             0
+	     3	      12492695	     0xbe9f97	             0
+	     5	      12384757	     0xbcf9f5	             0
+	     6	      12598014	     0xc03afe	             0
+	     0	      12426417	     0xbd9cb1	             0
+
+indread16/file.00000127
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644372	     0xc0f014	             0
+	     6	      12597987	     0xc03ae3	             0
+	     2	      12572725	     0xbfd835	             0
+	     7	      12463091	     0xbe2bf3	             0
+	     3	      12492669	     0xbe9f7d	             0
+	     0	      12426391	     0xbd9c97	             0
+	     4	      12514465	     0xbef4a1	             0
+	     5	      12384731	     0xbcf9db	             0
+
+indread16/file.00000062
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426400	     0xbd9ca0	             0
+	     2	      12572735	     0xbfd83f	             0
+	     4	      12514474	     0xbef4aa	             0
+	     7	      12463101	     0xbe2bfd	             0
+	     1	      12644382	     0xc0f01e	             0
+	     3	      12492678	     0xbe9f86	             0
+	     5	      12384740	     0xbcf9e4	             0
+	     6	      12597997	     0xc03aed	             0
+
+indread16/file.00000060
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426424	     0xbd9cb8	             0
+	     2	      12572759	     0xbfd857	             0
+	     4	      12514498	     0xbef4c2	             0
+	     7	      12463125	     0xbe2c15	             0
+	     1	      12644406	     0xc0f036	             0
+	     3	      12492702	     0xbe9f9e	             0
+	     5	      12384764	     0xbcf9fc	             0
+	     6	      12598021	     0xc03b05	             0
+
+indread16/file.00000125
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463068	     0xbe2bdc	             0
+	     1	      12644349	     0xc0effd	             0
+	     3	      12492646	     0xbe9f66	             0
+	     5	      12384707	     0xbcf9c3	             0
+	     6	      12597964	     0xc03acc	             0
+	     0	      12426367	     0xbd9c7f	             0
+	     2	      12572702	     0xbfd81e	             0
+	     4	      12514441	     0xbef489	             0
+
+indread16/file.00000082
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463104	     0xbe2c00	             0
+	     1	      12644385	     0xc0f021	             0
+	     3	      12492681	     0xbe9f89	             0
+	     5	      12384743	     0xbcf9e7	             0
+	     6	      12598000	     0xc03af0	             0
+	     0	      12426403	     0xbd9ca3	             0
+	     2	      12572738	     0xbfd842	             0
+	     4	      12514477	     0xbef4ad	             0
+
+indread16/file.00000081
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514420	     0xbef474	             0
+	     7	      12463047	     0xbe2bc7	             0
+	     1	      12644328	     0xc0efe8	             0
+	     3	      12492625	     0xbe9f51	             0
+	     5	      12384686	     0xbcf9ae	             0
+	     6	      12597943	     0xc03ab7	             0
+	     0	      12426347	     0xbd9c6b	             0
+	     2	      12572681	     0xbfd809	             0
+
+indread16/file.00000041
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492715	     0xbe9fab	             0
+	     5	      12384777	     0xbcfa09	             0
+	     6	      12598034	     0xc03b12	             0
+	     0	      12426437	     0xbd9cc5	             0
+	     2	      12572772	     0xbfd864	             0
+	     4	      12514511	     0xbef4cf	             0
+	     1	      12644419	     0xc0f043	             0
+	     7	      12463138	     0xbe2c22	             0
+
+indread16/file.00000013
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598004	     0xc03af4	             0
+	     0	      12426407	     0xbd9ca7	             0
+	     2	      12572742	     0xbfd846	             0
+	     4	      12514481	     0xbef4b1	             0
+	     7	      12463108	     0xbe2c04	             0
+	     1	      12644389	     0xc0f025	             0
+	     3	      12492685	     0xbe9f8d	             0
+	     5	      12384747	     0xbcf9eb	             0
+
+indread16/file.00000068
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572798	     0xbfd87e	             0
+	     4	      12514537	     0xbef4e9	             0
+	     7	      12463164	     0xbe2c3c	             0
+	     1	      12644445	     0xc0f05d	             0
+	     3	      12492741	     0xbe9fc5	             0
+	     5	      12384803	     0xbcfa23	             0
+	     6	      12598060	     0xc03b2c	             0
+	     0	      12426463	     0xbd9cdf	             0
+
+indread16/file.00000084
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426432	     0xbd9cc0	             0
+	     2	      12572767	     0xbfd85f	             0
+	     4	      12514506	     0xbef4ca	             0
+	     7	      12463133	     0xbe2c1d	             0
+	     1	      12644414	     0xc0f03e	             0
+	     3	      12492710	     0xbe9fa6	             0
+	     5	      12384772	     0xbcfa04	             0
+	     6	      12598029	     0xc03b0d	             0
+
+indread16/file.00000119
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644424	     0xc0f048	             0
+	     3	      12492720	     0xbe9fb0	             0
+	     5	      12384782	     0xbcfa0e	             0
+	     6	      12598039	     0xc03b17	             0
+	     0	      12426442	     0xbd9cca	             0
+	     2	      12572777	     0xbfd869	             0
+	     4	      12514516	     0xbef4d4	             0
+	     7	      12463143	     0xbe2c27	             0
+
+indread16/file.00000019
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597940	     0xc03ab4	             0
+	     0	      12426344	     0xbd9c68	             0
+	     2	      12572678	     0xbfd806	             0
+	     4	      12514417	     0xbef471	             0
+	     7	      12463044	     0xbe2bc4	             0
+	     1	      12644325	     0xc0efe5	             0
+	     3	      12492622	     0xbe9f4e	             0
+	     5	      12384683	     0xbcf9ab	             0
+
+indread16/file.00000106
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492721	     0xbe9fb1	             0
+	     5	      12384783	     0xbcfa0f	             0
+	     6	      12598040	     0xc03b18	             0
+	     0	      12426443	     0xbd9ccb	             0
+	     2	      12572778	     0xbfd86a	             0
+	     4	      12514517	     0xbef4d5	             0
+	     7	      12463144	     0xbe2c28	             0
+	     1	      12644425	     0xc0f049	             0
+
+indread16/file.00000020
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572744	     0xbfd848	             0
+	     4	      12514483	     0xbef4b3	             0
+	     7	      12463110	     0xbe2c06	             0
+	     1	      12644391	     0xc0f027	             0
+	     3	      12492687	     0xbe9f8f	             0
+	     5	      12384749	     0xbcf9ed	             0
+	     6	      12598006	     0xc03af6	             0
+	     0	      12426409	     0xbd9ca9	             0
+
+indread16/file.00000055
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514522	     0xbef4da	             0
+	     7	      12463149	     0xbe2c2d	             0
+	     1	      12644430	     0xc0f04e	             0
+	     3	      12492726	     0xbe9fb6	             0
+	     5	      12384788	     0xbcfa14	             0
+	     6	      12598045	     0xc03b1d	             0
+	     0	      12426448	     0xbd9cd0	             0
+	     2	      12572783	     0xbfd86f	             0
+
+indread16/file.00000123
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514440	     0xbef488	             0
+	     7	      12463067	     0xbe2bdb	             0
+	     1	      12644348	     0xc0effc	             0
+	     3	      12492645	     0xbe9f65	             0
+	     5	      12384706	     0xbcf9c2	             0
+	     6	      12597963	     0xc03acb	             0
+	     0	      12426366	     0xbd9c7e	             0
+	     2	      12572701	     0xbfd81d	             0
+
+indread16/file.00000109
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384697	     0xbcf9b9	             0
+	     6	      12597954	     0xc03ac2	             0
+	     0	      12426358	     0xbd9c76	             0
+	     2	      12572692	     0xbfd814	             0
+	     4	      12514431	     0xbef47f	             0
+	     7	      12463058	     0xbe2bd2	             0
+	     1	      12644339	     0xc0eff3	             0
+	     3	      12492636	     0xbe9f5c	             0
+
+indread16/file.00000025
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463128	     0xbe2c18	             0
+	     1	      12644409	     0xc0f039	             0
+	     3	      12492705	     0xbe9fa1	             0
+	     5	      12384767	     0xbcf9ff	             0
+	     6	      12598024	     0xc03b08	             0
+	     0	      12426427	     0xbd9cbb	             0
+	     2	      12572762	     0xbfd85a	             0
+	     4	      12514501	     0xbef4c5	             0
+
+indread16/file.00000075
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514513	     0xbef4d1	             0
+	     6	      12598037	     0xc03b15	             0
+	     7	      12463141	     0xbe2c25	             0
+	     1	      12644422	     0xc0f046	             0
+	     3	      12492718	     0xbe9fae	             0
+	     5	      12384780	     0xbcfa0c	             0
+	     0	      12426440	     0xbd9cc8	             0
+	     2	      12572775	     0xbfd867	             0
+
+indread16/file.00000011
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463085	     0xbe2bed	             0
+	     1	      12644366	     0xc0f00e	             0
+	     3	      12492663	     0xbe9f77	             0
+	     5	      12384724	     0xbcf9d4	             0
+	     6	      12597981	     0xc03add	             0
+	     0	      12426384	     0xbd9c90	             0
+	     2	      12572719	     0xbfd82f	             0
+	     4	      12514458	     0xbef49a	             0
+
+indread16/file.00000113
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597968	     0xc03ad0	             0
+	     0	      12426371	     0xbd9c83	             0
+	     2	      12572706	     0xbfd822	             0
+	     4	      12514445	     0xbef48d	             0
+	     7	      12463072	     0xbe2be0	             0
+	     1	      12644353	     0xc0f001	             0
+	     3	      12492650	     0xbe9f6a	             0
+	     5	      12384711	     0xbcf9c7	             0
+
+indread16/file.00000103
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572708	     0xbfd824	             0
+	     4	      12514447	     0xbef48f	             0
+	     7	      12463074	     0xbe2be2	             0
+	     1	      12644355	     0xc0f003	             0
+	     3	      12492652	     0xbe9f6c	             0
+	     5	      12384713	     0xbcf9c9	             0
+	     6	      12597970	     0xc03ad2	             0
+	     0	      12426373	     0xbd9c85	             0
+
+indread16/file.00000010
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463150	     0xbe2c2e	             0
+	     1	      12644431	     0xc0f04f	             0
+	     3	      12492727	     0xbe9fb7	             0
+	     5	      12384789	     0xbcfa15	             0
+	     6	      12598046	     0xc03b1e	             0
+	     0	      12426449	     0xbd9cd1	             0
+	     2	      12572784	     0xbfd870	             0
+	     4	      12514523	     0xbef4db	             0
+
+indread16/file.00000067
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426408	     0xbd9ca8	             0
+	     2	      12572743	     0xbfd847	             0
+	     4	      12514482	     0xbef4b2	             0
+	     7	      12463109	     0xbe2c05	             0
+	     1	      12644390	     0xc0f026	             0
+	     3	      12492686	     0xbe9f8e	             0
+	     5	      12384748	     0xbcf9ec	             0
+	     6	      12598005	     0xc03af5	             0
+
+indread16/file.00000035
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426361	     0xbd9c79	             0
+	     2	      12572695	     0xbfd817	             0
+	     4	      12514435	     0xbef483	             0
+	     3	      12492640	     0xbe9f60	             0
+	     5	      12384701	     0xbcf9bd	             0
+	     6	      12597958	     0xc03ac6	             0
+	     7	      12463062	     0xbe2bd6	             0
+	     1	      12644343	     0xc0eff7	             0
+
+indread16/file.00000046
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644402	     0xc0f032	             0
+	     3	      12492698	     0xbe9f9a	             0
+	     5	      12384760	     0xbcf9f8	             0
+	     6	      12598017	     0xc03b01	             0
+	     0	      12426420	     0xbd9cb4	             0
+	     2	      12572755	     0xbfd853	             0
+	     4	      12514494	     0xbef4be	             0
+	     7	      12463121	     0xbe2c11	             0
+
+indread16/file.00000016
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426462	     0xbd9cde	             0
+	     2	      12572797	     0xbfd87d	             0
+	     4	      12514536	     0xbef4e8	             0
+	     7	      12463163	     0xbe2c3b	             0
+	     1	      12644444	     0xc0f05c	             0
+	     3	      12492740	     0xbe9fc4	             0
+	     5	      12384802	     0xbcfa22	             0
+	     6	      12598059	     0xc03b2b	             0
+
+indread16/file.00000004
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644361	     0xc0f009	             0
+	     3	      12492659	     0xbe9f73	             0
+	     5	      12384720	     0xbcf9d0	             0
+	     6	      12597977	     0xc03ad9	             0
+	     0	      12426380	     0xbd9c8c	             0
+	     2	      12572715	     0xbfd82b	             0
+	     4	      12514454	     0xbef496	             0
+	     7	      12463081	     0xbe2be9	             0
+
+indread16/file.00000023
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644367	     0xc0f00f	             0
+	     3	      12492664	     0xbe9f78	             0
+	     5	      12384725	     0xbcf9d5	             0
+	     6	      12597982	     0xc03ade	             0
+	     0	      12426385	     0xbd9c91	             0
+	     2	      12572720	     0xbfd830	             0
+	     4	      12514459	     0xbef49b	             0
+	     7	      12463086	     0xbe2bee	             0
+
+indread16/file.00000100
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598058	     0xc03b2a	             0
+	     0	      12426461	     0xbd9cdd	             0
+	     2	      12572796	     0xbfd87c	             0
+	     4	      12514535	     0xbef4e7	             0
+	     7	      12463162	     0xbe2c3a	             0
+	     1	      12644443	     0xc0f05b	             0
+	     3	      12492739	     0xbe9fc3	             0
+	     5	      12384801	     0xbcfa21	             0
+
+indread16/file.00000118
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463158	     0xbe2c36	             0
+	     1	      12644439	     0xc0f057	             0
+	     3	      12492735	     0xbe9fbf	             0
+	     5	      12384797	     0xbcfa1d	             0
+	     6	      12598054	     0xc03b26	             0
+	     0	      12426457	     0xbd9cd9	             0
+	     2	      12572792	     0xbfd878	             0
+	     4	      12514531	     0xbef4e3	             0
+
+indread16/file.00000111
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514411	     0xbef46b	             0
+	     1	      12644319	     0xc0efdf	             0
+	     5	      12384677	     0xbcf9a5	             0
+	     0	      12426339	     0xbd9c63	             0
+	     7	      12463039	     0xbe2bbf	             0
+	     3	      12492617	     0xbe9f49	             0
+	     6	      12597935	     0xc03aaf	             0
+	     2	      12572673	     0xbfd801	             0
+
+indread16/file.00000000
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492729	     0xbe9fb9	             0
+	     5	      12384791	     0xbcfa17	             0
+	     6	      12598048	     0xc03b20	             0
+	     0	      12426451	     0xbd9cd3	             0
+	     2	      12572786	     0xbfd872	             0
+	     4	      12514525	     0xbef4dd	             0
+	     7	      12463152	     0xbe2c30	             0
+	     1	      12644433	     0xc0f051	             0
+
+indread16/file.00000079
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492675	     0xbe9f83	             0
+	     5	      12384737	     0xbcf9e1	             0
+	     6	      12597994	     0xc03aea	             0
+	     0	      12426397	     0xbd9c9d	             0
+	     2	      12572732	     0xbfd83c	             0
+	     4	      12514471	     0xbef4a7	             0
+	     7	      12463098	     0xbe2bfa	             0
+	     1	      12644379	     0xc0f01b	             0
+
+indread16/file.00000117
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597960	     0xc03ac8	             0
+	     0	      12426363	     0xbd9c7b	             0
+	     2	      12572698	     0xbfd81a	             0
+	     4	      12514437	     0xbef485	             0
+	     7	      12463064	     0xbe2bd8	             0
+	     1	      12644345	     0xc0eff9	             0
+	     3	      12492642	     0xbe9f62	             0
+	     5	      12384703	     0xbcf9bf	             0
+
+indread16/file.00000044
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514508	     0xbef4cc	             0
+	     7	      12463135	     0xbe2c1f	             0
+	     1	      12644416	     0xc0f040	             0
+	     3	      12492712	     0xbe9fa8	             0
+	     5	      12384774	     0xbcfa06	             0
+	     6	      12598031	     0xc03b0f	             0
+	     0	      12426434	     0xbd9cc2	             0
+	     2	      12572769	     0xbfd861	             0
+
+indread16/file.00000120
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644410	     0xc0f03a	             0
+	     3	      12492706	     0xbe9fa2	             0
+	     5	      12384768	     0xbcfa00	             0
+	     6	      12598025	     0xc03b09	             0
+	     0	      12426428	     0xbd9cbc	             0
+	     2	      12572763	     0xbfd85b	             0
+	     4	      12514502	     0xbef4c6	             0
+	     7	      12463129	     0xbe2c19	             0
+
+indread16/file.00000093
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492683	     0xbe9f8b	             0
+	     5	      12384745	     0xbcf9e9	             0
+	     6	      12598002	     0xc03af2	             0
+	     0	      12426405	     0xbd9ca5	             0
+	     2	      12572740	     0xbfd844	             0
+	     4	      12514479	     0xbef4af	             0
+	     7	      12463106	     0xbe2c02	             0
+	     1	      12644387	     0xc0f023	             0
+
+indread16/file.00000017
+lmm_stripe_count:  7
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384730	     0xbcf9da	             0
+	     0	      12426390	     0xbd9c96	             0
+	     4	      12514464	     0xbef4a0	             0
+	     1	      12644373	     0xc0f015	             0
+	     6	      12597988	     0xc03ae4	             0
+	     2	      12572726	     0xbfd836	             0
+	     7	      12463092	     0xbe2bf4	             0
+
+indread16/file.00000002
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514484	     0xbef4b4	             0
+	     7	      12463111	     0xbe2c07	             0
+	     1	      12644392	     0xc0f028	             0
+	     3	      12492688	     0xbe9f90	             0
+	     5	      12384750	     0xbcf9ee	             0
+	     6	      12598007	     0xc03af7	             0
+	     0	      12426410	     0xbd9caa	             0
+	     2	      12572745	     0xbfd849	             0
+
+indread16/file.00000029
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384746	     0xbcf9ea	             0
+	     6	      12598003	     0xc03af3	             0
+	     0	      12426406	     0xbd9ca6	             0
+	     2	      12572741	     0xbfd845	             0
+	     4	      12514480	     0xbef4b0	             0
+	     7	      12463107	     0xbe2c03	             0
+	     1	      12644388	     0xc0f024	             0
+	     3	      12492684	     0xbe9f8c	             0
+
+indread16/file.00000045
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572693	     0xbfd815	             0
+	     7	      12463059	     0xbe2bd3	             0
+	     1	      12644340	     0xc0eff4	             0
+	     5	      12384698	     0xbcf9ba	             0
+	     4	      12514433	     0xbef481	             0
+	     3	      12492638	     0xbe9f5e	             0
+	     6	      12597956	     0xc03ac4	             0
+	     0	      12426360	     0xbd9c78	             0
+
+indread16/file.00000026
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598042	     0xc03b1a	             0
+	     0	      12426445	     0xbd9ccd	             0
+	     2	      12572780	     0xbfd86c	             0
+	     4	      12514519	     0xbef4d7	             0
+	     7	      12463146	     0xbe2c2a	             0
+	     1	      12644427	     0xc0f04b	             0
+	     3	      12492723	     0xbe9fb3	             0
+	     5	      12384785	     0xbcfa11	             0
+
+indread16/file.00000085
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514468	     0xbef4a4	             0
+	     7	      12463095	     0xbe2bf7	             0
+	     1	      12644376	     0xc0f018	             0
+	     3	      12492672	     0xbe9f80	             0
+	     5	      12384734	     0xbcf9de	             0
+	     6	      12597991	     0xc03ae7	             0
+	     0	      12426394	     0xbd9c9a	             0
+	     2	      12572729	     0xbfd839	             0
+
+indread16/file.00000038
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572790	     0xbfd876	             0
+	     4	      12514529	     0xbef4e1	             0
+	     7	      12463156	     0xbe2c34	             0
+	     1	      12644437	     0xc0f055	             0
+	     3	      12492733	     0xbe9fbd	             0
+	     5	      12384795	     0xbcfa1b	             0
+	     6	      12598052	     0xc03b24	             0
+	     0	      12426455	     0xbd9cd7	             0
+
+indread16/file.00000012
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492658	     0xbe9f72	             0
+	     5	      12384719	     0xbcf9cf	             0
+	     6	      12597976	     0xc03ad8	             0
+	     0	      12426379	     0xbd9c8b	             0
+	     2	      12572714	     0xbfd82a	             0
+	     4	      12514453	     0xbef495	             0
+	     7	      12463080	     0xbe2be8	             0
+	     1	      12644362	     0xc0f00a	             0
+
+indread16/file.00000065
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463048	     0xbe2bc8	             0
+	     1	      12644329	     0xc0efe9	             0
+	     3	      12492626	     0xbe9f52	             0
+	     5	      12384687	     0xbcf9af	             0
+	     6	      12597944	     0xc03ab8	             0
+	     0	      12426348	     0xbd9c6c	             0
+	     2	      12572682	     0xbfd80a	             0
+	     4	      12514421	     0xbef475	             0
+
+indread16/file.00000028
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644386	     0xc0f022	             0
+	     3	      12492682	     0xbe9f8a	             0
+	     5	      12384744	     0xbcf9e8	             0
+	     6	      12598001	     0xc03af1	             0
+	     0	      12426404	     0xbd9ca4	             0
+	     2	      12572739	     0xbfd843	             0
+	     4	      12514478	     0xbef4ae	             0
+	     7	      12463105	     0xbe2c01	             0
+
+indread16/file.00000099
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514457	     0xbef499	             0
+	     7	      12463084	     0xbe2bec	             0
+	     1	      12644365	     0xc0f00d	             0
+	     3	      12492662	     0xbe9f76	             0
+	     5	      12384723	     0xbcf9d3	             0
+	     6	      12597980	     0xc03adc	             0
+	     0	      12426383	     0xbd9c8f	             0
+	     2	      12572718	     0xbfd82e	             0
+
+indread16/file.00000063
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572716	     0xbfd82c	             0
+	     1	      12644364	     0xc0f00c	             0
+	     4	      12514456	     0xbef498	             0
+	     3	      12492661	     0xbe9f75	             0
+	     7	      12463083	     0xbe2beb	             0
+	     5	      12384722	     0xbcf9d2	             0
+	     6	      12597979	     0xc03adb	             0
+	     0	      12426382	     0xbd9c8e	             0
+
+indread16/file.00000124
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384762	     0xbcf9fa	             0
+	     6	      12598019	     0xc03b03	             0
+	     0	      12426422	     0xbd9cb6	             0
+	     2	      12572757	     0xbfd855	             0
+	     4	      12514496	     0xbef4c0	             0
+	     7	      12463123	     0xbe2c13	             0
+	     1	      12644404	     0xc0f034	             0
+	     3	      12492700	     0xbe9f9c	             0
+
+indread16/file.00000001
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426353	     0xbd9c71	             0
+	     2	      12572687	     0xbfd80f	             0
+	     4	      12514426	     0xbef47a	             0
+	     7	      12463053	     0xbe2bcd	             0
+	     1	      12644334	     0xc0efee	             0
+	     3	      12492631	     0xbe9f57	             0
+	     5	      12384692	     0xbcf9b4	             0
+	     6	      12597949	     0xc03abd	             0
+
+indread16/file.00000032
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598012	     0xc03afc	             0
+	     0	      12426415	     0xbd9caf	             0
+	     2	      12572750	     0xbfd84e	             0
+	     4	      12514489	     0xbef4b9	             0
+	     7	      12463116	     0xbe2c0c	             0
+	     1	      12644397	     0xc0f02d	             0
+	     3	      12492693	     0xbe9f95	             0
+	     5	      12384755	     0xbcf9f3	             0
+
+indread16/file.00000121
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492699	     0xbe9f9b	             0
+	     5	      12384761	     0xbcf9f9	             0
+	     6	      12598018	     0xc03b02	             0
+	     0	      12426421	     0xbd9cb5	             0
+	     2	      12572756	     0xbfd854	             0
+	     4	      12514495	     0xbef4bf	             0
+	     7	      12463122	     0xbe2c12	             0
+	     1	      12644403	     0xc0f033	             0
+
+indread16/file.00000024
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492628	     0xbe9f54	             0
+	     5	      12384689	     0xbcf9b1	             0
+	     6	      12597946	     0xc03aba	             0
+	     0	      12426350	     0xbd9c6e	             0
+	     2	      12572684	     0xbfd80c	             0
+	     4	      12514423	     0xbef477	             0
+	     7	      12463050	     0xbe2bca	             0
+	     1	      12644331	     0xc0efeb	             0
+
+indread2
+stripe_count:  4 stripe_size:   1048576 stripe_offset: -1
+indread2/file.00000007
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384906	     0xbcfa8a	             0
+	     6	      12598162	     0xc03b92	             0
+	     0	      12426567	     0xbd9d47	             0
+	     2	      12572905	     0xbfd8e9	             0
+
+indread2/file.00000014
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384902	     0xbcfa86	             0
+	     6	      12598158	     0xc03b8e	             0
+	     0	      12426563	     0xbd9d43	             0
+	     2	      12572901	     0xbfd8e5	             0
+
+indread2/file.00000008
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463264	     0xbe2ca0	             0
+	     1	      12644551	     0xc0f0c7	             0
+	     3	      12492846	     0xbea02e	             0
+	     5	      12384907	     0xbcfa8b	             0
+
+indread2/file.00000006
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492844	     0xbea02c	             0
+	     5	      12384905	     0xbcfa89	             0
+	     6	      12598161	     0xc03b91	             0
+	     0	      12426566	     0xbd9d46	             0
+
+indread2/file.00000003
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572900	     0xbfd8e4	             0
+	     4	      12514637	     0xbef54d	             0
+	     7	      12463258	     0xbe2c9a	             0
+	     1	      12644545	     0xc0f0c1	             0
+
+indread2/file.00000005
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644548	     0xc0f0c4	             0
+	     3	      12492843	     0xbea02b	             0
+	     5	      12384904	     0xbcfa88	             0
+	     6	      12598160	     0xc03b90	             0
+
+indread2/file.00000009
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572904	     0xbfd8e8	             0
+	     4	      12514641	     0xbef551	             0
+	     7	      12463262	     0xbe2c9e	             0
+	     1	      12644549	     0xc0f0c5	             0
+
+indread2/file.00000015
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426565	     0xbd9d45	             0
+	     2	      12572903	     0xbfd8e7	             0
+	     4	      12514640	     0xbef550	             0
+	     7	      12463261	     0xbe2c9d	             0
+
+indread2/file.00000013
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598159	     0xc03b8f	             0
+	     0	      12426564	     0xbd9d44	             0
+	     2	      12572902	     0xbfd8e6	             0
+	     4	      12514639	     0xbef54f	             0
+
+indread2/file.00000011
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514642	     0xbef552	             0
+	     7	      12463263	     0xbe2c9f	             0
+	     1	      12644550	     0xc0f0c6	             0
+	     3	      12492845	     0xbea02d	             0
+
+indread2/file.00000010
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492840	     0xbea028	             0
+	     5	      12384901	     0xbcfa85	             0
+	     6	      12598157	     0xc03b8d	             0
+	     0	      12426562	     0xbd9d42	             0
+
+indread2/file.00000004
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644544	     0xc0f0c0	             0
+	     3	      12492839	     0xbea027	             0
+	     5	      12384900	     0xbcfa84	             0
+	     0	      12426561	     0xbd9d41	             0
+
+indread2/file.00000000
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514638	     0xbef54e	             0
+	     7	      12463259	     0xbe2c9b	             0
+	     1	      12644546	     0xc0f0c2	             0
+	     3	      12492841	     0xbea029	             0
+
+indread2/file.00000002
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463260	     0xbe2c9c	             0
+	     1	      12644547	     0xc0f0c3	             0
+	     3	      12492842	     0xbea02a	             0
+	     5	      12384903	     0xbcfa87	             0
+
+indread2/file.00000012
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598156	     0xc03b8c	             0
+	     2	      12572899	     0xbfd8e3	             0
+	     4	      12514636	     0xbef54c	             0
+	     7	      12463257	     0xbe2c99	             0
+
+indread2/file.00000001
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598163	     0xc03b93	             0
+	     0	      12426568	     0xbd9d48	             0
+	     2	      12572906	     0xbfd8ea	             0
+	     4	      12514643	     0xbef553	             0
+
+indread4
+stripe_count:  8 stripe_size:   1048576 stripe_offset: -1
+indread4/file.00000007
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12462941	     0xbe2b5d	             0
+	     1	      12644220	     0xc0ef7c	             0
+	     3	      12492514	     0xbe9ee2	             0
+	     5	      12384579	     0xbcf943	             0
+	     6	      12597836	     0xc03a4c	             0
+	     0	      12426238	     0xbd9bfe	             0
+	     2	      12572572	     0xbfd79c	             0
+	     4	      12514313	     0xbef409	             0
+
+indread4/file.00000014
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644209	     0xc0ef71	             0
+	     3	      12492503	     0xbe9ed7	             0
+	     5	      12384568	     0xbcf938	             0
+	     6	      12597825	     0xc03a41	             0
+	     0	      12426227	     0xbd9bf3	             0
+	     2	      12572561	     0xbfd791	             0
+	     4	      12514302	     0xbef3fe	             0
+	     7	      12462930	     0xbe2b52	             0
+
+indread4/file.00000018
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492524	     0xbe9eec	             0
+	     5	      12384589	     0xbcf94d	             0
+	     6	      12597846	     0xc03a56	             0
+	     0	      12426248	     0xbd9c08	             0
+	     2	      12572582	     0xbfd7a6	             0
+	     4	      12514323	     0xbef413	             0
+	     7	      12462951	     0xbe2b67	             0
+	     1	      12644230	     0xc0ef86	             0
+
+indread4/file.00000008
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644229	     0xc0ef85	             0
+	     3	      12492523	     0xbe9eeb	             0
+	     5	      12384588	     0xbcf94c	             0
+	     6	      12597845	     0xc03a55	             0
+	     0	      12426247	     0xbd9c07	             0
+	     2	      12572581	     0xbfd7a5	             0
+	     4	      12514322	     0xbef412	             0
+	     7	      12462950	     0xbe2b66	             0
+
+indread4/file.00000022
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597820	     0xc03a3c	             0
+	     0	      12426222	     0xbd9bee	             0
+	     2	      12572556	     0xbfd78c	             0
+	     4	      12514297	     0xbef3f9	             0
+	     7	      12462925	     0xbe2b4d	             0
+	     1	      12644204	     0xc0ef6c	             0
+	     3	      12492498	     0xbe9ed2	             0
+	     5	      12384563	     0xbcf933	             0
+
+indread4/file.00000006
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572558	     0xbfd78e	             0
+	     4	      12514299	     0xbef3fb	             0
+	     7	      12462927	     0xbe2b4f	             0
+	     1	      12644206	     0xc0ef6e	             0
+	     3	      12492500	     0xbe9ed4	             0
+	     5	      12384565	     0xbcf935	             0
+	     6	      12597822	     0xc03a3e	             0
+	     0	      12426224	     0xbd9bf0	             0
+
+indread4/file.00000003
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492516	     0xbe9ee4	             0
+	     5	      12384581	     0xbcf945	             0
+	     6	      12597838	     0xc03a4e	             0
+	     0	      12426240	     0xbd9c00	             0
+	     2	      12572574	     0xbfd79e	             0
+	     4	      12514315	     0xbef40b	             0
+	     7	      12462943	     0xbe2b5f	             0
+	     1	      12644222	     0xc0ef7e	             0
+
+indread4/file.00000005
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12462929	     0xbe2b51	             0
+	     1	      12644208	     0xc0ef70	             0
+	     3	      12492502	     0xbe9ed6	             0
+	     5	      12384567	     0xbcf937	             0
+	     6	      12597824	     0xc03a40	             0
+	     0	      12426226	     0xbd9bf2	             0
+	     2	      12572560	     0xbfd790	             0
+	     4	      12514301	     0xbef3fd	             0
+
+indread4/file.00000009
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384582	     0xbcf946	             0
+	     6	      12597839	     0xc03a4f	             0
+	     0	      12426241	     0xbd9c01	             0
+	     2	      12572575	     0xbfd79f	             0
+	     4	      12514316	     0xbef40c	             0
+	     7	      12462944	     0xbe2b60	             0
+	     1	      12644223	     0xc0ef7f	             0
+	     3	      12492517	     0xbe9ee5	             0
+
+indread4/file.00000031
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514300	     0xbef3fc	             0
+	     7	      12462928	     0xbe2b50	             0
+	     1	      12644207	     0xc0ef6f	             0
+	     3	      12492501	     0xbe9ed5	             0
+	     5	      12384566	     0xbcf936	             0
+	     6	      12597823	     0xc03a3f	             0
+	     0	      12426225	     0xbd9bf1	             0
+	     2	      12572559	     0xbfd78f	             0
+
+indread4/file.00000030
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384590	     0xbcf94e	             0
+	     6	      12597847	     0xc03a57	             0
+	     0	      12426249	     0xbd9c09	             0
+	     2	      12572583	     0xbfd7a7	             0
+	     4	      12514324	     0xbef414	             0
+	     7	      12462952	     0xbe2b68	             0
+	     1	      12644231	     0xc0ef87	             0
+	     3	      12492525	     0xbe9eed	             0
+
+indread4/file.00000021
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572570	     0xbfd79a	             0
+	     4	      12514311	     0xbef407	             0
+	     7	      12462939	     0xbe2b5b	             0
+	     1	      12644218	     0xc0ef7a	             0
+	     3	      12492512	     0xbe9ee0	             0
+	     5	      12384577	     0xbcf941	             0
+	     6	      12597834	     0xc03a4a	             0
+	     0	      12426236	     0xbd9bfc	             0
+
+indread4/file.00000015
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514312	     0xbef408	             0
+	     7	      12462940	     0xbe2b5c	             0
+	     1	      12644219	     0xc0ef7b	             0
+	     3	      12492513	     0xbe9ee1	             0
+	     5	      12384578	     0xbcf942	             0
+	     6	      12597835	     0xc03a4b	             0
+	     0	      12426237	     0xbd9bfd	             0
+	     2	      12572571	     0xbfd79b	             0
+
+indread4/file.00000027
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644213	     0xc0ef75	             0
+	     3	      12492507	     0xbe9edb	             0
+	     5	      12384572	     0xbcf93c	             0
+	     6	      12597829	     0xc03a45	             0
+	     0	      12426231	     0xbd9bf7	             0
+	     2	      12572565	     0xbfd795	             0
+	     4	      12514306	     0xbef402	             0
+	     7	      12462934	     0xbe2b56	             0
+
+indread4/file.00000013
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384562	     0xbcf932	             0
+	     6	      12597819	     0xc03a3b	             0
+	     0	      12426221	     0xbd9bed	             0
+	     2	      12572555	     0xbfd78b	             0
+	     4	      12514296	     0xbef3f8	             0
+	     7	      12462924	     0xbe2b4c	             0
+	     1	      12644203	     0xc0ef6b	             0
+	     3	      12492497	     0xbe9ed1	             0
+
+indread4/file.00000019
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597840	     0xc03a50	             0
+	     0	      12426242	     0xbd9c02	             0
+	     2	      12572576	     0xbfd7a0	             0
+	     4	      12514317	     0xbef40d	             0
+	     7	      12462945	     0xbe2b61	             0
+	     1	      12644224	     0xc0ef80	             0
+	     3	      12492518	     0xbe9ee6	             0
+	     5	      12384583	     0xbcf947	             0
+
+indread4/file.00000020
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644211	     0xc0ef73	             0
+	     3	      12492505	     0xbe9ed9	             0
+	     7	      12462932	     0xbe2b54	             0
+	     5	      12384571	     0xbcf93b	             0
+	     6	      12597828	     0xc03a44	             0
+	     0	      12426230	     0xbd9bf6	             0
+	     2	      12572564	     0xbfd794	             0
+	     4	      12514305	     0xbef401	             0
+
+indread4/file.00000025
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426235	     0xbd9bfb	             0
+	     2	      12572569	     0xbfd799	             0
+	     4	      12514310	     0xbef406	             0
+	     7	      12462938	     0xbe2b5a	             0
+	     1	      12644217	     0xc0ef79	             0
+	     3	      12492511	     0xbe9edf	             0
+	     5	      12384576	     0xbcf940	             0
+	     6	      12597833	     0xc03a49	             0
+
+indread4/file.00000011
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384574	     0xbcf93e	             0
+	     6	      12597831	     0xc03a47	             0
+	     0	      12426233	     0xbd9bf9	             0
+	     2	      12572567	     0xbfd797	             0
+	     4	      12514308	     0xbef404	             0
+	     7	      12462936	     0xbe2b58	             0
+	     1	      12644215	     0xc0ef77	             0
+	     3	      12492509	     0xbe9edd	             0
+
+indread4/file.00000010
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426243	     0xbd9c03	             0
+	     2	      12572577	     0xbfd7a1	             0
+	     4	      12514318	     0xbef40e	             0
+	     7	      12462946	     0xbe2b62	             0
+	     1	      12644225	     0xc0ef81	             0
+	     3	      12492519	     0xbe9ee7	             0
+	     5	      12384584	     0xbcf948	             0
+	     6	      12597841	     0xc03a51	             0
+
+indread4/file.00000016
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12462949	     0xbe2b65	             0
+	     1	      12644228	     0xc0ef84	             0
+	     3	      12492522	     0xbe9eea	             0
+	     5	      12384587	     0xbcf94b	             0
+	     6	      12597844	     0xc03a54	             0
+	     0	      12426246	     0xbd9c06	             0
+	     2	      12572580	     0xbfd7a4	             0
+	     4	      12514321	     0xbef411	             0
+
+indread4/file.00000004
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572578	     0xbfd7a2	             0
+	     4	      12514319	     0xbef40f	             0
+	     7	      12462947	     0xbe2b63	             0
+	     1	      12644226	     0xc0ef82	             0
+	     3	      12492520	     0xbe9ee8	             0
+	     5	      12384585	     0xbcf949	             0
+	     6	      12597842	     0xc03a52	             0
+	     0	      12426244	     0xbd9c04	             0
+
+indread4/file.00000023
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597832	     0xc03a48	             0
+	     0	      12426234	     0xbd9bfa	             0
+	     2	      12572568	     0xbfd798	             0
+	     4	      12514309	     0xbef405	             0
+	     7	      12462937	     0xbe2b59	             0
+	     1	      12644216	     0xc0ef78	             0
+	     3	      12492510	     0xbe9ede	             0
+	     5	      12384575	     0xbcf93f	             0
+
+indread4/file.00000000
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492504	     0xbe9ed8	             0
+	     5	      12384569	     0xbcf939	             0
+	     6	      12597826	     0xc03a42	             0
+	     0	      12426228	     0xbd9bf4	             0
+	     2	      12572562	     0xbfd792	             0
+	     4	      12514303	     0xbef3ff	             0
+	     7	      12462931	     0xbe2b53	             0
+	     1	      12644210	     0xc0ef72	             0
+
+indread4/file.00000017
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492496	     0xbe9ed0	             0
+	     5	      12384561	     0xbcf931	             0
+	     6	      12597818	     0xc03a3a	             0
+	     0	      12426220	     0xbd9bec	             0
+	     2	      12572554	     0xbfd78a	             0
+	     4	      12514295	     0xbef3f7	             0
+	     7	      12462923	     0xbe2b4b	             0
+	     1	      12644202	     0xc0ef6a	             0
+
+indread4/file.00000002
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12597848	     0xc03a58	             0
+	     0	      12426250	     0xbd9c0a	             0
+	     2	      12572584	     0xbfd7a8	             0
+	     4	      12514325	     0xbef415	             0
+	     7	      12462953	     0xbe2b69	             0
+	     1	      12644232	     0xc0ef88	             0
+	     3	      12492526	     0xbe9eee	             0
+	     5	      12384591	     0xbcf94f	             0
+
+indread4/file.00000029
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644201	     0xc0ef69	             0
+	     3	      12492495	     0xbe9ecf	             0
+	     5	      12384560	     0xbcf930	             0
+	     6	      12597817	     0xc03a39	             0
+	     0	      12426219	     0xbd9beb	             0
+	     2	      12572553	     0xbfd789	             0
+	     4	      12514294	     0xbef3f6	             0
+	     7	      12462922	     0xbe2b4a	             0
+
+indread4/file.00000026
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514320	     0xbef410	             0
+	     7	      12462948	     0xbe2b64	             0
+	     1	      12644227	     0xc0ef83	             0
+	     3	      12492521	     0xbe9ee9	             0
+	     5	      12384586	     0xbcf94a	             0
+	     6	      12597843	     0xc03a53	             0
+	     0	      12426245	     0xbd9c05	             0
+	     2	      12572579	     0xbfd7a3	             0
+
+indread4/file.00000012
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644221	     0xc0ef7d	             0
+	     3	      12492515	     0xbe9ee3	             0
+	     5	      12384580	     0xbcf944	             0
+	     6	      12597837	     0xc03a4d	             0
+	     0	      12426239	     0xbd9bff	             0
+	     2	      12572573	     0xbfd79d	             0
+	     4	      12514314	     0xbef40a	             0
+	     7	      12462942	     0xbe2b5e	             0
+
+indread4/file.00000028
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426223	     0xbd9bef	             0
+	     2	      12572557	     0xbfd78d	             0
+	     4	      12514298	     0xbef3fa	             0
+	     7	      12462926	     0xbe2b4e	             0
+	     1	      12644205	     0xc0ef6d	             0
+	     3	      12492499	     0xbe9ed3	             0
+	     5	      12384564	     0xbcf934	             0
+	     6	      12597821	     0xc03a3d	             0
+
+indread4/file.00000001
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492508	     0xbe9edc	             0
+	     5	      12384573	     0xbcf93d	             0
+	     6	      12597830	     0xc03a46	             0
+	     0	      12426232	     0xbd9bf8	             0
+	     2	      12572566	     0xbfd796	             0
+	     4	      12514307	     0xbef403	             0
+	     7	      12462935	     0xbe2b57	             0
+	     1	      12644214	     0xc0ef76	             0
+
+indread4/file.00000024
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384570	     0xbcf93a	             0
+	     6	      12597827	     0xc03a43	             0
+	     0	      12426229	     0xbd9bf5	             0
+	     2	      12572563	     0xbfd793	             0
+	     4	      12514304	     0xbef400	             0
+	     3	      12492506	     0xbe9eda	             0
+	     7	      12462933	     0xbe2b55	             0
+	     1	      12644212	     0xc0ef74	             0
+
+indread8
+stripe_count:  16 stripe_size:   1048576 stripe_offset: -1
+indread8/file.00000042
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514704	     0xbef590	             0
+	     7	      12463326	     0xbe2cde	             0
+	     1	      12644613	     0xc0f105	             0
+	     3	      12492908	     0xbea06c	             0
+	     5	      12384968	     0xbcfac8	             0
+	     6	      12598224	     0xc03bd0	             0
+	     0	      12426629	     0xbd9d85	             0
+	     2	      12572967	     0xbfd927	             0
+
+indread8/file.00000059
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598180	     0xc03ba4	             0
+	     0	      12426585	     0xbd9d59	             0
+	     2	      12572923	     0xbfd8fb	             0
+	     4	      12514660	     0xbef564	             0
+	     7	      12463282	     0xbe2cb2	             0
+	     1	      12644569	     0xc0f0d9	             0
+	     3	      12492864	     0xbea040	             0
+	     5	      12384924	     0xbcfa9c	             0
+
+indread8/file.00000007
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426614	     0xbd9d76	             0
+	     2	      12572952	     0xbfd918	             0
+	     4	      12514689	     0xbef581	             0
+	     7	      12463311	     0xbe2ccf	             0
+	     1	      12644598	     0xc0f0f6	             0
+	     3	      12492893	     0xbea05d	             0
+	     5	      12384953	     0xbcfab9	             0
+	     6	      12598209	     0xc03bc1	             0
+
+indread8/file.00000049
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426626	     0xbd9d82	             0
+	     4	      12514701	     0xbef58d	             0
+	     3	      12492905	     0xbea069	             0
+	     2	      12572964	     0xbfd924	             0
+	     7	      12463323	     0xbe2cdb	             0
+	     5	      12384966	     0xbcfac6	             0
+	     1	      12644610	     0xc0f102	             0
+	     6	      12598221	     0xc03bcd	             0
+
+indread8/file.00000014
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598192	     0xc03bb0	             0
+	     0	      12426597	     0xbd9d65	             0
+	     2	      12572935	     0xbfd907	             0
+	     4	      12514672	     0xbef570	             0
+	     7	      12463294	     0xbe2cbe	             0
+	     1	      12644581	     0xc0f0e5	             0
+	     3	      12492876	     0xbea04c	             0
+	     5	      12384936	     0xbcfaa8	             0
+
+indread8/file.00000039
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598208	     0xc03bc0	             0
+	     0	      12426613	     0xbd9d75	             0
+	     2	      12572951	     0xbfd917	             0
+	     4	      12514688	     0xbef580	             0
+	     7	      12463310	     0xbe2cce	             0
+	     1	      12644597	     0xc0f0f5	             0
+	     3	      12492892	     0xbea05c	             0
+	     5	      12384952	     0xbcfab8	             0
+
+indread8/file.00000043
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644574	     0xc0f0de	             0
+	     3	      12492869	     0xbea045	             0
+	     5	      12384929	     0xbcfaa1	             0
+	     6	      12598185	     0xc03ba9	             0
+	     0	      12426590	     0xbd9d5e	             0
+	     2	      12572928	     0xbfd900	             0
+	     4	      12514665	     0xbef569	             0
+	     7	      12463287	     0xbe2cb7	             0
+
+indread8/file.00000033
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572966	     0xbfd926	             0
+	     4	      12514703	     0xbef58f	             0
+	     7	      12463325	     0xbe2cdd	             0
+	     1	      12644612	     0xc0f104	             0
+	     3	      12492907	     0xbea06b	             0
+	     5	      12384967	     0xbcfac7	             0
+	     6	      12598223	     0xc03bcf	             0
+	     0	      12426628	     0xbd9d84	             0
+
+indread8/file.00000052
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514699	     0xbef58b	             0
+	     7	      12463321	     0xbe2cd9	             0
+	     5	      12384963	     0xbcfac3	             0
+	     6	      12598219	     0xc03bcb	             0
+	     2	      12572962	     0xbfd922	             0
+	     1	      12644608	     0xc0f100	             0
+	     0	      12426625	     0xbd9d81	             0
+	     3	      12492904	     0xbea068	             0
+
+indread8/file.00000018
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572960	     0xbfd920	             0
+	     7	      12463319	     0xbe2cd7	             0
+	     1	      12644606	     0xc0f0fe	             0
+	     3	      12492902	     0xbea066	             0
+	     5	      12384962	     0xbcfac2	             0
+	     6	      12598218	     0xc03bca	             0
+	     0	      12426622	     0xbd9d7e	             0
+	     4	      12514698	     0xbef58a	             0
+
+indread8/file.00000008
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598172	     0xc03b9c	             0
+	     0	      12426577	     0xbd9d51	             0
+	     2	      12572915	     0xbfd8f3	             0
+	     4	      12514652	     0xbef55c	             0
+	     7	      12463274	     0xbe2caa	             0
+	     1	      12644561	     0xc0f0d1	             0
+	     3	      12492856	     0xbea038	             0
+	     5	      12384916	     0xbcfa94	             0
+
+indread8/file.00000034
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514691	     0xbef583	             0
+	     7	      12463313	     0xbe2cd1	             0
+	     1	      12644600	     0xc0f0f8	             0
+	     3	      12492895	     0xbea05f	             0
+	     5	      12384955	     0xbcfabb	             0
+	     6	      12598211	     0xc03bc3	             0
+	     0	      12426616	     0xbd9d78	             0
+	     2	      12572954	     0xbfd91a	             0
+
+indread8/file.00000022
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644566	     0xc0f0d6	             0
+	     3	      12492861	     0xbea03d	             0
+	     5	      12384921	     0xbcfa99	             0
+	     6	      12598177	     0xc03ba1	             0
+	     0	      12426582	     0xbd9d56	             0
+	     2	      12572920	     0xbfd8f8	             0
+	     4	      12514657	     0xbef561	             0
+	     7	      12463279	     0xbe2caf	             0
+
+indread8/file.00000051
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514683	     0xbef57b	             0
+	     7	      12463305	     0xbe2cc9	             0
+	     1	      12644592	     0xc0f0f0	             0
+	     3	      12492887	     0xbea057	             0
+	     5	      12384947	     0xbcfab3	             0
+	     6	      12598203	     0xc03bbb	             0
+	     0	      12426608	     0xbd9d70	             0
+	     2	      12572946	     0xbfd912	             0
+
+indread8/file.00000006
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384932	     0xbcfaa4	             0
+	     6	      12598189	     0xc03bad	             0
+	     0	      12426594	     0xbd9d62	             0
+	     2	      12572932	     0xbfd904	             0
+	     4	      12514669	     0xbef56d	             0
+	     7	      12463291	     0xbe2cbb	             0
+	     1	      12644578	     0xc0f0e2	             0
+	     3	      12492873	     0xbea049	             0
+
+indread8/file.00000003
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572945	     0xbfd911	             0
+	     4	      12514682	     0xbef57a	             0
+	     7	      12463304	     0xbe2cc8	             0
+	     1	      12644591	     0xc0f0ef	             0
+	     3	      12492886	     0xbea056	             0
+	     5	      12384946	     0xbcfab2	             0
+	     6	      12598202	     0xc03bba	             0
+	     0	      12426607	     0xbd9d6f	             0
+
+indread8/file.00000005
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644615	     0xc0f107	             0
+	     3	      12492910	     0xbea06e	             0
+	     5	      12384970	     0xbcfaca	             0
+	     6	      12598226	     0xc03bd2	             0
+	     0	      12426631	     0xbd9d87	             0
+	     2	      12572969	     0xbfd929	             0
+	     4	      12514706	     0xbef592	             0
+	     7	      12463328	     0xbe2ce0	             0
+
+indread8/file.00000009
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492882	     0xbea052	             0
+	     5	      12384942	     0xbcfaae	             0
+	     6	      12598198	     0xc03bb6	             0
+	     0	      12426603	     0xbd9d6b	             0
+	     2	      12572941	     0xbfd90d	             0
+	     4	      12514678	     0xbef576	             0
+	     7	      12463300	     0xbe2cc4	             0
+	     1	      12644587	     0xc0f0eb	             0
+
+indread8/file.00000057
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572937	     0xbfd909	             0
+	     4	      12514674	     0xbef572	             0
+	     7	      12463296	     0xbe2cc0	             0
+	     1	      12644583	     0xc0f0e7	             0
+	     3	      12492878	     0xbea04e	             0
+	     5	      12384938	     0xbcfaaa	             0
+	     6	      12598194	     0xc03bb2	             0
+	     0	      12426599	     0xbd9d67	             0
+
+indread8/file.00000050
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644602	     0xc0f0fa	             0
+	     3	      12492897	     0xbea061	             0
+	     5	      12384957	     0xbcfabd	             0
+	     6	      12598213	     0xc03bc5	             0
+	     0	      12426618	     0xbd9d7a	             0
+	     2	      12572956	     0xbfd91c	             0
+	     4	      12514693	     0xbef585	             0
+	     7	      12463315	     0xbe2cd3	             0
+
+indread8/file.00000061
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514675	     0xbef573	             0
+	     7	      12463297	     0xbe2cc1	             0
+	     1	      12644584	     0xc0f0e8	             0
+	     3	      12492879	     0xbea04f	             0
+	     5	      12384939	     0xbcfaab	             0
+	     6	      12598195	     0xc03bb3	             0
+	     0	      12426600	     0xbd9d68	             0
+	     2	      12572938	     0xbfd90a	             0
+
+indread8/file.00000047
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572917	     0xbfd8f5	             0
+	     4	      12514654	     0xbef55e	             0
+	     7	      12463276	     0xbe2cac	             0
+	     1	      12644563	     0xc0f0d3	             0
+	     3	      12492858	     0xbea03a	             0
+	     5	      12384918	     0xbcfa96	             0
+	     6	      12598174	     0xc03b9e	             0
+	     0	      12426579	     0xbd9d53	             0
+
+indread8/file.00000048
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426571	     0xbd9d4b	             0
+	     2	      12572909	     0xbfd8ed	             0
+	     4	      12514646	     0xbef556	             0
+	     7	      12463268	     0xbe2ca4	             0
+	     1	      12644555	     0xc0f0cb	             0
+	     3	      12492850	     0xbea032	             0
+	     5	      12384910	     0xbcfa8e	             0
+	     6	      12598166	     0xc03b96	             0
+
+indread8/file.00000040
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572925	     0xbfd8fd	             0
+	     4	      12514662	     0xbef566	             0
+	     7	      12463284	     0xbe2cb4	             0
+	     1	      12644571	     0xc0f0db	             0
+	     3	      12492866	     0xbea042	             0
+	     5	      12384926	     0xbcfa9e	             0
+	     6	      12598182	     0xc03ba6	             0
+	     0	      12426587	     0xbd9d5b	             0
+
+indread8/file.00000031
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492862	     0xbea03e	             0
+	     5	      12384922	     0xbcfa9a	             0
+	     6	      12598178	     0xc03ba2	             0
+	     0	      12426583	     0xbd9d57	             0
+	     2	      12572921	     0xbfd8f9	             0
+	     4	      12514658	     0xbef562	             0
+	     7	      12463280	     0xbe2cb0	             0
+	     1	      12644567	     0xc0f0d7	             0
+
+indread8/file.00000030
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384931	     0xbcfaa3	             0
+	     6	      12598187	     0xc03bab	             0
+	     0	      12426592	     0xbd9d60	             0
+	     2	      12572930	     0xbfd902	             0
+	     4	      12514667	     0xbef56b	             0
+	     7	      12463289	     0xbe2cb9	             0
+	     1	      12644576	     0xc0f0e0	             0
+	     3	      12492871	     0xbea047	             0
+
+indread8/file.00000021
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384915	     0xbcfa93	             0
+	     6	      12598171	     0xc03b9b	             0
+	     0	      12426576	     0xbd9d50	             0
+	     2	      12572914	     0xbfd8f2	             0
+	     4	      12514651	     0xbef55b	             0
+	     7	      12463273	     0xbe2ca9	             0
+	     1	      12644560	     0xc0f0d0	             0
+	     3	      12492855	     0xbea037	             0
+
+indread8/file.00000015
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426586	     0xbd9d5a	             0
+	     2	      12572924	     0xbfd8fc	             0
+	     4	      12514661	     0xbef565	             0
+	     7	      12463283	     0xbe2cb3	             0
+	     1	      12644570	     0xc0f0da	             0
+	     3	      12492865	     0xbea041	             0
+	     5	      12384925	     0xbcfa9d	             0
+	     6	      12598181	     0xc03ba5	             0
+
+indread8/file.00000053
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463327	     0xbe2cdf	             0
+	     1	      12644614	     0xc0f106	             0
+	     3	      12492909	     0xbea06d	             0
+	     5	      12384969	     0xbcfac9	             0
+	     6	      12598225	     0xc03bd1	             0
+	     0	      12426630	     0xbd9d86	             0
+	     2	      12572968	     0xbfd928	             0
+	     4	      12514705	     0xbef591	             0
+
+indread8/file.00000058
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492901	     0xbea065	             0
+	     5	      12384961	     0xbcfac1	             0
+	     6	      12598217	     0xc03bc9	             0
+	     4	      12514697	     0xbef589	             0
+	     2	      12572961	     0xbfd921	             0
+	     7	      12463320	     0xbe2cd8	             0
+	     1	      12644607	     0xc0f0ff	             0
+	     0	      12426623	     0xbd9d7f	             0
+
+indread8/file.00000054
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514648	     0xbef558	             0
+	     7	      12463270	     0xbe2ca6	             0
+	     1	      12644557	     0xc0f0cd	             0
+	     3	      12492852	     0xbea034	             0
+	     5	      12384912	     0xbcfa90	             0
+	     6	      12598168	     0xc03b98	             0
+	     0	      12426573	     0xbd9d4d	             0
+	     2	      12572911	     0xbfd8ef	             0
+
+indread8/file.00000036
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514655	     0xbef55f	             0
+	     7	      12463277	     0xbe2cad	             0
+	     1	      12644564	     0xc0f0d4	             0
+	     3	      12492859	     0xbea03b	             0
+	     5	      12384919	     0xbcfa97	             0
+	     6	      12598175	     0xc03b9f	             0
+	     0	      12426580	     0xbd9d54	             0
+	     2	      12572918	     0xbfd8f6	             0
+
+indread8/file.00000027
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492903	     0xbea067	             0
+	     0	      12426624	     0xbd9d80	             0
+	     4	      12514700	     0xbef58c	             0
+	     5	      12384964	     0xbcfac4	             0
+	     6	      12598220	     0xc03bcc	             0
+	     2	      12572963	     0xbfd923	             0
+	     7	      12463322	     0xbe2cda	             0
+	     1	      12644609	     0xc0f101	             0
+
+indread8/file.00000056
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	      12514663	     0xbef567	             0
+	     7	      12463285	     0xbe2cb5	             0
+	     1	      12644572	     0xc0f0dc	             0
+	     3	      12492867	     0xbea043	             0
+	     5	      12384927	     0xbcfa9f	             0
+	     6	      12598183	     0xc03ba7	             0
+	     0	      12426588	     0xbd9d5c	             0
+	     2	      12572926	     0xbfd8fe	             0
+
+indread8/file.00000037
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492911	     0xbea06f	             0
+	     5	      12384971	     0xbcfacb	             0
+	     6	      12598227	     0xc03bd3	             0
+	     0	      12426632	     0xbd9d88	             0
+	     2	      12572970	     0xbfd92a	             0
+	     4	      12514707	     0xbef593	             0
+	     7	      12463329	     0xbe2ce1	             0
+	     1	      12644616	     0xc0f108	             0
+
+indread8/file.00000062
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598188	     0xc03bac	             0
+	     0	      12426593	     0xbd9d61	             0
+	     2	      12572931	     0xbfd903	             0
+	     4	      12514668	     0xbef56c	             0
+	     7	      12463290	     0xbe2cba	             0
+	     1	      12644577	     0xc0f0e1	             0
+	     3	      12492872	     0xbea048	             0
+	     5	      12384933	     0xbcfaa5	             0
+
+indread8/file.00000060
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598200	     0xc03bb8	             0
+	     0	      12426605	     0xbd9d6d	             0
+	     2	      12572943	     0xbfd90f	             0
+	     4	      12514680	     0xbef578	             0
+	     7	      12463302	     0xbe2cc6	             0
+	     1	      12644589	     0xc0f0ed	             0
+	     3	      12492884	     0xbea054	             0
+	     5	      12384944	     0xbcfab0	             0
+
+indread8/file.00000041
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384923	     0xbcfa9b	             0
+	     6	      12598179	     0xc03ba3	             0
+	     0	      12426584	     0xbd9d58	             0
+	     2	      12572922	     0xbfd8fa	             0
+	     4	      12514659	     0xbef563	             0
+	     7	      12463281	     0xbe2cb1	             0
+	     1	      12644568	     0xc0f0d8	             0
+	     3	      12492863	     0xbea03f	             0
+
+indread8/file.00000013
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572910	     0xbfd8ee	             0
+	     4	      12514647	     0xbef557	             0
+	     7	      12463269	     0xbe2ca5	             0
+	     1	      12644556	     0xc0f0cc	             0
+	     3	      12492851	     0xbea033	             0
+	     5	      12384911	     0xbcfa8f	             0
+	     6	      12598167	     0xc03b97	             0
+	     0	      12426572	     0xbd9d4c	             0
+
+indread8/file.00000019
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426606	     0xbd9d6e	             0
+	     2	      12572944	     0xbfd910	             0
+	     4	      12514681	     0xbef579	             0
+	     7	      12463303	     0xbe2cc7	             0
+	     1	      12644590	     0xc0f0ee	             0
+	     3	      12492885	     0xbea055	             0
+	     5	      12384945	     0xbcfab1	             0
+	     6	      12598201	     0xc03bb9	             0
+
+indread8/file.00000020
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426578	     0xbd9d52	             0
+	     2	      12572916	     0xbfd8f4	             0
+	     4	      12514653	     0xbef55d	             0
+	     7	      12463275	     0xbe2cab	             0
+	     1	      12644562	     0xc0f0d2	             0
+	     3	      12492857	     0xbea039	             0
+	     5	      12384917	     0xbcfa95	             0
+	     6	      12598173	     0xc03b9d	             0
+
+indread8/file.00000055
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12572953	     0xbfd919	             0
+	     4	      12514690	     0xbef582	             0
+	     7	      12463312	     0xbe2cd0	             0
+	     1	      12644599	     0xc0f0f7	             0
+	     3	      12492894	     0xbea05e	             0
+	     5	      12384954	     0xbcfaba	             0
+	     6	      12598210	     0xc03bc2	             0
+	     0	      12426615	     0xbd9d77	             0
+
+indread8/file.00000025
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644586	     0xc0f0ea	             0
+	     3	      12492881	     0xbea051	             0
+	     5	      12384941	     0xbcfaad	             0
+	     6	      12598197	     0xc03bb5	             0
+	     0	      12426602	     0xbd9d6a	             0
+	     2	      12572940	     0xbfd90c	             0
+	     4	      12514677	     0xbef575	             0
+	     7	      12463299	     0xbe2cc3	             0
+
+indread8/file.00000011
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492870	     0xbea046	             0
+	     5	      12384930	     0xbcfaa2	             0
+	     6	      12598186	     0xc03baa	             0
+	     0	      12426591	     0xbd9d5f	             0
+	     2	      12572929	     0xbfd901	             0
+	     4	      12514666	     0xbef56a	             0
+	     7	      12463288	     0xbe2cb8	             0
+	     1	      12644575	     0xc0f0df	             0
+
+indread8/file.00000010
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384965	     0xbcfac5	             0
+	     2	      12572965	     0xbfd925	             0
+	     7	      12463324	     0xbe2cdc	             0
+	     1	      12644611	     0xc0f103	             0
+	     6	      12598222	     0xc03bce	             0
+	     4	      12514702	     0xbef58e	             0
+	     0	      12426627	     0xbd9d83	             0
+	     3	      12492906	     0xbea06a	             0
+
+indread8/file.00000035
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463306	     0xbe2cca	             0
+	     1	      12644593	     0xc0f0f1	             0
+	     3	      12492888	     0xbea058	             0
+	     5	      12384948	     0xbcfab4	             0
+	     6	      12598204	     0xc03bbc	             0
+	     0	      12426609	     0xbd9d71	             0
+	     2	      12572947	     0xbfd913	             0
+	     4	      12514684	     0xbef57c	             0
+
+indread8/file.00000046
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12426598	     0xbd9d66	             0
+	     2	      12572936	     0xbfd908	             0
+	     4	      12514673	     0xbef571	             0
+	     7	      12463295	     0xbe2cbf	             0
+	     1	      12644582	     0xc0f0e6	             0
+	     3	      12492877	     0xbea04d	             0
+	     5	      12384937	     0xbcfaa9	             0
+	     6	      12598193	     0xc03bb1	             0
+
+indread8/file.00000016
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463314	     0xbe2cd2	             0
+	     1	      12644601	     0xc0f0f9	             0
+	     3	      12492896	     0xbea060	             0
+	     5	      12384956	     0xbcfabc	             0
+	     6	      12598212	     0xc03bc4	             0
+	     0	      12426617	     0xbd9d79	             0
+	     2	      12572955	     0xbfd91b	             0
+	     4	      12514692	     0xbef584	             0
+
+indread8/file.00000004
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598165	     0xc03b95	             0
+	     0	      12426570	     0xbd9d4a	             0
+	     2	      12572908	     0xbfd8ec	             0
+	     4	      12514645	     0xbef555	             0
+	     7	      12463267	     0xbe2ca3	             0
+	     1	      12644554	     0xc0f0ca	             0
+	     3	      12492849	     0xbea031	             0
+	     5	      12384909	     0xbcfa8d	             0
+
+indread8/file.00000023
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384951	     0xbcfab7	             0
+	     6	      12598207	     0xc03bbf	             0
+	     0	      12426612	     0xbd9d74	             0
+	     2	      12572950	     0xbfd916	             0
+	     4	      12514687	     0xbef57f	             0
+	     7	      12463309	     0xbe2ccd	             0
+	     1	      12644596	     0xc0f0f4	             0
+	     3	      12492891	     0xbea05b	             0
+
+indread8/file.00000000
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644594	     0xc0f0f2	             0
+	     3	      12492889	     0xbea059	             0
+	     5	      12384949	     0xbcfab5	             0
+	     6	      12598205	     0xc03bbd	             0
+	     0	      12426610	     0xbd9d72	             0
+	     2	      12572948	     0xbfd914	             0
+	     4	      12514685	     0xbef57d	             0
+	     7	      12463307	     0xbe2ccb	             0
+
+indread8/file.00000044
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492898	     0xbea062	             0
+	     5	      12384958	     0xbcfabe	             0
+	     6	      12598214	     0xc03bc6	             0
+	     0	      12426619	     0xbd9d7b	             0
+	     2	      12572957	     0xbfd91d	             0
+	     4	      12514694	     0xbef586	             0
+	     7	      12463316	     0xbe2cd4	             0
+	     1	      12644603	     0xc0f0fb	             0
+
+indread8/file.00000017
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463271	     0xbe2ca7	             0
+	     5	      12384913	     0xbcfa91	             0
+	     0	      12426574	     0xbd9d4e	             0
+	     4	      12514649	     0xbef559	             0
+	     1	      12644558	     0xc0f0ce	             0
+	     6	      12598170	     0xc03b9a	             0
+	     2	      12572913	     0xbfd8f1	             0
+	     3	      12492854	     0xbea036	             0
+
+indread8/file.00000002
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12644604	     0xc0f0fc	             0
+	     3	      12492899	     0xbea063	             0
+	     5	      12384960	     0xbcfac0	             0
+	     6	      12598216	     0xc03bc8	             0
+	     0	      12426621	     0xbd9d7d	             0
+	     2	      12572959	     0xbfd91f	             0
+	     4	      12514696	     0xbef588	             0
+	     7	      12463318	     0xbe2cd6	             0
+
+indread8/file.00000029
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463298	     0xbe2cc2	             0
+	     1	      12644585	     0xc0f0e9	             0
+	     3	      12492880	     0xbea050	             0
+	     5	      12384940	     0xbcfaac	             0
+	     6	      12598196	     0xc03bb4	             0
+	     0	      12426601	     0xbd9d69	             0
+	     2	      12572939	     0xbfd90b	             0
+	     4	      12514676	     0xbef574	             0
+
+indread8/file.00000045
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463278	     0xbe2cae	             0
+	     1	      12644565	     0xc0f0d5	             0
+	     3	      12492860	     0xbea03c	             0
+	     5	      12384920	     0xbcfa98	             0
+	     6	      12598176	     0xc03ba0	             0
+	     0	      12426581	     0xbd9d55	             0
+	     2	      12572919	     0xbfd8f7	             0
+	     4	      12514656	     0xbef560	             0
+
+indread8/file.00000026
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384959	     0xbcfabf	             0
+	     6	      12598215	     0xc03bc7	             0
+	     0	      12426620	     0xbd9d7c	             0
+	     2	      12572958	     0xbfd91e	             0
+	     4	      12514695	     0xbef587	             0
+	     3	      12492900	     0xbea064	             0
+	     7	      12463317	     0xbe2cd5	             0
+	     1	      12644605	     0xc0f0fd	             0
+
+indread8/file.00000038
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384934	     0xbcfaa6	             0
+	     6	      12598191	     0xc03baf	             0
+	     0	      12426596	     0xbd9d64	             0
+	     2	      12572934	     0xbfd906	             0
+	     4	      12514671	     0xbef56f	             0
+	     7	      12463293	     0xbe2cbd	             0
+	     1	      12644580	     0xc0f0e4	             0
+	     3	      12492875	     0xbea04b	             0
+
+indread8/file.00000012
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	      12598190	     0xc03bae	             0
+	     0	      12426595	     0xbd9d63	             0
+	     2	      12572933	     0xbfd905	             0
+	     4	      12514670	     0xbef56e	             0
+	     7	      12463292	     0xbe2cbc	             0
+	     1	      12644579	     0xc0f0e3	             0
+	     3	      12492874	     0xbea04a	             0
+	     5	      12384935	     0xbcfaa7	             0
+
+indread8/file.00000028
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384943	     0xbcfaaf	             0
+	     6	      12598199	     0xc03bb7	             0
+	     0	      12426604	     0xbd9d6c	             0
+	     2	      12572942	     0xbfd90e	             0
+	     4	      12514679	     0xbef577	             0
+	     7	      12463301	     0xbe2cc5	             0
+	     1	      12644588	     0xc0f0ec	             0
+	     3	      12492883	     0xbea053	             0
+
+indread8/file.00000063
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492853	     0xbea035	             0
+	     6	      12598169	     0xc03b99	             0
+	     2	      12572912	     0xbfd8f0	             0
+	     7	      12463272	     0xbe2ca8	             0
+	     5	      12384914	     0xbcfa92	             0
+	     0	      12426575	     0xbd9d4f	             0
+	     4	      12514650	     0xbef55a	             0
+	     1	      12644559	     0xc0f0cf	             0
+
+indread8/file.00000001
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      12384972	     0xbcfacc	             0
+	     6	      12598228	     0xc03bd4	             0
+	     0	      12426633	     0xbd9d89	             0
+	     2	      12572971	     0xbfd92b	             0
+	     4	      12514708	     0xbef594	             0
+	     7	      12463330	     0xbe2ce2	             0
+	     1	      12644617	     0xc0f109	             0
+	     3	      12492912	     0xbea070	             0
+
+indread8/file.00000032
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12492890	     0xbea05a	             0
+	     5	      12384950	     0xbcfab6	             0
+	     6	      12598206	     0xc03bbe	             0
+	     0	      12426611	     0xbd9d73	             0
+	     2	      12572949	     0xbfd915	             0
+	     4	      12514686	     0xbef57e	             0
+	     7	      12463308	     0xbe2ccc	             0
+	     1	      12644595	     0xc0f0f3	             0
+
+indread8/file.00000024
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	      12463286	     0xbe2cb6	             0
+	     1	      12644573	     0xc0f0dd	             0
+	     3	      12492868	     0xbea044	             0
+	     5	      12384928	     0xbcfaa0	             0
+	     6	      12598184	     0xc03ba8	             0
+	     0	      12426589	     0xbd9d5d	             0
+	     2	      12572927	     0xbfd8ff	             0
+	     4	      12514664	     0xbef568	             0
+
+sharedread1
+stripe_count:  2 stripe_size:   1048576 stripe_offset: -1
+sharedread1/file
+lmm_stripe_count:  2
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	      12495080	     0xbea8e8	             0
+	     5	      12387140	     0xbd0344	             0
+
+sharedread16
+stripe_count:  32 stripe_size:   1048576 stripe_offset: -1
+sharedread16/file
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12575152	     0xbfe1b0	             0
+	     4	      12516878	     0xbefe0e	             0
+	     7	      12465513	     0xbe3569	             0
+	     1	      12646792	     0xc0f988	             0
+	     3	      12495097	     0xbea8f9	             0
+	     5	      12387157	     0xbd0355	             0
+	     6	      12600402	     0xc04452	             0
+	     0	      12428805	     0xbda605	             0
+
+sharedread2
+stripe_count:  4 stripe_size:   1048576 stripe_offset: -1
+sharedread2/file
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	      12575136	     0xbfe1a0	             0
+	     4	      12516862	     0xbefdfe	             0
+	     7	      12465498	     0xbe355a	             0
+	     1	      12646776	     0xc0f978	             0
+
+sharedread4
+stripe_count:  8 stripe_size:   1048576 stripe_offset: -1
+sharedread4/file
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	      12428791	     0xbda5f7	             0
+	     2	      12575138	     0xbfe1a2	             0
+	     4	      12516864	     0xbefe00	             0
+	     7	      12465500	     0xbe355c	             0
+	     1	      12646778	     0xc0f97a	             0
+	     3	      12495083	     0xbea8eb	             0
+	     5	      12387143	     0xbd0347	             0
+	     6	      12600388	     0xc04444	             0
+
+sharedread8
+stripe_count:  16 stripe_size:   1048576 stripe_offset: -1
+sharedread8/file
+lmm_stripe_count:  8
+lmm_stripe_size:   1048576
+lmm_pattern:       1
+lmm_layout_gen:    0
+lmm_stripe_offset: 1
+	obdidx		 objid		 objid		 group
+	     1	      12646781	     0xc0f97d	             0
+	     3	      12495086	     0xbea8ee	             0
+	     5	      12387146	     0xbd034a	             0
+	     6	      12600391	     0xc04447	             0
+	     0	      12428795	     0xbda5fb	             0
+	     2	      12575142	     0xbfe1a6	             0
+	     4	      12516868	     0xbefe04	             0
+	     7	      12465503	     0xbe355f	             0
+
